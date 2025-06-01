@@ -1,0 +1,28 @@
+@model InvestmentPortfolioManagement.Models.Asset
+@{
+    ViewData["Title"] = "Asset Details";
+}
+
+<div class="container mt-5">
+    <h2>Asset Details</h2>
+
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.AssetName</dd>
+
+        <dt class="col-sm-3">Type</dt>
+        <dd class="col-sm-9">@Model.AssetType</dd>
+
+        <dt class="col-sm-3">Quantity</dt>
+        <dd class="col-sm-9">@Model.Quantity</dd>
+
+        <dt class="col-sm-3">Purchase Price</dt>
+        <dd class="col-sm-9">@Model.PurchasePrice</dd>
+
+        <dt class="col-sm-3">Date</dt>
+        <dd class="col-sm-9">@Model.PurchaseDate.ToShortDateString()</dd>
+    </dl>
+
+    <a asp-action="Edit" asp-route-id="@Model.AssetId" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-secondary">Back</a>
+</div>

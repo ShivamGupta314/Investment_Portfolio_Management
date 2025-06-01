@@ -1,0 +1,55 @@
+@model IEnumerable<InvestmentPortfolioManagement.Models.Portfolio>
+@{
+    ViewData["Title"] = "Your Portfolios";
+}
+
+<div class="container mt-5">
+    <h2>Your Portfolios</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <a asp-action="Create" class="btn btn-primary mb-3 d-grid d-md-inline mb-2 me-md-2">Add Portfolio</a>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Portfolio Name</th>
+                    <th>Type</th>
+                    <th>Total Value</th>
+                    <th>Created Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.PortfolioName</td>
+                    <td>@item.Type</td>
+                    <td>@item.TotalValue</td>
+                    <td>@item.CreatedDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.PortfolioId" class="btn btn-info btn-sm d-grid d-md-inline mb-2 me-md-2">View</a>
+                        <a asp-action="Edit" asp-route-id="@item.PortfolioId" class="btn btn-warning btn-sm d-grid d-md-inline mb-2 me-md-2">Edit</a>
+
+                        <form asp-action="Delete" asp-route-id="@item.PortfolioId" method="get" class="d-inline"
+                              onsubmit="return confirm('Are you sure you want to delete this portfolio?');">
+                            <button type="submit" class="btn btn-danger btn-sm d-grid d-md-inline mb-2 me-md-2">Delete</button>
+                        </form>
+
+                        <form asp-action="Clone" asp-route-id="@item.PortfolioId" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-primary btn-sm d-grid d-md-inline mb-2 me-md-2">Clone</button>
+                        </form>
+
+                        <a asp-action="AllocationChart" asp-route-id="@item.PortfolioId" class="btn btn-secondary btn-sm d-grid d-md-inline mb-2 me-md-2">Allocation</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

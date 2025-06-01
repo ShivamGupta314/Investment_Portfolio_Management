@@ -1,0 +1,39 @@
+@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-5">
+    <h2>Admin Analytics Dashboard</h2>
+    <p>Overview of all users' investment performance.</p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped mt-4">
+            <thead class="table-dark">
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Total Investment</th>
+                    <th>Current Value</th>
+                    <th>Profit / Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Username</td>
+                        <td>@user.Email</td>
+                        <td>@user.TotalInvestment</td>
+                        <td>@user.TotalValue</td>
+                        <td class="fw-bold @(user.ProfitOrLoss >= 0 ? "text-success" : "text-danger")">
+                            @user.ProfitOrLoss
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3 d-grid d-md-inline mb-2 me-md-2">Back</a>
+</div>

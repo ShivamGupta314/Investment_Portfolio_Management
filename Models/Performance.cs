@@ -1,0 +1,26 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace InvestmentPortfolioManagement.Models
+{
+    // Represents performance summary of a portfolio
+    public class Performance
+    {
+        [Key]
+        public int PerformanceId { get; set; }
+
+        public decimal TotalInvestment { get; set; }
+
+        public decimal CurrentValue { get; set; }
+
+        public decimal ProfitOrLoss => CurrentValue - TotalInvestment;
+
+        public DateTime CalculatedOn { get; set; } = DateTime.UtcNow;
+
+        // Foreign Key
+        public int PortfolioId { get; set; }
+
+        [ForeignKey("PortfolioId")]
+        public Portfolio Portfolio { get; set; }
+    }
+}

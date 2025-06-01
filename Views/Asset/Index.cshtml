@@ -1,0 +1,48 @@
+@model IEnumerable<InvestmentPortfolioManagement.Models.Asset>
+@{
+    ViewData["Title"] = "Assets";
+    var portfolioId = ViewBag.PortfolioId;
+}
+
+<div class="container mt-5">
+    <h2>Assets</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <a asp-action="Create" asp-route-portfolioId="@portfolioId" class="btn btn-primary d-grid d-md-inline mb-2 me-md-2">Add Asset</a>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Asset Name</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Purchase Price</th>
+                    <th>Purchase Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.AssetName</td>
+                    <td>@item.AssetType</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.PurchasePrice</td>
+                    <td>@item.PurchaseDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.AssetId" class="btn btn-info btn-sm d-grid d-md-inline mb-2 me-md-2">View</a>
+                        <a asp-action="Edit" asp-route-id="@item.AssetId" class="btn btn-warning btn-sm d-grid d-md-inline mb-2 me-md-2">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.AssetId" class="btn btn-danger btn-sm d-grid d-md-inline mb-2 me-md-2">Delete</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
