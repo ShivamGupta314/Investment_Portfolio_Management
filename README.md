@@ -1,97 +1,149 @@
 # Investment Portfolio Management System
 
-An ASP.NET Core MVC web application to manage investment portfolios with secure authentication, asset tracking, performance monitoring, risk profiling, and analytics dashboard. Built using SOLID principles and clean MVC architecture.
+An ASP.NET Core MVC-based web application for managing investment portfolios with performance tracking, asset management, risk assessment, report generation, and analytics. This project follows SOLID principles and uses JWT authentication.
 
 ---
 
-## 🚀 Features
-
-- 🔐 User Authentication (JWT based)
-- 🧾 Portfolio Management (Create, Clone, Delete, View)
-- 💼 Asset Management per Portfolio
-- 📊 Performance Visualization (Bar, Line, Pie Charts using Chart.js)
-- 🛡️ Role-Based Authorization (User/Admin)
-- 📉 Risk Assessment Module (Planned)
-- 📁 Report Generation (Planned: PDF/CSV)
-- 📈 Admin Analytics Dashboard
-- ✅ Mobile Responsive UI (Bootstrap)
-- ☑️ Two-Step Confirmation Before Delete
-
----
-
-## 📁 Project Structure
-
-```
-InvestmentPortfolioManagement/
-│
-├── Controllers/               # MVC Controllers
-├── Models/                    # Entity + ViewModels
-├── Interfaces/                # Service Interfaces (SOLID)
-├── Services/                  # Business Logic
-├── Views/                     # Razor Views
-│   └── Shared/                # Layout, Partials
-├── wwwroot/                   # Static files (Bootstrap, JS, CSS)
-├── appsettings.json           # Configuration + JWT settings
-├── Program.cs                 # Middleware + DI config
-├── README.md                  # Project overview
-└── Documentation/             # Detailed technical + feature docs
-```
-
----
-
-## 🛠️ Tech Stack
-
-- ASP.NET Core MVC (.NET 8)
+## 🔧 Technologies Used
+- .NET 8
+- ASP.NET Core MVC
 - Entity Framework Core
+- SQL Server
 - JWT Authentication
 - Bootstrap 5
-- Chart.js (via CDN)
-- SQL Server
-- Visual Studio / Cursor
+- Chart.js
+- DinkToPdf (PDF export)
+- CSV Export (via StringBuilder)
 
 ---
 
-## 🔐 JWT Configuration (`appsettings.json`)
+## ✅ Features
+- **User Authentication** (Register/Login using JWT)
+- **Portfolio Management** (Add/Edit/Delete/View)
+- **Asset Tracking** (Linked to Portfolios)
+- **Risk Module** (Risk score per portfolio)
+- **Performance Module** (Chart.js based visualization)
+- **Report Module** (PDF & CSV Export)
+- **Analytics Dashboard** (For Admin to view all users)
+- **Role-Based Authorization** (User/Admin)
+- **Responsive UI** with Bootstrap
+- **ViewModels & Interfaces** following SOLID principles
 
-```json
-"Jwt": {
-  "Key": "your-secret-key",
-  "Issuer": "your-app",
-  "Audience": "your-users"
-}
+---
+
+## 📁 Folder Structure
+```
+InvestmentPortfolioManagement/
+├── Controllers/
+├── Models/
+├── Views/
+├── Services/
+├── Interfaces/
+├── Data/
+├── Helpers/
+├── Documentation/
+├── Native/ (DLL file for PDF)
+├── wwwroot/
+├── appsettings.json
+├── Program.cs
+├── InvestmentPortfolioManagement.sln ✅
 ```
 
 ---
 
-## ✅ How to Run
+## 🚀 How to Run (Windows - Visual Studio Community)
 
-1. Clone the repo  
-   `git clone https://github.com/yourusername/InvestmentPortfolioManagement.git`
+### 1. Clone the Repository
+```bash
+git clone <your-repo-url>
+cd InvestmentPortfolioManagement
+```
 
-2. Configure connection string in `appsettings.json`
+### 2. Open in Visual Studio
+- Open `InvestmentPortfolioManagement.sln`
 
-3. Run migrations (if any)  
-   `dotnet ef database update`
+### 3. Install Required NuGet Packages
+Make sure these are installed:
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+```bash
+dotnet add package DinkToPdf
+```
+```bash
+dotnet add package DinkToPdf.Contracts
+```
+```bash
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+```
 
-4. Build and run the app  
-   `dotnet run`
+### 4. Setup Database
+Update your `appsettings.json` connection string:
+```json
+"ConnectionStrings": {
+  "ConnectionString": "Server=YOUR_SQL_SERVER;Database=PortfolioDb;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+Run migrations:
+```bash
+dotnet ef migrations add InitialCreate
+```
+```bash
+dotnet ef database update
+```
 
 ---
 
-## 📂 Documentation
+## 🖨 PDF Export Setup
 
-See the `Documentation/` folder for:
+### Step 1: Download Native DLL
+Download `libwkhtmltox.dll` from:
+https://github.com/rdvojmoc/DinkToPdf/tree/master/v0.12.4/64%20bit
 
-- Feature Descriptions
-- Architecture Diagrams
-- SOLID Principle Implementation
-- Sample Screenshots
-- Future Improvements
+### Step 2: Place in Folder
+Put `libwkhtmltox.dll` into:
+```
+InvestmentPortfolioManagement/Native/
+```
+
+### Step 3: Code to Load DLL (Program.cs)
+```csharp
+var context = new CustomAssemblyLoadContext();
+context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "Native", "libwkhtmltox.dll"));
+```
+Also add:
+```csharp
+using InvestmentPortfolioManagement.Helpers;
+```
+
+### Step 4: Register PDF Service
+```csharp
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+```
 
 ---
 
-## 🙋 Author
+## 🔐 Default Roles
+- **Admin** can access analytics
+- **User** can manage their portfolios
 
-**Saurabh Suman**  
-.NET Developer Intern – Cognizant  
-B.Tech CSE, Cambridge Institute of Technology (2025)
+---
+
+## 📁 Documentation
+Check `Documentation/` folder for:
+- Module breakdown
+- Diagrams & charts (performance, risk)
+- Screenshots (if needed)
+
+---
+
+## 📦 Submission Ready
+- ✅ Compatible with Windows Visual Studio
+- ✅ Self-contained `.sln` for one-click run
+- ✅ Mobile responsive UI
+- ✅ Clean, modular, and documented codebase
+
+---
+
+## 🙌 Author
+This project was developed as part of an internship assignment by [Shivam Gupta] under guidance from mentors using best coding practices.

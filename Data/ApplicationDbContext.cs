@@ -15,6 +15,8 @@ namespace InvestmentPortfolioManagement.Data
         public DbSet<Report> Reports { get; set; }
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<Asset> Assets { get; set; } // ✅ Add this line
+        public DbSet<Performance> Performances { get; set; }
+        public DbSet<RiskProfile> RiskProfiles { get; set; }
 
 
     }
