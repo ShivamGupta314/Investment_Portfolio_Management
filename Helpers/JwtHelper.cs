@@ -21,7 +21,7 @@ namespace InvestmentPortfolioManagement.Helpers
                 new Claim(ClaimTypes.Email, user.Email) // ✅ Added email claim
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"] ?? throw new InvalidOperationException("jwt key is not configured")));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(

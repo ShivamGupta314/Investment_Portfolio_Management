@@ -1,3 +1,4 @@
+using InvestmentPortfolioManagement.Data;
 using InvestmentPortfolioManagement.Interfaces;
 using InvestmentPortfolioManagement.Models;
 using Microsoft.EntityFrameworkCore;

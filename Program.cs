@@ -7,6 +7,7 @@ using System.Text;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 using InvestmentPortfolioManagement.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
 
@@ -33,18 +34,28 @@ context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "Nati
 builder.Services.AddControllersWithViews();
 
 // Configure JWT Authentication
-builder.Services.AddAuthentication("Bearer")
-    .AddJwtBearer("Bearer", options =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
         var jwtSettings = builder.Configuration.GetSection("Jwt");
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
             ValidateAudience = true,
+            ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwtSettings["Issuer"],
             ValidAudience = jwtSettings["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"] ?? throw new InvalidOperationException("jwt key is missing")))
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                context.Token = context.Request.Cookies["jwt"];
+                return Task.CompletedTask;
+            }
         };
     });
 

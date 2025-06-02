@@ -1,0 +1,13 @@
+C:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Investment_Portfolio_Management\wwwroot\css\site.css
+C:\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
+C:\Investment_Portfolio_Management\wwwroot\favicon.ico
+C:\Investment_Portfolio_Management\wwwroot\js\site.js
+C:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

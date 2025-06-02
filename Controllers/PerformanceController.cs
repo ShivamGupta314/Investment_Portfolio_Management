@@ -1,6 +1,8 @@
+using InvestmentPortfolioManagement.Data;
 using InvestmentPortfolioManagement.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvestmentPortfolioManagement.Controllers
 {
@@ -8,10 +10,12 @@ namespace InvestmentPortfolioManagement.Controllers
     public class PerformanceController : Controller
     {
         private readonly IPerformanceService _performanceService;
+        private readonly ApplicationDbContext _context;
 
-        public PerformanceController(IPerformanceService performanceService)
+        public PerformanceController(IPerformanceService performanceService, ApplicationDbContext context)
         {
             _performanceService = performanceService;
+            _context = context;
         }
 
         // GET: /Performance/Portfolio/{portfolioId}
@@ -23,10 +27,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         public async Task<IActionResult> History(int portfolioId)
         {
-            var history = await _context.Performances
-                .Where(p => p.PortfolioId == portfolioId)
-                .OrderBy(p => p.CalculatedOn)
-                .ToListAsync();
+            var history = await _context.Performances.Where(p => p.PortfolioId == portfolioId).OrderBy(p => p.CalculatedOn).ToListAsync();
 
             ViewBag.PortfolioId = portfolioId;
             return View(history);

@@ -38,9 +38,12 @@ namespace InvestmentPortfolioManagement.Controllers
             if (user != null)
             {
                 var token = JwtHelper.GenerateJwtToken(user, _configuration);
-                ViewBag.Token = token;
-                TempData["Success"] = "Login successful!";
-                return View("TokenView"); // You can change this to redirect to Dashboard if needed
+                Response.Cookies.Append("jwt", token, new CookieOptions
+                {
+                    HttpOnly = true,
+                    Expires = DateTimeOffset.UtcNow.AddHours(2)
+                });
+                return RedirectToAction("Index", "Portfolio");
             }
 
             TempData["Error"] = "Invalid username or password.";
