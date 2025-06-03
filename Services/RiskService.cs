@@ -14,7 +14,7 @@ namespace InvestmentPortfolioManagement.Services
             _context = context;
         }
 
-        public async Task<RiskProfile> GetRiskByUserIdAsync(int userId)
+        public async Task<RiskProfile> GetRiskByUserIdAsync(Guid userId)
         {
             return await _context.RiskProfiles.FirstOrDefaultAsync(r => r.UserId == userId);
         }

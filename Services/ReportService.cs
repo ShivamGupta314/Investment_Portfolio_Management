@@ -17,7 +17,7 @@ namespace InvestmentPortfolioManagement.Services
             _pdfConverter = pdfConverter;
         }
 
-        public byte[] GeneratePortfolioPdf(int userId)
+        public byte[] GeneratePortfolioPdf(Guid userId)
         {
             var portfolios = _context.Portfolios.Where(p => p.UserId == userId).ToList();
 
@@ -38,7 +38,7 @@ namespace InvestmentPortfolioManagement.Services
             return _pdfConverter.Convert(doc);
         }
 
-        public string GenerateAssetCsv(int userId)
+        public string GenerateAssetCsv(Guid userId)
         {
             var assets = _context.Assets.Where(a => a.Portfolio.UserId == userId).ToList();
 

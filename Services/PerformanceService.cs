@@ -14,7 +14,7 @@ namespace InvestmentPortfolioManagement.Services
             _context = context;
         }
 
-        public async Task<Performance> CalculatePerformanceAsync(int portfolioId)
+        public async Task<Performance> CalculatePerformanceAsync(Guid portfolioId)
         {
             var assets = await _context.Assets
                 .Where(a => a.PortfolioId == portfolioId)

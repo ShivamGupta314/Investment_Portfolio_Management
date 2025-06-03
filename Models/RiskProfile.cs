@@ -5,9 +5,9 @@ namespace InvestmentPortfolioManagement.Models
     public class RiskProfile
     {
         [Key]
-        public int RiskProfileId { get; set; }
+        public Guid RiskProfileId { get; set; }
 
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [Required]
         public string RiskLevel { get; set; } = string.Empty;

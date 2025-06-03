@@ -7,7 +7,7 @@ namespace InvestmentPortfolioManagement.Models
     public class Asset
     {
         [Key]
-        public int AssetId { get; set; }
+        public Guid AssetId { get; set; }
 
         [Required]
         public string AssetName { get; set; }
@@ -23,7 +23,7 @@ namespace InvestmentPortfolioManagement.Models
         public DateTime PurchaseDate { get; set; } = DateTime.UtcNow;
 
         // Foreign key to Portfolio
-        public int PortfolioId { get; set; }
+        public Guid PortfolioId { get; set; }
 
         [ForeignKey("PortfolioId")]
         public Portfolio Portfolio { get; set; } // Navigation property

@@ -14,14 +14,14 @@ namespace InvestmentPortfolioManagement.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Portfolio>> GetAllPortfoliosAsync(int userId)
+        public async Task<IEnumerable<Portfolio>> GetAllPortfoliosAsync(Guid userId)
         {
             return await _context.Portfolios
                 .Where(p => p.UserId == userId)
                 .ToListAsync();
         }
 
-        public async Task<Portfolio> GetPortfolioByIdAsync(int id)
+        public async Task<Portfolio> GetPortfolioByIdAsync(Guid id)
         {
             return await _context.Portfolios.FindAsync(id);
         }
@@ -38,7 +38,7 @@ namespace InvestmentPortfolioManagement.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeletePortfolioAsync(int id)
+        public async Task DeletePortfolioAsync(Guid id)
         {
             var portfolio = await _context.Portfolios.FindAsync(id);
             if (portfolio != null)

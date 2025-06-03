@@ -62,6 +62,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+// Seed the admin user
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var authcontext = services.GetRequiredService<ApplicationDbContext>();
+    await DbInitializer.EnsureAdminUser(authcontext);
+}
 
 app.UseStaticFiles();
 app.UseRouting();

@@ -15,10 +15,11 @@ namespace InvestmentPortfolioManagement.Controllers
             _reportService = reportService;
         }
 
-        private int GetCurrentUserId()
+        private Guid GetCurrentUserId()
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-            return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+            return userIdClaim != null ? Guid.Parse(userIdClaim.Value) : Guid.Empty;
+
         }
 
         public IActionResult Index()
@@ -28,7 +29,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         public IActionResult ExportPdf()
         {
-            var userId = GetCurrentUserId();
+            Guid userId = GetCurrentUserId();
             var file = _reportService.GeneratePortfolioPdf(userId);
             return File(file, "application/pdf", "PortfolioReport.pdf");
         }

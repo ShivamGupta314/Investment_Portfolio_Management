@@ -6,7 +6,7 @@ namespace InvestmentPortfolioManagement.Models
     public class User
     {
         [Key]
-        public int UserId { get; set; } // Primary Key
+        public Guid UserId { get; set; } // Primary Key
         [Required]
         public string Username { get; set; } = string.Empty;
         [Required]
@@ -15,7 +15,7 @@ namespace InvestmentPortfolioManagement.Models
         [Required]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; } = string.Empty;
-        public string Role { get; set; } // Investor or Admin
+        public string Role { get; set; } = "Investor";
 
         public ICollection<Portfolio>? Portfolios { get; set; }
     }

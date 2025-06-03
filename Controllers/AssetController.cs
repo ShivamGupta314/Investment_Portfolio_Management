@@ -18,7 +18,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Asset/Index/{portfolioId}
-        public async Task<IActionResult> Index(int portfolioId)
+        public async Task<IActionResult> Index(Guid portfolioId)
         {
             var assets = await _assetService.GetAssetsByPortfolioIdAsync(portfolioId);
             ViewBag.PortfolioId = portfolioId;
@@ -26,7 +26,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Asset/Create/{portfolioId}
-        public IActionResult Create(int portfolioId)
+        public IActionResult Create(Guid portfolioId)
         {
             var asset = new Asset { PortfolioId = portfolioId };
             return View(asset);
@@ -46,7 +46,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Asset/Edit/{id}
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(Guid id)
         {
             var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
@@ -55,7 +55,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // POST: /Asset/Edit/{id}
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Asset asset)
+        public async Task<IActionResult> Edit(Guid id, Asset asset)
         {
             if (id != asset.AssetId) return BadRequest();
 
@@ -69,7 +69,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Asset/Details/{id}
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(Guid id)
         {
             var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
@@ -77,7 +77,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Asset/Delete/{id}
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
@@ -86,12 +86,12 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // POST: /Asset/DeleteConfirmed
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
 
-            int portfolioId = asset.PortfolioId;
+            Guid portfolioId = asset.PortfolioId;
             await _assetService.DeleteAssetAsync(id);
             TempData["Success"] = "Asset deleted successfully.";
             return RedirectToAction(nameof(Index), new { portfolioId });

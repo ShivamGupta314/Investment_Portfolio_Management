@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace InvestmentPortfolioManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class INIT : Migration
+    public partial class inttoguid : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -28,9 +28,8 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "RiskProfile",
                 columns: table => new
                 {
-                    RiskProfileId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    RiskProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     RiskLevel = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AssessedOn = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -44,8 +43,7 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -60,14 +58,13 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "Portfolios",
                 columns: table => new
                 {
-                    PortfolioId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PortfolioName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalValue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -84,14 +81,13 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "Assets",
                 columns: table => new
                 {
-                    AssetId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AssetId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     AssetName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AssetType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     PurchasePrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PurchaseDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PortfolioId = table.Column<int>(type: "int", nullable: false)
+                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -108,12 +104,11 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "Performances",
                 columns: table => new
                 {
-                    PerformanceId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PerformanceId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TotalInvestment = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CurrentValue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CalculatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PortfolioId = table.Column<int>(type: "int", nullable: false)
+                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
