@@ -22,7 +22,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         private int GetCurrentUserId()
         {
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
             return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
         }
 
@@ -42,16 +42,19 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // POST: /Portfolio/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Portfolio portfolio)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                portfolio.UserId = GetCurrentUserId();
-                await _portfolioService.AddPortfolioAsync(portfolio);
-                TempData["Success"] = "Portfolio created successfully.";
-                return RedirectToAction(nameof(Index));
+                TempData["Error"] = "Validation failed.";
+                return View(portfolio);
             }
-            return View(portfolio);
+            portfolio.UserId = GetCurrentUserId(); // Critical!
+            portfolio.CreatedDate = DateTime.UtcNow;
+            await _portfolioService.AddPortfolioAsync(portfolio);
+            TempData["Success"] = "Portfolio created successfully!";
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: /Portfolio/Edit/id

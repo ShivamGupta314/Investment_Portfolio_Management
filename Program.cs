@@ -59,12 +59,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.MinimumSameSitePolicy = SameSiteMode.Strict;
+    options.Secure = CookieSecurePolicy.Always;
+});
+
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseCookiePolicy();
 
 app.UseAuthentication(); // Enable JWT auth
 app.UseAuthorization();

@@ -1,9 +1,9 @@
-C:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
-C:\Investment_Portfolio_Management\wwwroot\css\site.css
-C:\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
-C:\Investment_Portfolio_Management\wwwroot\favicon.ico
-C:\Investment_Portfolio_Management\wwwroot\js\site.js
-C:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\css\site.css
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\favicon.ico
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\js\site.js
+C:\Users\2406762\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

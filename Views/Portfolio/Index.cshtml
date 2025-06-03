@@ -11,6 +11,11 @@
         <div class="alert alert-success">@TempData["Success"]</div>
     }
 
+    @if (TempData["Error"] != null)
+    {
+        <div class ="alert alert-danger">@TempData["Error"]</div>
+    }
+
     <a asp-action="Create" class="btn btn-primary mb-3 d-grid d-md-inline mb-2 me-md-2">Add Portfolio</a>
 
     <div class="table-responsive">

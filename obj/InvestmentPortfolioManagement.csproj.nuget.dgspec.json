@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj": {}
+    "C:\\Users\\2406762\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj": {}
   },
   "projects": {
-    "C:\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj": {
+    "C:\\Users\\2406762\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj",
+        "projectUniqueName": "C:\\Users\\2406762\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj",
         "projectName": "InvestmentPortfolioManagement",
-        "projectPath": "C:\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj",
-        "packagesPath": "C:\\Users\\2406685\\.nuget\\packages\\",
-        "outputPath": "C:\\Investment_Portfolio_Management\\obj\\",
+        "projectPath": "C:\\Users\\2406762\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj",
+        "packagesPath": "C:\\Users\\2406762\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2406762\\Investment_Portfolio_Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2406685\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2406762\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

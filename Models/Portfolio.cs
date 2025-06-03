@@ -28,8 +28,8 @@ namespace InvestmentPortfolioManagement.Models
         public int UserId { get; set; }
 
         [ForeignKey("UserId")]
-        public User? User { get; set; } // Navigation Property
-        public ICollection<Asset> Assets { get; set; }
+        public User User { get; set; } // Navigation Property
+        public ICollection<Asset>? Assets { get; set; }
 
     }
 }
