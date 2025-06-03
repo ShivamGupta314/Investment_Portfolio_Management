@@ -8,7 +8,7 @@ namespace InvestmentPortfolioManagement.Models
     public class Portfolio
     {
         [Key]
-        public int PortfolioId { get; set; }
+        public Guid PortfolioId { get; set; }
 
         [Required]
         public string PortfolioName { get; set; } = string.Empty;
@@ -25,9 +25,10 @@ namespace InvestmentPortfolioManagement.Models
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
         // Foreign Key for User
-        public int UserId { get; set; }
-
         [ForeignKey("UserId")]
+        public Guid UserId { get; set; }
+
+
         public User User { get; set; } // Navigation Property
         public ICollection<Asset>? Assets { get; set; }
 

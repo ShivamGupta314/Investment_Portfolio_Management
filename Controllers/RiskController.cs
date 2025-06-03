@@ -16,15 +16,16 @@ namespace InvestmentPortfolioManagement.Controllers
             _riskService = riskService;
         }
 
-        private int GetCurrentUserId()
+        private Guid GetCurrentUserId()
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-            return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+            return userIdClaim != null ? Guid.Parse(userIdClaim.Value) : Guid.Empty;
+
         }
 
         public async Task<IActionResult> Index()
         {
-            var userId = GetCurrentUserId();
+            Guid userId = GetCurrentUserId();
             var profile = await _riskService.GetRiskByUserIdAsync(userId);
             return View(profile);
         }

@@ -5,6 +5,6 @@ namespace InvestmentPortfolioManagement.Interfaces
 {
     public interface IPerformanceService
     {
-        Task<Performance> CalculatePerformanceAsync(int portfolioId);
+        Task<Performance> CalculatePerformanceAsync(Guid portfolioId);
     }
 }

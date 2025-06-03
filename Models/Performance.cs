@@ -7,7 +7,7 @@ namespace InvestmentPortfolioManagement.Models
     public class Performance
     {
         [Key]
-        public int PerformanceId { get; set; }
+        public Guid PerformanceId { get; set; }
 
         public decimal TotalInvestment { get; set; }
 
@@ -18,7 +18,7 @@ namespace InvestmentPortfolioManagement.Models
         public DateTime CalculatedOn { get; set; } = DateTime.UtcNow;
 
         // Foreign Key
-        public int PortfolioId { get; set; }
+        public Guid PortfolioId { get; set; }
 
         [ForeignKey("PortfolioId")]
         public Portfolio Portfolio { get; set; }

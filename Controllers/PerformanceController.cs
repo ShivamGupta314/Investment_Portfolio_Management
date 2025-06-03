@@ -19,13 +19,13 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Performance/Portfolio/{portfolioId}
-        public async Task<IActionResult> Portfolio(int portfolioId)
+        public async Task<IActionResult> Portfolio(Guid portfolioId)
         {
             var result = await _performanceService.CalculatePerformanceAsync(portfolioId);
             return View(result);
         }
 
-        public async Task<IActionResult> History(int portfolioId)
+        public async Task<IActionResult> History(Guid portfolioId)
         {
             var history = await _context.Performances.Where(p => p.PortfolioId == portfolioId).OrderBy(p => p.CalculatedOn).ToListAsync();
 

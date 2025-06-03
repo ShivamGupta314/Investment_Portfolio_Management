@@ -4,7 +4,7 @@ namespace InvestmentPortfolioManagement.Interfaces
 {
     public interface IReportService
     {
-        byte[] GeneratePortfolioPdf(int userId);
-        string GenerateAssetCsv(int userId);
+        byte[] GeneratePortfolioPdf(Guid userId);
+        string GenerateAssetCsv(Guid userId);
     }
 }

@@ -4,7 +4,7 @@ namespace InvestmentPortfolioManagement.Interfaces
 {
     public interface IRiskService
     {
-        Task<RiskProfile> GetRiskByUserIdAsync(int userId);
+        Task<RiskProfile> GetRiskByUserIdAsync(Guid userId);
         Task AssessRiskAsync(RiskProfile profile);
     }
 }

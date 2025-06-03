@@ -27,14 +27,15 @@
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 
-                <div class="form-group mb-4">
+                @* Removed the Role selection dropdown *@
+                @* <div class="form-group mb-4">
                     <label asp-for="Role" class="form-label"></label>
                     <select asp-for="Role" class="form-select">
                         <option value="Investor">Investor</option>
                         <option value="Admin">Admin</option>
                     </select>
                     <span asp-validation-for="Role" class="text-danger"></span>
-                </div>
+                </div> *@
 
                 <button type="submit" class="btn btn-success w-100 d-grid d-md-inline mb-2 me-md-2">Register</button>
             </form>
@@ -43,5 +44,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

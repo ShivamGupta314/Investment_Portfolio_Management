@@ -6,10 +6,10 @@ namespace InvestmentPortfolioManagement.Interfaces
 {
     public interface IPortfolioService
     {
-        Task<IEnumerable<Portfolio>> GetAllPortfoliosAsync(int userId);
-        Task<Portfolio> GetPortfolioByIdAsync(int id);
+        Task<IEnumerable<Portfolio>> GetAllPortfoliosAsync(Guid userId);
+        Task<Portfolio> GetPortfolioByIdAsync(Guid id);
         Task AddPortfolioAsync(Portfolio portfolio);
         Task UpdatePortfolioAsync(Portfolio portfolio);
-        Task DeletePortfolioAsync(int id);
+        Task DeletePortfolioAsync(Guid id);
     }
 }

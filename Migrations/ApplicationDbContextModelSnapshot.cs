@@ -24,11 +24,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.Asset", b =>
                 {
-                    b.Property<int>("AssetId")
+                    b.Property<Guid>("AssetId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AssetId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("AssetName")
                         .IsRequired()
@@ -38,8 +36,8 @@ namespace InvestmentPortfolioManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PortfolioId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("PortfolioId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("datetime2");
@@ -59,11 +57,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.Performance", b =>
                 {
-                    b.Property<int>("PerformanceId")
+                    b.Property<Guid>("PerformanceId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PerformanceId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CalculatedOn")
                         .HasColumnType("datetime2");
@@ -71,8 +67,8 @@ namespace InvestmentPortfolioManagement.Migrations
                     b.Property<decimal>("CurrentValue")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("PortfolioId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("PortfolioId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("TotalInvestment")
                         .HasColumnType("decimal(18,2)");
@@ -86,11 +82,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.Portfolio", b =>
                 {
-                    b.Property<int>("PortfolioId")
+                    b.Property<Guid>("PortfolioId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PortfolioId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -110,8 +104,8 @@ namespace InvestmentPortfolioManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("PortfolioId");
 
@@ -139,11 +133,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.RiskProfile", b =>
                 {
-                    b.Property<int>("RiskProfileId")
+                    b.Property<Guid>("RiskProfileId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RiskProfileId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("AssessedOn")
                         .HasColumnType("datetime2");
@@ -156,8 +148,8 @@ namespace InvestmentPortfolioManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("RiskProfileId");
 
@@ -166,11 +158,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()

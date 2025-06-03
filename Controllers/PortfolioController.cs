@@ -20,16 +20,16 @@ namespace InvestmentPortfolioManagement.Controllers
             _context = context;
         }
 
-        private int GetCurrentUserId()
-        {
-            var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
-            return userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+        private Guid GetCurrentUserId()
+        {    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            return userIdClaim != null ? Guid.Parse(userIdClaim.Value) : Guid.Empty;
+
         }
 
         // GET: /Portfolio
         public async Task<IActionResult> Index()
         {
-            var userId = GetCurrentUserId();
+            Guid userId = GetCurrentUserId();
             var portfolios = await _portfolioService.GetAllPortfoliosAsync(userId);
             return View(portfolios);
         }
@@ -39,7 +39,6 @@ namespace InvestmentPortfolioManagement.Controllers
         {
             return View();
         }
-
         // POST: /Portfolio/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -50,15 +49,23 @@ namespace InvestmentPortfolioManagement.Controllers
                 TempData["Error"] = "Validation failed.";
                 return View(portfolio);
             }
-            portfolio.UserId = GetCurrentUserId(); // Critical!
+            // Get current logged-in user's ID
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+            {
+                TempData["Error"] = "User not authenticated.";
+                return View(portfolio);
+            }
+            portfolio.UserId = Guid.Parse(userIdClaim.Value); // 👈 Important
             portfolio.CreatedDate = DateTime.UtcNow;
             await _portfolioService.AddPortfolioAsync(portfolio);
             TempData["Success"] = "Portfolio created successfully!";
             return RedirectToAction(nameof(Index));
         }
 
+
         // GET: /Portfolio/Edit/id
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(Guid id)
         {
             var portfolio = await _portfolioService.GetPortfolioByIdAsync(id);
             if (portfolio == null) return NotFound();
@@ -67,7 +74,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // POST: /Portfolio/Edit/id
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Portfolio portfolio)
+        public async Task<IActionResult> Edit(Guid id, Portfolio portfolio)
         {
             if (id != portfolio.PortfolioId) return BadRequest();
 
@@ -81,7 +88,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Portfolio/Details/id
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(Guid id)
         {
             var portfolio = await _portfolioService.GetPortfolioByIdAsync(id);
             if (portfolio == null) return NotFound();
@@ -89,7 +96,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // GET: /Portfolio/Delete/id
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             var portfolio = await _portfolioService.GetPortfolioByIdAsync(id);
             if (portfolio == null) return NotFound();
@@ -98,7 +105,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // POST: /Portfolio/DeleteConfirmed
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             await _portfolioService.DeletePortfolioAsync(id);
             TempData["Success"] = "Portfolio deleted successfully.";
@@ -107,7 +114,7 @@ namespace InvestmentPortfolioManagement.Controllers
 
         // 🔁 POST: /Portfolio/Clone
         [HttpPost]
-        public async Task<IActionResult> Clone(int id)
+        public async Task<IActionResult> Clone(Guid id)
         {
             var original = await _context.Portfolios
                 .Include(p => p.Assets)
@@ -145,7 +152,7 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // 📊 GET: /Portfolio/AllocationChart/id
-        public async Task<IActionResult> AllocationChart(int id)
+        public async Task<IActionResult> AllocationChart(Guid id)
         {
             var data = await _context.Assets
                 .Where(a => a.PortfolioId == id)

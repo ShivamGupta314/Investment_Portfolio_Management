@@ -14,14 +14,12 @@ namespace InvestmentPortfolioManagement.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Asset>> GetAssetsByPortfolioIdAsync(int portfolioId)
+        public async Task<IEnumerable<Asset>> GetAssetsByPortfolioIdAsync(Guid portfolioId)
         {
-            return await _context.Assets
-                .Where(a => a.PortfolioId == portfolioId)
-                .ToListAsync();
+            return await _context.Assets.Where(a => a.PortfolioId == portfolioId).ToListAsync();
         }
 
-        public async Task<Asset> GetAssetByIdAsync(int id)
+        public async Task<Asset> GetAssetByIdAsync(Guid id)
         {
             return await _context.Assets.FindAsync(id);
         }
@@ -38,7 +36,7 @@ namespace InvestmentPortfolioManagement.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAssetAsync(int id)
+        public async Task DeleteAssetAsync(Guid id)
         {
             var asset = await _context.Assets.FindAsync(id);
             if (asset != null)

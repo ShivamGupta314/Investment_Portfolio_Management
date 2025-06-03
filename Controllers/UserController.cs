@@ -2,8 +2,11 @@ using InvestmentPortfolioManagement.Helpers;
 using InvestmentPortfolioManagement.Interfaces;
 using InvestmentPortfolioManagement.Models;
 using InvestmentPortfolioManagement.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System.Runtime.ConstrainedExecution;
+using System.Security.Claims; // Added for ClaimTypes
 
 namespace InvestmentPortfolioManagement.Controllers
 {
@@ -41,9 +44,20 @@ namespace InvestmentPortfolioManagement.Controllers
                 Response.Cookies.Append("jwt", token, new CookieOptions
                 {
                     HttpOnly = true,
+                    Secure = true,
+                    SameSite = SameSiteMode.Strict,
                     Expires = DateTimeOffset.UtcNow.AddHours(2)
                 });
-                return RedirectToAction("Index", "Portfolio");
+
+                // Redirect based on role
+                if (user.Role == "Admin")
+                {
+                    return RedirectToAction("Index", "Admin"); // Redirect to Admin dashboard
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Portfolio"); // Redirect to Investor portfolio
+                }
             }
 
             TempData["Error"] = "Invalid username or password.";
@@ -66,10 +80,15 @@ namespace InvestmentPortfolioManagement.Controllers
                 return View(user);
             }
 
+            // Hash the password securely
+            var passwordHasher = new PasswordHasher<User>();
+            user.Password = passwordHasher.HashPassword(user, user.Password);
+
             await _userService.RegisterAsync(user);
             TempData["Success"] = "Registration successful. Please login.";
             return RedirectToAction("Login");
         }
+
 
         [HttpPost]
         public IActionResult Logout()

@@ -1,7 +1,9 @@
 using InvestmentPortfolioManagement.Data;
 using InvestmentPortfolioManagement.Interfaces;
 using InvestmentPortfolioManagement.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace InvestmentPortfolioManagement.Services
 {
@@ -17,7 +19,16 @@ namespace InvestmentPortfolioManagement.Services
         // Authenticates user based on credentials
         public async Task<User> AuthenticateAsync(string username, string password)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+
+            if (user == null)
+                return null; // User not found
+
+            // Verify hashed password
+            var passwordHasher = new PasswordHasher<User>();
+            var result = passwordHasher.VerifyHashedPassword(user, user.Password, password);
+
+            return result == PasswordVerificationResult.Success ? user : null;
         }
 
         // Registers new user
