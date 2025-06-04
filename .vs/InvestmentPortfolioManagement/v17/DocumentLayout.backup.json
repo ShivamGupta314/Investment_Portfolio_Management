@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Investment_Portfolio_Management\\Migrations\\20250603112342_int to guid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250603112342_int to guid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Investment_Portfolio_Management\\Migrations\\20250603111807_int to guid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -173,6 +169,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\common\\assettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:common\\assettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\investment_portfolio_management\\migrations\\20250603112342_int to guid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:migrations\\20250603112342_int to guid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,9 +190,9 @@
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Investment_Portfolio_Management\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "Controllers\\UserController.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwEYAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Investment_Portfolio_Management\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAApwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T11:15:56.205Z",
               "EditorCaption": ""
@@ -207,8 +207,7 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:18:32.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:18:32.974Z"
             },
             {
               "$type": "Document",
@@ -216,16 +215,15 @@
               "Title": "PortfolioController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs",
               "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
-              "ToolTip": "C:\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs*",
-              "RelativeToolTip": "Controllers\\PortfolioController.cs*",
+              "ToolTip": "C:\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "Controllers\\PortfolioController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAxwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:14:51.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:14:51.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "JwtHelper.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Helpers\\JwtHelper.cs",
               "RelativeDocumentMoniker": "Helpers\\JwtHelper.cs",
@@ -233,12 +231,11 @@
               "RelativeToolTip": "Helpers\\JwtHelper.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:27:38.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T12:27:38.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
@@ -246,34 +243,31 @@
               "RelativeToolTip": "Data\\DbInitializer.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:47:27.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T10:47:27.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Investment_Portfolio_Management\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T11:26:42.867Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Investment_Portfolio_Management\\Models\\User.cs*",
-              "RelativeToolTip": "Models\\User.cs*",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:26:42.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
               "ToolTip": "C:\\Investment_Portfolio_Management\\Services\\UserService.cs",
               "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAApwBcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:16:29.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:16:29.862Z"
             },
             {
               "$type": "Document",
@@ -285,12 +279,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAIAwwBEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:11:05.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:11:05.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 42,
               "Title": "20250603112342_int to guid.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Migrations\\20250603112342_int to guid.cs",
               "RelativeDocumentMoniker": "Migrations\\20250603112342_int to guid.cs",
@@ -298,12 +291,11 @@
               "RelativeToolTip": "Migrations\\20250603112342_int to guid.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:23:45.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:23:45.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "AssetController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\AssetController.cs",
               "RelativeDocumentMoniker": "Controllers\\AssetController.cs",
@@ -311,12 +303,11 @@
               "RelativeToolTip": "Controllers\\AssetController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAIAxwF0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:10:04.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:10:04.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "RiskService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\RiskService.cs",
               "RelativeDocumentMoniker": "Services\\RiskService.cs",
@@ -324,12 +315,11 @@
               "RelativeToolTip": "Services\\RiskService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwBAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:18:27.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:18:27.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "20250603111807_int to guid.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Migrations\\20250603111807_int to guid.cs",
               "RelativeDocumentMoniker": "Migrations\\20250603111807_int to guid.cs",
@@ -337,12 +327,11 @@
               "RelativeToolTip": "Migrations\\20250603111807_int to guid.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:18:08.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:18:08.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
@@ -350,12 +339,11 @@
               "RelativeToolTip": "Controllers\\ReportController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:12.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:12.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "RiskController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\RiskController.cs",
               "RelativeDocumentMoniker": "Controllers\\RiskController.cs",
@@ -363,12 +351,11 @@
               "RelativeToolTip": "Controllers\\RiskController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAmwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:17.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:17.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ReportService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "Services\\ReportService.cs",
@@ -376,12 +363,11 @@
               "RelativeToolTip": "Services\\ReportService.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwCgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:15:23.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:15:23.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "PortfolioService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\PortfolioService.cs",
               "RelativeDocumentMoniker": "Services\\PortfolioService.cs",
@@ -389,12 +375,11 @@
               "RelativeToolTip": "Services\\PortfolioService.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAkwCgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:15:13.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:15:13.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "PerformanceService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\PerformanceService.cs",
               "RelativeDocumentMoniker": "Services\\PerformanceService.cs",
@@ -402,12 +387,11 @@
               "RelativeToolTip": "Services\\PerformanceService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwBAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:15:05.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:15:05.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "AssetService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Services\\AssetService.cs",
               "RelativeDocumentMoniker": "Services\\AssetService.cs",
@@ -415,12 +399,11 @@
               "RelativeToolTip": "Services\\AssetService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:13:10.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:13:10.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Performance.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\Performance.cs",
               "RelativeDocumentMoniker": "Models\\Performance.cs",
@@ -428,12 +411,11 @@
               "RelativeToolTip": "Models\\Performance.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:27:01.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:27:01.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "Asset.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\Asset.cs",
               "RelativeDocumentMoniker": "Models\\Asset.cs",
@@ -441,12 +423,11 @@
               "RelativeToolTip": "Models\\Asset.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:09:04.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:09:04.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Portfolio.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\Portfolio.cs",
               "RelativeDocumentMoniker": "Models\\Portfolio.cs",
@@ -454,12 +435,11 @@
               "RelativeToolTip": "Models\\Portfolio.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAiwBsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:15:40.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:15:40.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\Report.cs",
               "RelativeDocumentMoniker": "Models\\Report.cs",
@@ -467,12 +447,11 @@
               "RelativeToolTip": "Models\\Report.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:19:45.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:19:45.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "RiskProfile.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Models\\RiskProfile.cs",
               "RelativeDocumentMoniker": "Models\\RiskProfile.cs",
@@ -480,12 +459,11 @@
               "RelativeToolTip": "Models\\RiskProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:18:47.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:18:47.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "IAssetService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IAssetService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAssetService.cs",
@@ -493,12 +471,11 @@
               "RelativeToolTip": "Interfaces\\IAssetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:33.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:33.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "IReportService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IReportService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IReportService.cs",
@@ -506,12 +483,11 @@
               "RelativeToolTip": "Interfaces\\IReportService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:53.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:53.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "IPortfolioService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IPortfolioService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPortfolioService.cs",
@@ -519,12 +495,11 @@
               "RelativeToolTip": "Interfaces\\IPortfolioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:44.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:44.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "IPerformanceService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IPerformanceService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPerformanceService.cs",
@@ -532,12 +507,11 @@
               "RelativeToolTip": "Interfaces\\IPerformanceService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:12:40.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:12:40.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
@@ -545,12 +519,11 @@
               "RelativeToolTip": "Interfaces\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:16:13.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:16:13.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "IRiskService.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Interfaces\\IRiskService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRiskService.cs",
@@ -558,12 +531,11 @@
               "RelativeToolTip": "Interfaces\\IRiskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:16:24.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:16:24.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -571,12 +543,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:11:16.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:11:16.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
@@ -584,12 +555,11 @@
               "RelativeToolTip": "Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:11:14.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:11:14.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "PerformanceController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\PerformanceController.cs",
               "RelativeDocumentMoniker": "Controllers\\PerformanceController.cs",
@@ -597,12 +567,11 @@
               "RelativeToolTip": "Controllers\\PerformanceController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:22:02.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:22:02.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -610,12 +579,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T11:09:48.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:09:48.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -623,12 +591,11 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:34:20.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T10:34:20.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
@@ -636,12 +603,11 @@
               "RelativeToolTip": "Views\\User\\Register.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAiwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T10:25:15.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T10:25:15.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
@@ -649,12 +615,11 @@
               "RelativeToolTip": "Views\\User\\Login.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T12:01:29.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T12:01:29.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "CustomAssemblyLoadContext.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Helpers\\CustomAssemblyLoadContext.cs",
               "RelativeDocumentMoniker": "Helpers\\CustomAssemblyLoadContext.cs",
@@ -662,12 +627,11 @@
               "RelativeToolTip": "Helpers\\CustomAssemblyLoadContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:24:18.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T10:24:18.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -675,12 +639,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T12:14:17.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T12:14:17.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
@@ -692,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
@@ -704,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "AssetType.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Common\\AssetType.cs",
               "RelativeDocumentMoniker": "Common\\AssetType.cs",
@@ -716,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "ReportType.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Common\\ReportType.cs",
               "RelativeDocumentMoniker": "Common\\ReportType.cs",
@@ -728,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "RiskLevel.cs",
               "DocumentMoniker": "C:\\Investment_Portfolio_Management\\Common\\RiskLevel.cs",
               "RelativeDocumentMoniker": "Common\\RiskLevel.cs",
