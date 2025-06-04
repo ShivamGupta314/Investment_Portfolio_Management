@@ -1,32 +1,49 @@
-@model InvestmentPortfolioManagement.Models.Portfolio
+@model InvestmentPortfolioManagement.ViewModels.PortfolioViewModel
+
 @{
     ViewData["Title"] = "Create Portfolio";
 }
 
-<div class="container mt-5">
-    <h2>Create Portfolio</h2>
+<h2>Create Portfolio</h2>
 
+<div class="container mt-5">
+    @* Display TempData messages *@
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    @* Display validation summary for non-field specific errors *@
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" }) 
+    
     <form asp-action="Create" method="post">
+        @Html.AntiForgeryToken()
         <div class="form-group mb-3">
             <label asp-for="PortfolioName" class="form-label"></label>
             <input asp-for="PortfolioName" class="form-control" />
             <span asp-validation-for="PortfolioName" class="text-danger"></span>
         </div>
-
         <div class="form-group mb-3">
             <label asp-for="Type" class="form-label"></label>
             <input asp-for="Type" class="form-control" />
             <span asp-validation-for="Type" class="text-danger"></span>
         </div>
-
-        <div class="form-group mb-4">
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea> @* Using textarea for description *@
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
             <label asp-for="TotalValue" class="form-label"></label>
             <input asp-for="TotalValue" class="form-control" />
             <span asp-validation-for="TotalValue" class="text-danger"></span>
         </div>
-
         <button type="submit" class="btn btn-success">Create</button>
-        <a asp-action="Index" class="btn btn-secondary">Back</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     </form>
 </div>
 

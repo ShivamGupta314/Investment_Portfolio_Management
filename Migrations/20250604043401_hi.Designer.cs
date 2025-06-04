@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InvestmentPortfolioManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250603112342_int to guid")]
-    partial class inttoguid
+    [Migration("20250604043401_hi")]
+    partial class hi
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

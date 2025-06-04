@@ -9,7 +9,7 @@ namespace InvestmentPortfolioManagement.Interfaces
         Task<IEnumerable<Portfolio>> GetAllPortfoliosAsync(Guid userId);
         Task<Portfolio> GetPortfolioByIdAsync(Guid id);
         Task AddPortfolioAsync(Portfolio portfolio);
-        Task UpdatePortfolioAsync(Portfolio portfolio);
+        Task<Portfolio?> UpdatePortfolioAsync(Portfolio portfolio);
         Task DeletePortfolioAsync(Guid id);
     }
 }

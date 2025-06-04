@@ -32,10 +32,11 @@ namespace InvestmentPortfolioManagement.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdatePortfolioAsync(Portfolio portfolio)
+        public async Task<Portfolio?> UpdatePortfolioAsync(Portfolio portfolio)
         {
             _context.Portfolios.Update(portfolio);
             await _context.SaveChangesAsync();
+            return portfolio;
         }
 
         public async Task DeletePortfolioAsync(Guid id)

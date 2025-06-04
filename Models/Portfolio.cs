@@ -11,13 +11,13 @@ namespace InvestmentPortfolioManagement.Models
         public Guid PortfolioId { get; set; }
 
         [Required]
-        public string PortfolioName { get; set; } = string.Empty;
+        public string PortfolioName { get; set; }
 
         [Required]
-        public string Description { get; set; } = string.Empty;
+        public string Description { get; set; }
 
         [Required]
-        public string Type { get; set; } = string.Empty;
+        public string Type { get; set; } 
 
         [DataType(DataType.Currency)]
         public decimal TotalValue { get; set; }
@@ -25,11 +25,12 @@ namespace InvestmentPortfolioManagement.Models
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
         // Foreign Key for User
+        [ForeignKey("UserId")]
         public Guid UserId { get; set; }
 
-        [ForeignKey("UserId")]
-        public User? User { get; set; } // Navigation Property
-        public ICollection<Asset> Assets { get; set; }
+
+        public User User { get; set; } // Navigation Property
+        public ICollection<Asset>? Assets { get; set; }
 
     }
 }
