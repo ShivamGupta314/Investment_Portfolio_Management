@@ -1,0 +1,36 @@
+@model InvestmentPortfolioManagement.ViewModels.InvestmentViewModel
+
+@{
+    ViewData["Title"] = "Add Investment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Investment</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<form asp-action="Create" asp-controller="Investment" method="post">
+    <input type="hidden" asp-for="PortfolioId" />
+
+    <div class="mb-3">
+        <label asp-for="AssetId" class="form-label">Select Asset</label>
+        <select asp-for="AssetId" class="form-select" required>
+            <option value="">-- Select an Asset --</option>
+            @foreach (var asset in Model.AvailableAssets)
+            {
+                <option value="@asset.AssetId">@asset.Name (@asset.Symbol)</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Quantity" class="form-label">Quantity</label>
+        <input asp-for="Quantity" class="form-control" required min="1" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Invest</button>
+    <a asp-controller="Portfolio" asp-action="Details" asp-route-id="@Model.PortfolioId" class="btn btn-secondary">Back</a>
+</form>

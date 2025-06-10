@@ -1,0 +1,16 @@
+
+@{
+    Layout = ViewData["Layout"]?.ToString();
+    ViewData["Title"] = "Risk Analysis";
+
+    var riskLevel = ViewBag.RiskLevel.ToString();
+    var riskColor = riskLevel == "Low" ? "success" : riskLevel == "Medium" ? "warning" : "danger";
+}
+
+<h2>Portfolio Risk Analysis</h2>
+
+<div class="alert alert-@riskColor mt-4">
+    <strong>Risk Level:</strong> @riskLevel
+</div>
+
+<a class="btn btn-secondary mt-3" href="/Investor/Portfolio">← Back to Portfolio</a>

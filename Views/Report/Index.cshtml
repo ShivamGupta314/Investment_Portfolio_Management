@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Export Reports";
+}
+
+<div class="container mt-5">
+    <h2>Export Reports</h2>
+
+    <a asp-action="ExportPdf" class="btn btn-danger mb-3">Download PDF (Portfolio)</a>
+    <a asp-action="ExportCsv" class="btn btn-primary mb-3">Download CSV (Assets)</a>
+</div>

@@ -1,0 +1,53 @@
+@model InvestmentPortfolioManagement.Models.Portfolio
+@{
+    ViewData["Title"] = "Portfolio Details";
+}
+
+<div class="container mt-5">
+    <h2>Portfolio Details</h2>
+
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+
+        <dt class="col-sm-3">Type</dt>
+        <dd class="col-sm-9">@Model.Type</dd>
+
+        <dt class="col-sm-3">Total Value</dt>
+        <dd class="col-sm-9">@Model.TotalValue</dd>
+
+        <dt class="col-sm-3">Created On</dt>
+        <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
+    </dl>
+
+    
+    <a asp-controller="Investment" asp-action="Create" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
+
+    <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>
+
+<hr />
+<h3 class="mt-4">Investments in this Portfolio</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Asset</th>
+            <th>Symbol</th>
+            <th>Quantity</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var investment in ViewBag.Investments)
+        {
+            <tr>
+                <td>@investment.Asset.Name</td>
+                <td>@investment.Asset.Symbol</td>
+                <td>@investment.Quantity</td>
+                <td>@investment.InvestmentDate.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

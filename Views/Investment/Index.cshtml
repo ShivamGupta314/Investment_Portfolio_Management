@@ -1,0 +1,42 @@
+﻿@model List<Investment>
+
+@{
+    ViewBag.Title = "Investment Portfolio";
+}
+
+<h2>My Investments</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Asset Name</th>
+            <th>Quantity</th>
+            <th>Current Price</th>
+            <th>Purchased Price</th>
+            <th>Total Value</th>
+            <th>Purchased Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var investment in Model)
+        {
+            <tr>
+                <td>@investment.Asset.Name</td>
+                <td>@investment.Quantity</td>
+                <td>@investment.CurrentPrice</td>
+                <td>@investment.PurchasePrice</td>
+                <td>@(investment.CurrentPrice * investment.Quantity)</td>
+                <td>@investment.InvestmentDate.ToShortDateString()</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+<!-- Invest Button -->
+<a href="@Url.Action("Create", new { portfolioId = ViewBag.PortfolioId })" class="btn btn-success">Invest</a>

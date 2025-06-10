@@ -1,0 +1,47 @@
+
+@model IEnumerable<InvestmentPortfolioManagement.Models.Portfolio>
+@{
+    Layout = ViewData["Layout"]?.ToString();
+    ViewData["Title"] = "My Portfolios";
+}
+
+<h2>My Portfolios</h2>
+
+<a class="btn btn-success mb-3" href="/Investor/CreatePortfolio">Create New Portfolio</a>
+
+@if (!Model.Any())
+{
+    <p>No portfolios found.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Total Value</th>
+                <th>Created</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Name
+                    <a href="/Investor/ExportPdf?portfolioId=@p.PortfolioId" class="btn btn-sm btn-outline-dark">PDF</a>
+                    <a href="/Investor/ExportCsv?portfolioId=@p.PortfolioId" class="btn btn-sm btn-outline-secondary">CSV</a>
+</td>
+                <td>@p.Type</td>
+                <td>₹@p.TotalValue</td>
+                <td>@p.CreatedDate.ToShortDateString()</td>
+                <td>
+                    <a href="/Asset/Index?portfolioId=@p.PortfolioId" class="btn btn-sm btn-primary">View Assets</a>
+                    <a href="/Investor/DeletePortfolio?id=@p.PortfolioId" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

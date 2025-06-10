@@ -1,0 +1,79 @@
+@model List<InvestmentPortfolioManagement.Models.Performance>
+@{
+    ViewData["Title"] = "Performance History";
+}
+
+<div class="container mt-5">
+    <h2>Performance History</h2>
+
+    <div style="width: 100%; height: 300px;">
+        <canvas id="historyChart" width="600" height="300"></canvas>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped mt-5">
+            <thead class="table-dark">
+                <tr>
+                    <th>Date</th>
+                    <th>Total Investment</th>
+                    <th>Current Value</th>
+                    <th>Profit/Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CalculatedOn.ToString("g")</td>
+                        <td>@item.TotalInvestment</td>
+                        <td>@item.CurrentValue</td>
+                        <td class="fw-bold @(item.ProfitOrLoss >= 0 ? "text-success" : "text-danger")">
+                            @item.ProfitOrLoss
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a asp-controller="Portfolio" asp-action="Index" class="btn btn-secondary mt-3">Back to Portfolios</a>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('historyChart').getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.Select(p => p.CalculatedOn.ToString("MMM d, yyyy HH:mm")))),
+                datasets: [
+                    {
+                        label: 'Total Investment',
+                        data: @Html.Raw(Json.Serialize(Model.Select(p => p.TotalInvestment))),
+                        borderColor: 'rgba(0,123,255,1)',
+                        backgroundColor: 'rgba(0,123,255,0.1)',
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Current Value',
+                        data: @Html.Raw(Json.Serialize(Model.Select(p => p.CurrentValue))),
+                        borderColor: 'rgba(40,167,69,1)',
+                        backgroundColor: 'rgba(40,167,69,0.1)',
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}

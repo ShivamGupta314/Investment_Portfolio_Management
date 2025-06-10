@@ -1,0 +1,16 @@
+@model InvestmentPortfolioManagement.Models.RiskProfile
+
+<h2>Your Risk Profile</h2>
+
+@if (Model != null)
+{
+    <p><strong>Risk Level:</strong> @Model.RiskLevel</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Assessed On:</strong> @Model.AssessedOn.ToShortDateString()</p>
+}
+else
+{
+    <p>No risk profile found.</p>
+}
+
+<a asp-action="Assess" class="btn btn-primary">Assess Risk</a>

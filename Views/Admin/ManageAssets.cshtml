@@ -1,0 +1,60 @@
+
+@model InvestmentPortfolioManagement.Models.Asset
+@{
+    Layout = ViewData["Layout"]?.ToString();
+    ViewData["Title"] = "Manage Assets";
+}
+
+<h2>Create New Asset</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<form asp-action="ManageAssets" method="post" class="mt-3">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Symbol" class="form-label">Symbol</label>
+        <input asp-for="Symbol" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="AssetType" class="form-label">Asset Type</label>
+        <select asp-for="AssetType" class="form-select">
+            <option>Stock</option>
+            <option>Bond</option>
+            <option>Mutual Fund</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="BasePrice" class="form-label">Base Price</label>
+        <input asp-for="BasePrice" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create Asset</button>
+</form>
+
+<h3 class="mt-5">Existing Assets</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Type</th>
+            <th>Base Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in ViewBag.AllAssets)
+        {
+            <tr>
+                <td>@asset.Name</td>
+                <td>@asset.Symbol</td>
+                <td>@asset.AssetType</td>
+                <td>@asset.BasePrice</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,78 @@
+@model InvestmentPortfolioManagement.Models.Performance
+@{
+    ViewData["Title"] = "Portfolio Performance";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Portfolio Performance Overview</h2>
+
+    <div style="width: 100%; height: 300px;">
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered w-50 mt-5">
+            <tr>
+                <th>Total Investment</th>
+                <td>@Model.TotalInvestment</td>
+            </tr>
+            <tr>
+                <th>Current Value</th>
+                <td>@Model.CurrentValue</td>
+            </tr>
+            <tr>
+                <th>Profit / Loss</th>
+                <td class="fw-bold @(Model.ProfitOrLoss >= 0 ? "text-success" : "text-danger")">
+                    @Model.ProfitOrLoss
+                </td>
+            </tr>
+            <tr>
+                <th>Calculated On</th>
+                <td>@Model.CalculatedOn.ToString("g")</td>
+            </tr>
+        </table>
+    </div>
+
+    <a asp-controller="Portfolio" asp-action="Index" class="btn btn-secondary mt-2 d-grid d-md-inline mb-2 me-md-2">Back to Portfolios</a>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const performanceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Total Investment', 'Current Value', 'Profit/Loss'],
+                datasets: [{
+                    label: 'Amount (₹)',
+                    data: [
+                        @Model.TotalInvestment,
+                        @Model.CurrentValue,
+                        @Model.ProfitOrLoss
+                    ],
+                    borderWidth: 1,
+                    backgroundColor: [
+                        'rgba(0, 123, 255, 0.5)',
+                        'rgba(40, 167, 69, 0.5)',
+                        '@(Model.ProfitOrLoss >= 0 ? "rgba(25, 135, 84, 0.5)" : "rgba(220, 53, 69, 0.5)")'
+                    ],
+                    borderColor: [
+                        'rgba(0, 123, 255, 1)',
+                        'rgba(40, 167, 69, 1)',
+                        '@(Model.ProfitOrLoss >= 0 ? "rgba(25, 135, 84, 1)" : "rgba(220, 53, 69, 1)")'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}
