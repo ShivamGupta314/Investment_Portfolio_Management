@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QpGctyTe9kFmpkKC82PrytfPPZTOBsQj39QR36+VgAw=",
+  "Hash": "MZBDNAD1mOSGCjGoJLYSeEw55Q7RfS5nhjtMnpgZaiM=",
   "Source": "InvestmentPortfolioManagement",
   "BasePath": "_content/InvestmentPortfolioManagement",
   "Mode": "Default",
@@ -10,59 +10,59 @@
     {
       "Name": "InvestmentPortfolioManagement\\wwwroot",
       "Source": "InvestmentPortfolioManagement",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-xzw0cte36n.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint=xzw0cte36n}]?.md.gz",
+      "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint=x0q3zqp4vz}]?.md.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7c5tre7zjy",
-      "Integrity": "R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4=",
+      "Fingerprint": "tbedkqp182",
+      "Integrity": "yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-lugek5hnai.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "css/site#[.{fingerprint=lugek5hnai}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\css\\site.css",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jrpo9zjyzf",
-      "Integrity": "kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g=",
+      "Fingerprint": "wf4wcyqcqt",
+      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\css\\site.css"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint=m2hykwq1ic}]!.bundle.scp.css.gz",
       "AssetKind": "All",
@@ -70,41 +70,41 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "61ko86r3ls",
       "Integrity": "astECWcUA+JyDei6Xe4SUoPw14fv+tAmdypOsoldD+w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-jfsiqqwiad.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "lib/jquery/LICENSE#[.{fingerprint=jfsiqqwiad}]?.txt.gz",
+      "RelativePath": "lib/jquery/LICENSE#[.{fingerprint=mlv21k5csn}]?.txt.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2lpailipk4",
-      "Integrity": "BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw=",
+      "Fingerprint": "rdl0higpfn",
+      "Integrity": "wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint=m2hykwq1ic}]?.styles.css.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "61ko86r3ls",
       "Integrity": "astECWcUA+JyDei6Xe4SUoPw14fv+tAmdypOsoldD+w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
       "AssetKind": "All",
@@ -133,62 +133,62 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\favicon.ico",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "lir1p715ud",
       "Integrity": "jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\favicon.ico"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-fr7q2aak1r.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "js/site#[.{fingerprint=fr7q2aak1r}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\js\\site.js",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jpu9m5shu4",
-      "Integrity": "SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U=",
+      "Fingerprint": "fpxp8wntf7",
+      "Integrity": "465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\js\\site.js"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-l3n5xuwxn8.gz",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint=l3n5xuwxn8}]?.txt.gz",
+      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint=356vix0kms}]?.txt.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dj4k298mwj",
-      "Integrity": "+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU=",
+      "Fingerprint": "0vtotz30el",
+      "Integrity": "1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -203,13 +203,13 @@
       "Integrity": "7n7lrnXRnntks3QBRQqAQpnRHfMxbl5SUtprID04m2A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -224,13 +224,13 @@
       "Integrity": "7n7lrnXRnntks3QBRQqAQpnRHfMxbl5SUtprID04m2A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -241,17 +241,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lugek5hnai",
-      "Integrity": "zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=",
+      "Fingerprint": "b9sayid5wm",
+      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -283,17 +283,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fr7q2aak1r",
-      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
+      "Fingerprint": "xtxxf3hu2r",
+      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -304,17 +304,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z6qzljqjd0",
-      "Integrity": "WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=",
+      "Fingerprint": "81b7ukuj9c",
+      "Integrity": "ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -325,17 +325,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jfsiqqwiad",
-      "Integrity": "kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=",
+      "Fingerprint": "mlv21k5csn",
+      "Integrity": "hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -346,17 +346,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xzw0cte36n",
-      "Integrity": "85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=",
+      "Fingerprint": "x0q3zqp4vz",
+      "Integrity": "geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\",
+      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l3n5xuwxn8",
-      "Integrity": "z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=",
+      "Fingerprint": "356vix0kms",
+      "Integrity": "16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
@@ -376,13 +376,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-lugek5hnai.gz",
+      "Route": "css/site.b9sayid5wm.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.003125000000"
         }
       ],
       "ResponseHeaders": [
@@ -392,152 +392,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "319"
         },
         {
           "Name": "ETag",
-          "Value": "\"kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g=\""
+          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "637"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-lugek5hnai.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-lugek5hnai.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003194888179"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -557,13 +420,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "b9sayid5wm"
         },
         {
           "Name": "label",
@@ -571,13 +434,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\css\\site.css",
+      "Route": "css/site.b9sayid5wm.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -586,7 +449,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "637"
+          "Value": "667"
         },
         {
           "Name": "Content-Type",
@@ -594,11 +457,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -608,7 +471,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "b9sayid5wm"
         },
         {
           "Name": "label",
@@ -616,13 +479,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-lugek5hnai.gz",
+      "Route": "css/site.b9sayid5wm.css.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -631,7 +494,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "319"
         },
         {
           "Name": "Content-Type",
@@ -639,11 +502,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g=\""
+          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -661,7 +524,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "b9sayid5wm"
         },
         {
           "Name": "label",
@@ -669,13 +532,150 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kaKh4p2nWzm7Wq+cxjp3pwo/zq+KYaOscSpE6m/AE7g="
+          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003125000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
         }
       ]
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -698,7 +698,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -738,7 +738,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -759,7 +759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -783,7 +783,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -804,7 +804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -836,7 +836,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -859,7 +859,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -891,7 +891,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -912,7 +912,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -928,7 +928,7 @@
     },
     {
       "Route": "favicon.ico.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -949,7 +949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -973,7 +973,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -996,7 +996,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1028,7 +1028,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1049,7 +1049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1065,7 +1065,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1086,7 +1086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1110,7 +1110,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1133,7 +1133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1173,7 +1173,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1194,7 +1194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1218,7 +1218,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1239,7 +1239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1271,7 +1271,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1294,7 +1294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1334,7 +1334,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1355,7 +1355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1379,7 +1379,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1400,7 +1400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1432,7 +1432,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1455,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1487,7 +1487,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1508,7 +1508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1524,7 +1524,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1545,7 +1545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:54 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1568,13 +1568,13 @@
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-fr7q2aak1r.gz",
+      "Route": "js/site.js",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005319148936"
+          "Quality": "0.005235602094"
         }
       ],
       "ResponseHeaders": [
@@ -1584,15 +1584,152 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "187"
+          "Value": "190"
         },
         {
           "Name": "ETag",
-          "Value": "\"SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U=\""
+          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.xtxxf3hu2r.js",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005235602094"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "190"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1612,13 +1749,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
+          "Value": "xtxxf3hu2r"
         },
         {
           "Name": "label",
@@ -1626,13 +1763,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
         }
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\js\\site.js",
+      "Route": "js/site.xtxxf3hu2r.js",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1641,7 +1778,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "231"
         },
         {
           "Name": "Content-Type",
@@ -1649,11 +1786,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1663,7 +1800,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
+          "Value": "xtxxf3hu2r"
         },
         {
           "Name": "label",
@@ -1671,13 +1808,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
         }
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-fr7q2aak1r.gz",
+      "Route": "js/site.xtxxf3hu2r.js.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1686,7 +1823,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "187"
+          "Value": "190"
         },
         {
           "Name": "Content-Type",
@@ -1694,11 +1831,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U=\""
+          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1716,7 +1853,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
+          "Value": "xtxxf3hu2r"
         },
         {
           "Name": "label",
@@ -1724,150 +1861,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-fr7q2aak1r.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005319148936"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "187"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "227"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-fr7q2aak1r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "187"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfKJjwz2xo2b0rv2/3C6YWWQgl++xedUoxGM5ZQOI6U="
+          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1876,7 +1876,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1153"
         },
         {
           "Name": "Content-Type",
@@ -1884,11 +1884,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=\""
+          "Value": "\"ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1898,13 +1898,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="
+          "Value": "sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/LICENSE.z6qzljqjd0",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1913,7 +1913,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1153"
         },
         {
           "Name": "Content-Type",
@@ -1921,11 +1921,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=\""
+          "Value": "\"ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1935,7 +1935,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z6qzljqjd0"
+          "Value": "81b7ukuj9c"
         },
         {
           "Name": "label",
@@ -1943,18 +1943,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="
+          "Value": "sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk="
         }
       ]
     },
     {
-      "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-jfsiqqwiad.gz",
+      "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001522070015"
+          "Quality": "0.001492537313"
         }
       ],
       "ResponseHeaders": [
@@ -1964,15 +1964,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "669"
         },
         {
           "Name": "ETag",
-          "Value": "\"BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw=\""
+          "Value": "\"wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1992,13 +1992,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "W/\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jfsiqqwiad"
+          "Value": "mlv21k5csn"
         },
         {
           "Name": "label",
@@ -2006,13 +2006,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
-      "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2021,7 +2021,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1097"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -2029,11 +2029,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2043,7 +2043,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jfsiqqwiad"
+          "Value": "mlv21k5csn"
         },
         {
           "Name": "label",
@@ -2051,13 +2051,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
-      "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-jfsiqqwiad.gz",
+      "Route": "lib/jquery/LICENSE.mlv21k5csn.txt.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2066,7 +2066,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "669"
         },
         {
           "Name": "Content-Type",
@@ -2074,11 +2074,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw=\""
+          "Value": "\"wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2096,7 +2096,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jfsiqqwiad"
+          "Value": "mlv21k5csn"
         },
         {
           "Name": "label",
@@ -2104,18 +2104,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw="
+          "Value": "sha256-wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw="
         }
       ]
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-jfsiqqwiad.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001522070015"
+          "Quality": "0.001492537313"
         }
       ],
       "ResponseHeaders": [
@@ -2125,15 +2125,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "669"
         },
         {
           "Name": "ETag",
-          "Value": "\"BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw=\""
+          "Value": "\"wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2153,19 +2153,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "W/\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2174,7 +2174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1097"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -2182,11 +2182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2196,13 +2196,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
       "Route": "lib/jquery/LICENSE.txt.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-jfsiqqwiad.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2211,7 +2211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "656"
+          "Value": "669"
         },
         {
           "Name": "Content-Type",
@@ -2219,11 +2219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw=\""
+          "Value": "\"wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2241,18 +2241,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BsaLTCIY8xEqp8b90cunDak9KJ6ZeZu0BDZG7wPfMIw="
+          "Value": "sha256-wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-xzw0cte36n.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001519756839"
+          "Quality": "0.001490312966"
         }
       ],
       "ResponseHeaders": [
@@ -2262,15 +2262,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "657"
+          "Value": "670"
         },
         {
           "Name": "ETag",
-          "Value": "\"R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4=\""
+          "Value": "\"yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2290,19 +2290,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "W/\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2311,7 +2311,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1095"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -2319,11 +2319,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2333,13 +2333,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-xzw0cte36n.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2348,7 +2348,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "657"
+          "Value": "670"
         },
         {
           "Name": "Content-Type",
@@ -2356,11 +2356,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4=\""
+          "Value": "\"yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2378,18 +2378,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4="
+          "Value": "sha256-yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-xzw0cte36n.gz",
+      "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001519756839"
+          "Quality": "0.001490312966"
         }
       ],
       "ResponseHeaders": [
@@ -2399,15 +2399,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "657"
+          "Value": "670"
         },
         {
           "Name": "ETag",
-          "Value": "\"R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4=\""
+          "Value": "\"yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2427,13 +2427,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "W/\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xzw0cte36n"
+          "Value": "x0q3zqp4vz"
         },
         {
           "Name": "label",
@@ -2441,13 +2441,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2456,7 +2456,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1095"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -2464,11 +2464,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2478,7 +2478,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xzw0cte36n"
+          "Value": "x0q3zqp4vz"
         },
         {
           "Name": "label",
@@ -2486,13 +2486,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-xzw0cte36n.gz",
+      "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2501,7 +2501,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "657"
+          "Value": "670"
         },
         {
           "Name": "Content-Type",
@@ -2509,11 +2509,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4=\""
+          "Value": "\"yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2531,7 +2531,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xzw0cte36n"
+          "Value": "x0q3zqp4vz"
         },
         {
           "Name": "label",
@@ -2539,18 +2539,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-R+OEUTLCKXt1xkSpOssvXikwOZyLM/YgbD1wky8cVw4="
+          "Value": "sha256-yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-l3n5xuwxn8.gz",
+      "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001494768311"
+          "Quality": "0.001468428781"
         }
       ],
       "ResponseHeaders": [
@@ -2560,15 +2560,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "680"
         },
         {
           "Name": "ETag",
-          "Value": "\"+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU=\""
+          "Value": "\"1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2588,13 +2588,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "W/\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l3n5xuwxn8"
+          "Value": "356vix0kms"
         },
         {
           "Name": "label",
@@ -2602,13 +2602,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2617,7 +2617,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1116"
+          "Value": "1139"
         },
         {
           "Name": "Content-Type",
@@ -2625,11 +2625,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2639,7 +2639,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l3n5xuwxn8"
+          "Value": "356vix0kms"
         },
         {
           "Name": "label",
@@ -2647,13 +2647,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-l3n5xuwxn8.gz",
+      "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2662,7 +2662,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "680"
         },
         {
           "Name": "Content-Type",
@@ -2670,11 +2670,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU=\""
+          "Value": "\"1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2692,7 +2692,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l3n5xuwxn8"
+          "Value": "356vix0kms"
         },
         {
           "Name": "label",
@@ -2700,18 +2700,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU="
+          "Value": "sha256-1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-l3n5xuwxn8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001494768311"
+          "Quality": "0.001468428781"
         }
       ],
       "ResponseHeaders": [
@@ -2721,15 +2721,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "680"
         },
         {
           "Name": "ETag",
-          "Value": "\"+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU=\""
+          "Value": "\"1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2749,19 +2749,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "W/\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2770,7 +2770,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1116"
+          "Value": "1139"
         },
         {
           "Name": "Content-Type",
@@ -2778,11 +2778,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2792,13 +2792,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt.gz",
-      "AssetFile": "C:\\Users\\2406762\\Downloads\\InvestmentPortfolioManagement_FinalFixed\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-l3n5xuwxn8.gz",
+      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2807,7 +2807,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "668"
+          "Value": "680"
         },
         {
           "Name": "Content-Type",
@@ -2815,11 +2815,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU=\""
+          "Value": "\"1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 09:21:55 GMT"
+          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2837,7 +2837,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+Vlf0CzWv1oSzy18ic+glStt6OeFtXUW6cbBvFyChEU="
+          "Value": "sha256-1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU="
         }
       ]
     }

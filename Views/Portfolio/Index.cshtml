@@ -51,6 +51,9 @@
                         </form>
 
                         <a asp-action="AllocationChart" asp-route-id="@item.PortfolioId" class="btn btn-secondary btn-sm d-grid d-md-inline mb-2 me-md-2">Allocation</a>
+                            <a asp-action="AddInvestments" asp-route-portfolioId="@item.PortfolioId"
+                               class="btn btn-success btn-sm d-grid d-md-inline mb-2 me-md-2">Add Investment</a>
+
                     </td>
                 </tr>
             }

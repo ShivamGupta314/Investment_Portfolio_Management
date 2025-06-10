@@ -59,5 +59,34 @@ namespace InvestmentPortfolioManagement.Services
                 await _context.SaveChangesAsync();
             }
         }
+
+
+        public async Task<List<Investment>> GetUnassignedInvestmentsAsync(Guid userId)
+        {
+            return await _context.Investments
+                .Where(i => i.UserId == userId && i.PortfolioId == null)
+                .ToListAsync();
+        }
+
+        public async Task AssignInvestmentsToPortfolioAsync(Guid portfolioId, List<Guid> investmentIds)
+        {
+            var portfolioExists = await _context.Portfolios.AnyAsync(p => p.PortfolioId == portfolioId);
+            if (!portfolioExists)
+            {
+                throw new ArgumentException("The specified portfolio does not exist.");
+            }
+
+            var investments = await _context.Investments
+                .Where(i => investmentIds.Contains(i.InvestmentId))
+                .ToListAsync();
+
+            foreach (var investment in investments)
+            {
+                investment.PortfolioId = portfolioId;
+            }
+
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

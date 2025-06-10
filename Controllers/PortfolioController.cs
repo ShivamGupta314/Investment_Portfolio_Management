@@ -269,5 +269,50 @@ namespace InvestmentPortfolioManagement.Controllers
             ViewBag.PortfolioId = id;
             return View(data);
         }
+
+        // GET: /Portfolio/AddInvestments/{portfolioId}
+        [HttpGet]
+        public async Task<IActionResult> AddInvestments(Guid portfolioId)
+        {
+            var userId = GetCurrentUserId();
+            var investments = await _portfolioService.GetUnassignedInvestmentsAsync(userId);
+
+            var viewModel = new AddInvestmentsToPortfolioViewModel
+            {
+                PortfolioId = portfolioId,
+                UnassignedInvestments = investments
+            };
+
+            return View(viewModel);
+        }
+
+
+        // POST: /Portfolio/AddInvestments
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddInvestments(AddInvestmentsToPortfolioViewModel model)
+        {
+            if (!ModelState.IsValid || model.SelectedInvestmentIds.Count == 0)
+            {
+                TempData["Error"] = "Please select at least one investment.";
+                model.UnassignedInvestments = await _portfolioService.GetUnassignedInvestmentsAsync(GetCurrentUserId());
+                return View(model);
+            }
+
+            try
+            {
+                await _portfolioService.AssignInvestmentsToPortfolioAsync(model.PortfolioId, model.SelectedInvestmentIds);
+                TempData["Success"] = "Investments successfully added to portfolio.";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (ArgumentException ex)
+            {
+                TempData["Error"] = ex.Message;
+                return RedirectToAction(nameof(Index));
+            }
+        }
+
+
+
     }
 }
