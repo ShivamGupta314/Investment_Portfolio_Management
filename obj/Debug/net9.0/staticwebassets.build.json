@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MZBDNAD1mOSGCjGoJLYSeEw55Q7RfS5nhjtMnpgZaiM=",
+  "Hash": "WZF69XoF2NCTbw6FT+L6prnCUPBImzEDmKStnkQgSHU=",
   "Source": "InvestmentPortfolioManagement",
   "BasePath": "_content/InvestmentPortfolioManagement",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "InvestmentPortfolioManagement\\wwwroot",
       "Source": "InvestmentPortfolioManagement",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint=x0q3zqp4vz}]?.md.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "tbedkqp182",
       "Integrity": "yZU1lf/p2dEnCHUXYp8G4roAyod23x5MoR4DehwHfrA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "wf4wcyqcqt",
       "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint=m2hykwq1ic}]!.bundle.scp.css.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "61ko86r3ls",
       "Integrity": "astECWcUA+JyDei6Xe4SUoPw14fv+tAmdypOsoldD+w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint=mlv21k5csn}]?.txt.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "rdl0higpfn",
       "Integrity": "wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint=m2hykwq1ic}]?.styles.css.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "61ko86r3ls",
       "Integrity": "astECWcUA+JyDei6Xe4SUoPw14fv+tAmdypOsoldD+w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
       "AssetKind": "All",
@@ -133,20 +133,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "lir1p715ud",
       "Integrity": "jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
       "AssetKind": "All",
@@ -154,20 +154,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "fpxp8wntf7",
       "Integrity": "465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint=356vix0kms}]?.txt.gz",
       "AssetKind": "All",
@@ -175,20 +175,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "RelatedAsset": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "0vtotz30el",
       "Integrity": "1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -203,13 +203,13 @@
       "Integrity": "7n7lrnXRnntks3QBRQqAQpnRHfMxbl5SUtprID04m2A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "InvestmentPortfolioManagement#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -224,13 +224,13 @@
       "Integrity": "7n7lrnXRnntks3QBRQqAQpnRHfMxbl5SUtprID04m2A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Investment_Portfolio_Management\\wwwroot\\",
+      "ContentRoot": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -377,7 +377,7 @@
   "Endpoints": [
     {
       "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -400,7 +400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -440,7 +440,7 @@
     },
     {
       "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -461,7 +461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -485,7 +485,7 @@
     },
     {
       "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -506,7 +506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -538,7 +538,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -561,7 +561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -593,7 +593,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -614,7 +614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -630,7 +630,7 @@
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\eziq4ienuh-b9sayid5wm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -651,7 +651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -675,7 +675,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -698,7 +698,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -738,7 +738,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -759,7 +759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -783,7 +783,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -804,7 +804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -836,7 +836,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -859,7 +859,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -891,7 +891,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -912,7 +912,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -928,7 +928,7 @@
     },
     {
       "Route": "favicon.ico.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -949,7 +949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -973,7 +973,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -996,7 +996,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1028,7 +1028,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1049,7 +1049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1065,7 +1065,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.bundle.scp.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1086,7 +1086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1110,7 +1110,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1133,7 +1133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1173,7 +1173,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1194,7 +1194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1218,7 +1218,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fpfblka54b-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1239,7 +1239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1271,7 +1271,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1294,7 +1294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1334,7 +1334,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1355,7 +1355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1379,7 +1379,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.m2hykwq1ic.styles.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1400,7 +1400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1432,7 +1432,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1455,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1487,7 +1487,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1508,7 +1508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1524,7 +1524,7 @@
     },
     {
       "Route": "InvestmentPortfolioManagement.styles.css.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\g1ehujmmuo-m2hykwq1ic.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1545,7 +1545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1569,7 +1569,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1592,7 +1592,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1624,7 +1624,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1645,7 +1645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1661,7 +1661,7 @@
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1682,7 +1682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1706,7 +1706,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1729,7 +1729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1769,7 +1769,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1790,7 +1790,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1814,7 +1814,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\tufqcepa2b-xtxxf3hu2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1835,7 +1835,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1867,7 +1867,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1888,7 +1888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1904,7 +1904,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1925,7 +1925,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1949,7 +1949,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1972,7 +1972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2012,7 +2012,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2033,7 +2033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2057,7 +2057,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2078,7 +2078,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2110,7 +2110,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2133,7 +2133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2165,7 +2165,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2186,7 +2186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2202,7 +2202,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\fr2683hz1l-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2223,7 +2223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2247,7 +2247,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2270,7 +2270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2302,7 +2302,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2323,7 +2323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2339,7 +2339,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2360,7 +2360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2384,7 +2384,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2407,7 +2407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2447,7 +2447,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2468,7 +2468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2492,7 +2492,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2513,7 +2513,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2545,7 +2545,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2568,7 +2568,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2608,7 +2608,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2629,7 +2629,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2653,7 +2653,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2674,7 +2674,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2706,7 +2706,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2729,7 +2729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2761,7 +2761,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2782,7 +2782,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2798,7 +2798,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt.gz",
-      "AssetFile": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
+      "AssetFile": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\wtechqarlz-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2819,7 +2819,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 16:56:29 GMT"
+          "Value": "Wed, 11 Jun 2025 04:21:56 GMT"
         },
         {
           "Name": "Cache-Control",
