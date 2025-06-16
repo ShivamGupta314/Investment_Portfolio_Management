@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using InvestmentPortfolioManagement.Common;
 
 namespace InvestmentPortfolioManagement.Models
 {
@@ -10,7 +11,7 @@ namespace InvestmentPortfolioManagement.Models
         public Guid UserId { get; set; }
 
         [Required]
-        public string RiskLevel { get; set; } = string.Empty;   
+        public RiskLevel RiskLevel { get; set; }   
         public string Description { get; set; }
 
         public DateTime AssessedOn { get; set; } = DateTime.UtcNow;

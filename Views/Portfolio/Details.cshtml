@@ -10,21 +10,23 @@
         <dt class="col-sm-3">Name</dt>
         <dd class="col-sm-9">@Model.Name</dd>
 
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+
         <dt class="col-sm-3">Type</dt>
         <dd class="col-sm-9">@Model.Type</dd>
 
         <dt class="col-sm-3">Total Value</dt>
-        <dd class="col-sm-9">@Model.TotalValue</dd>
+        <dd class="col-sm-9" id="portfolioTotalValue">@Model.TotalValue.ToString("C")</dd> @* Added ID and Currency format *@
 
         <dt class="col-sm-3">Created On</dt>
         <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
     </dl>
 
-    
-    <a asp-controller="Investment" asp-action="Create" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
-
+    <a asp-asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
     <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
     <a asp-action="Index" class="btn btn-secondary">Back</a>
+    <a asp-action="AllocationChart" asp-route-id="@Model.PortfolioId" class="btn btn-info">View Allocation Chart</a>
 </div>
 
 <hr />
@@ -33,21 +35,95 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Asset</th>
-            <th>Symbol</th>
+            <th>Asset Name</th>
             <th>Quantity</th>
-            <th>Date</th>
+            <th>Current Price</th>
+            <th>Purchased Price</th>
+            <th>Total Value</th>
+            <th>Purchased Date</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach (var investment in ViewBag.Investments)
+    <tbody id="investmentsTableBody">
+        @* Added ID to tbody *@
+        @* Initial render of investments (will be updated by AJAX) *@
+        @if (Model?.Investments != null && Model.Investments.Any())
+        {
+            foreach (var investment in Model.Investments)
+            {
+                <tr>
+                    <td>@investment.Asset.Name</td>
+                    <td>@investment.Quantity</td>
+                    <td>@investment.CurrentPrice.ToString("C")</td> @* Format CurrentPrice as currency *@
+                    <td>@investment.PurchasePrice.ToString("C")</td> @* Format PurchasePrice as currency *@
+                    <td>@((investment.Asset?.CurrentPrice ?? 0.0M) * investment.Quantity).ToString("C")</td> @* Use Asset's price for calculation and format *@
+                    <td>@investment.InvestmentDate.ToShortDateString()</td>
+                </tr>
+            }
+        }
+        else
         {
             <tr>
-                <td>@investment.Asset.Name</td>
-                <td>@investment.Asset.Symbol</td>
-                <td>@investment.Quantity</td>
-                <td>@investment.InvestmentDate.ToShortDateString()</td>
+                <td colspan="6">No investments found for this portfolio.</td>
             </tr>
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model
+        const portfolioTotalValueElement = document.getElementById('portfolioTotalValue');
+        const investmentsTableBody = document.getElementById('investmentsTableBody');
+
+        async function updatePortfolioData() {
+            try {
+                const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                // 1. Update Portfolio Total Value
+                if (portfolioTotalValueElement) {
+                    // Format as currency, assuming default locale or specify
+                    portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                }
+
+                // 2. Update Investments Table
+                if (investmentsTableBody) {
+                    investmentsTableBody.innerHTML = ''; // Clear existing rows
+
+                    if (data.investments && data.investments.length > 0) {
+                        data.investments.forEach(investment => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${investment.assetName}</td>
+                                <td>${investment.quantity}</td>
+                                <td>${investment.currentPrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                <td>${investment.purchasePrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                <td>${investment.totalInvestmentValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                <td>${investment.investmentDate}</td>
+                            `;
+                            investmentsTableBody.appendChild(row);
+                        });
+                    } else {
+                        // Display message if no investments
+                        const noDataRow = document.createElement('tr');
+                        noDataRow.innerHTML = `<td colspan="6">No investments found for this portfolio.</td>`;
+                        investmentsTableBody.appendChild(noDataRow);
+                    }
+                }
+
+            } catch (error) {
+                console.error("Error fetching live portfolio data:", error);
+                // Optionally display an error message on the page
+            }
+        }
+
+        // Call the function immediately on page load
+        updatePortfolioData();
+
+        // Set interval to update every 5 seconds
+        setInterval(updatePortfolioData, 5000);
+    </script>
+}

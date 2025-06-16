@@ -87,9 +87,6 @@ namespace InvestmentPortfolioManagement.Migrations
                     b.Property<Guid?>("PortfolioId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("PortfolioId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<double>("PurchasePrice")
                         .HasColumnType("float");
 
@@ -104,8 +101,6 @@ namespace InvestmentPortfolioManagement.Migrations
                     b.HasIndex("AssetId");
 
                     b.HasIndex("PortfolioId");
-
-                    b.HasIndex("PortfolioId1");
 
                     b.HasIndex("UserId");
 
@@ -201,9 +196,8 @@ namespace InvestmentPortfolioManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("RiskLevel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("RiskLevel")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -258,13 +252,9 @@ namespace InvestmentPortfolioManagement.Migrations
                         .IsRequired();
 
                     b.HasOne("InvestmentPortfolioManagement.Models.Portfolio", "Portfolio")
-                        .WithMany()
+                        .WithMany("Investments")
                         .HasForeignKey("PortfolioId")
                         .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("InvestmentPortfolioManagement.Models.Portfolio", null)
-                        .WithMany("Investments")
-                        .HasForeignKey("PortfolioId1");
 
                     b.HasOne("InvestmentPortfolioManagement.Models.User", "User")
                         .WithMany()

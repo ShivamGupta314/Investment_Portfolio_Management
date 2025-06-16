@@ -25,8 +25,8 @@ namespace InvestmentPortfolioManagement.Models
         [ForeignKey("UserId")]
         public User? User { get; set; }
 
-        public ICollection<Asset>? Assets { get; set; }
+        public ICollection<Asset> Assets { get; set; } = new List<Asset>();
 
-        public ICollection<Investment>? Investments { get; set; }
+        public ICollection<Investment> Investments { get; set; } = new List<Investment>();
     }
 }
