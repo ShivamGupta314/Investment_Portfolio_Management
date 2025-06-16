@@ -1,8 +1,41 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5 d-flex flex-column ">
+    <div class="align-items-center justify-content-center text-center">
+        <h1 class="display-4 fw-bold ">Manage your wealth</h1>
+        <p class="lead fw-medium ">Built for a Growing India</p>
+       
+        <button type="button" class="btn btn-primary">Get Started</button>
+    </div>
+    <div class="image-container">
+    </div>
+    <section class="hero row ">
+        <div class="col-md-6  align-items-center">
+            <h3 class="display-4 fw-bold ">Indian markets at your fingertips.</h3>
+            <p>Long-term or short-term, high risk or low risk. Be the kind of investor you want to be.</p>
+            <ul class="styled-list">
+                <li><a href="#">Stocks & Intraday</a></li>
+                <li><a href="#">Mutual funds & SIPs</a></li>
+                <li><a href="#">Futures & Options</a></li>
+            </ul>
+        </div>
+        <div class="imagecon"></div>
+
+       
+    </section>
+    <section class="hero-2">
+        <img src="/images/cap.png" alt="Finance Simplified">
+        <h1>Finance simplified</h1>
+        <h1>in your Language</h1>
+
+        <div class="cta-buttons">
+            <a href="https://www.youtube.com/watch?v=tHxwyWnNu0c" class="btn btn-youtube">YouTube</a>
+            <a href="https://www.youtube.com/watch?v=tHxwyWnNu0c" class="btn btn-groww">Investment  </a>
+        </div>
+    </section>
+
 </div>
+<script src="~/js/home.js"></script>

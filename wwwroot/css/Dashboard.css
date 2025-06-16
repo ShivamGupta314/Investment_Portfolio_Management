@@ -1,0 +1,164 @@
+﻿
+.finance-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .finance-section h3 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .finance-section p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+.image-container {
+    background-image: url('/images/bg.png'); /* Correct path */
+    background-size: cover;
+    width: 80%;
+    margin-top: -50px;
+    margin-left: 8%;
+    height: 450px;
+    z-index: -1;
+}
+.imagecon {
+    background-image: url('/images/mobile.png');
+    background-size: cover;
+    width: 20%;
+    height: 450px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease-in-out;
+}
+
+.imagecon.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.image-container2 {
+    background-image: url('/images/mobile.png'); 
+    background-size: cover;
+    width: 20%;
+    height: 450px;
+}
+.hero {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.imagecon {
+    background-image: url('/images/mobile.png');
+    background-size: cover;
+    width: 20%;
+    height: 450px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease-in-out;
+    overflow: hidden; 
+    position: relative; 
+}
+.hero-2 {
+    margin-top: 10%;
+    display: flex; 
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.styled-list {
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+    .styled-list li {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 8px 0;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .styled-list li {
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .styled-list li:hover {
+            background-color: dodgerblue;
+        }
+
+
+        
+
+        .styled-list li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+            @media (max-width: 768px) {
+        .image-container {
+            width: 100%;
+            height: 300px;
+            margin-left: 0;
+        }
+
+        .imagecon {
+            width: 45%;
+            height: 300px;
+            transform: translateX(50%);
+        }
+
+        .styled-list {
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .styled-list li {
+            font-size: 14px;
+            padding: 6px;
+        }
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+.cta-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-youtube {
+    background-color: dodgerblue;
+}
+
+.btn-groww {
+    background-color: dodgerblue;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+

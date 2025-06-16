@@ -1,0 +1,19 @@
+﻿.card {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.card-link {
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
