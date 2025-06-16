@@ -367,6 +367,61 @@ namespace InvestmentPortfolioManagement.Controllers
             return View(portfolios);
         }
 
+
+        [HttpGet]
+        public async Task<IActionResult> GetLivePortfolioTotalValues()
+        {
+            Guid userId = GetCurrentUserId(); // Get the current user's ID
+
+            var portfolios = await _context.Portfolios
+                .Where(p => p.UserId == userId)
+                .Select(p => new
+                {
+                    portfolioId = p.PortfolioId,
+                    totalValue = p.TotalValue
+                })
+                .ToListAsync();
+
+            return Json(portfolios);
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetPortfolioLiveUpdates(Guid id)
+        {
+            // Ensure the portfolio and its investments/assets are loaded
+            var portfolio = await _context.Portfolios
+                .Include(p => p.Investments)
+                    .ThenInclude(i => i.Asset) // Crucial for getting Asset.Name and Asset.CurrentPrice
+                .FirstOrDefaultAsync(p => p.PortfolioId == id);
+
+            if (portfolio == null || portfolio.UserId != GetCurrentUserId())
+            {
+                // Return an error or empty data if portfolio not found or unauthorized
+                return NotFound(); // Or Json(new { success = false, message = "Portfolio not found or unauthorized." });
+            }
+
+            // Prepare investment data for JSON response
+            var investmentData = portfolio.Investments.Select(inv => new
+            {
+                investmentId = inv.InvestmentId, // Include ID if you ever need to reference it
+                assetName = inv.Asset?.Name, // Use null-conditional operator for safety
+                quantity = inv.Quantity,
+                // **IMPORTANT:** Use Asset.CurrentPrice for the most up-to-date value
+                // If Investment.CurrentPrice is just a cached copy.
+                currentPrice = inv.Asset?.CurrentPrice ?? 0.0M, // Use decimal from Asset, default to 0
+                purchasePrice = inv.PurchasePrice,
+                // Calculate total value based on the Asset's current price for accuracy
+                totalInvestmentValue = (inv.Asset?.CurrentPrice ?? 0.0M) * inv.Quantity,
+                investmentDate = inv.InvestmentDate.ToShortDateString() // Format date for display
+            }).ToList();
+
+            // Return consolidated data including portfolio's TotalValue
+            return Json(new
+            {
+                totalValue = portfolio.TotalValue, // This is already updated by background service/AssetService
+                investments = investmentData
+            });
+        }
+
         // GET: /Portfolio/Create
         public IActionResult Create()
         {
@@ -603,29 +658,50 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
         // 📊 GET: /Portfolio/AllocationChart/id
+        [HttpGet]
         public async Task<IActionResult> AllocationChart(Guid id)
         {
-            var portfolio = await _portfolioService.GetPortfolioByIdAsync(id);
-            if (portfolio == null) return NotFound();
+            ViewBag.PortfolioId = id; // pass for JS use
+            return View(); // view will use AJAX to fetch data
+        }
+        [HttpGet]
 
-            if (portfolio.UserId != GetCurrentUserId())
-            {
-                TempData["Error"] = "You are not authorized to view this chart.";
-                return RedirectToAction(nameof(Index));
-            }
+        public async Task<IActionResult> GetAllocationData(Guid id)
 
-            var data = await _context.Assets
-                .Where(a => a.PortfolioId == id)
-                .GroupBy(a => a.AssetType)
+        {
+
+            var portfolio = await _context.Portfolios
+
+                .Include(p => p.Investments)
+
+                    .ThenInclude(i => i.Asset)
+
+                .FirstOrDefaultAsync(p => p.PortfolioId == id);
+
+            if (portfolio == null || portfolio.Investments == null || !portfolio.Investments.Any())
+
+                return Json(new { success = false, message = "No investments found." });
+
+            var data = portfolio.Investments
+
+                .Where(i => i.Asset != null)
+
+                .GroupBy(i => i.Asset.AssetType)
+
                 .Select(g => new
-                {
-                    Type = g.Key,
-                    TotalAmount = g.Sum(a => a.CurrentPrice * a.Quantity)
-                })
-                .ToListAsync();
 
-            ViewBag.PortfolioId = id;
-            return View(data);
+                {
+
+                    type = g.Key,
+
+                    totalAmount = g.Sum(i => i.CurrentPrice * i.Quantity)
+
+                })
+
+                .ToList();
+
+            return Json(data);
+
         }
 
         // GET: /Portfolio/AddInvestments/{portfolioId}
@@ -634,13 +710,6 @@ namespace InvestmentPortfolioManagement.Controllers
         {
             var userId = GetCurrentUserId();
             var unassignedInvestments = await _portfolioService.GetUnassignedInvestmentsAsync(userId);
-
-            // Filter out investments that already belong to the current portfolio,
-            // though GetUnassignedInvestmentsAsync should ideally only return truly unassigned ones.
-            // If GetUnassignedInvestmentsAsync is designed to get ALL investments a user owns
-            // that are not assigned to *any* portfolio, this logic is fine.
-            // If it should include investments that are assigned to *other* portfolios but not this one,
-            // the service method's logic would need to change. For now, assuming "unassigned" means PortfolioId is null.
 
             var viewModel = new AddInvestmentsToPortfolioViewModel
             {
