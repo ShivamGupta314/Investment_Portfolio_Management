@@ -25,7 +25,7 @@ namespace InvestmentPortfolioManagement.Models
         public Guid? PortfolioId { get; set; }
 
         [ForeignKey("PortfolioId")]
-        public Portfolio Portfolio { get; set; }
+        public Portfolio? Portfolio { get; set; }
 
         [Required]
         public int Quantity { get; set; }

@@ -13,8 +13,8 @@ namespace InvestmentPortfolioManagement.ViewModels
         [Required(ErrorMessage = "Type is required.")]
         public string Type { get; set; }
 
-        [Required(ErrorMessage = "Total Value is required.")]
-        public decimal TotalValue { get; set; }
+        //[Required(ErrorMessage = "Total Value is required.")]
+        //public decimal TotalValue { get; set; }
 
     }
 }

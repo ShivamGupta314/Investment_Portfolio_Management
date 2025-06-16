@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace InvestmentPortfolioManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class init5 : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,7 +30,7 @@ namespace InvestmentPortfolioManagement.Migrations
                 {
                     RiskProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RiskLevel = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RiskLevel = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AssessedOn = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -130,13 +130,12 @@ namespace InvestmentPortfolioManagement.Migrations
                     InvestmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     AssetId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     AssetName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PurchasePrice = table.Column<double>(type: "float", nullable: false),
                     CurrentPrice = table.Column<double>(type: "float", nullable: false),
-                    InvestmentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PortfolioId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    InvestmentDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -153,11 +152,6 @@ namespace InvestmentPortfolioManagement.Migrations
                         principalTable: "Portfolios",
                         principalColumn: "PortfolioId",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Investments_Portfolios_PortfolioId1",
-                        column: x => x.PortfolioId1,
-                        principalTable: "Portfolios",
-                        principalColumn: "PortfolioId");
                     table.ForeignKey(
                         name: "FK_Investments_Users_UserId",
                         column: x => x.UserId,
@@ -179,11 +173,6 @@ namespace InvestmentPortfolioManagement.Migrations
                 name: "IX_Investments_PortfolioId",
                 table: "Investments",
                 column: "PortfolioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Investments_PortfolioId1",
-                table: "Investments",
-                column: "PortfolioId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Investments_UserId",

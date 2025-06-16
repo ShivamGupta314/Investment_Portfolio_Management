@@ -13,6 +13,8 @@ namespace InvestmentPortfolioManagement.Interfaces
         Task DeletePortfolioAsync(Guid id);
         Task<List<Investment>> GetUnassignedInvestmentsAsync(Guid userId);
         Task AssignInvestmentsToPortfolioAsync(Guid portfolioId, List<Guid> investmentIds);
- 
+        Task CalculateAndSetPortfolioTotalValueAsync(Guid portfolioId);
+
+
     }
 }

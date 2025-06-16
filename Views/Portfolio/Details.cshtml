@@ -20,9 +20,7 @@
         <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
     </dl>
 
-    
-    <a asp-controller="Investment" asp-action="Create" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
-
+    <a asp-asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
     <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
     <a asp-action="Index" class="btn btn-secondary">Back</a>
 </div>
@@ -33,20 +31,47 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Asset</th>
-            <th>Symbol</th>
+            <th>Asset Name</th>
             <th>Quantity</th>
-            <th>Date</th>
+            <th>Current Price</th>
+            <th>Purchased Price</th>
+            <th>Total Value</th>
+            <th>Purchased Date</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var investment in ViewBag.Investments)
+        @if (Model?.Investments != null && Model.Investments.Any()) // Prefer Model.Investments directly if possible
+        {
+            foreach (var investment in Model.Investments)
+            {
+                <tr>
+                    <td>@investment.Asset.Name</td>
+                    <td>@investment.Quantity</td>
+                    <td>@investment.CurrentPrice</td>
+                    <td>@investment.PurchasePrice</td>
+                    <td>@(investment.CurrentPrice * investment.Quantity)</td>
+                    <td>@investment.InvestmentDate.ToShortDateString()</td>
+                </tr>
+            }
+        }
+        else if (ViewBag.Investments != null) // Fallback to ViewBag if you still need it
+        {
+            foreach (var investment in ViewBag.Investments)
+            {
+                <tr>
+                    <td>@investment.Asset.Name</td>
+                    <td>@investment.Quantity</td>
+                    <td>@investment.CurrentPrice</td>
+                    <td>@investment.PurchasePrice</td>
+                    <td>@(investment.CurrentPrice * investment.Quantity)</td>
+                    <td>@investment.InvestmentDate.ToShortDateString()</td>
+                </tr>
+            }
+        }
+        else
         {
             <tr>
-                <td>@investment.Asset.Name</td>
-                <td>@investment.Asset.Symbol</td>
-                <td>@investment.Quantity</td>
-                <td>@investment.InvestmentDate.ToShortDateString()</td>
+                <td colspan="4">No investments found for this portfolio.</td>
             </tr>
         }
     </tbody>

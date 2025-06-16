@@ -37,9 +37,11 @@ namespace InvestmentPortfolioManagement.Data
             // Portfolio -> Investment relationship will default to Cascade, which is correct.
             modelBuilder.Entity<Investment>()
                 .HasOne(i => i.Portfolio)
-                .WithMany() // The Portfolio model also doesn't have an ICollection<Investment>
+                 .WithMany(p => p.Investments) // The Portfolio model also doesn't have an ICollection<Investment>
                 .HasForeignKey(i => i.PortfolioId)
                 .OnDelete(DeleteBehavior.Cascade); // Explicitly set to cascade (this is the default anyway)
+
+
         }
     }
 }
