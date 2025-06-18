@@ -3,33 +3,140 @@
     ViewData["Title"] = "Edit Portfolio";
 }
 
+<style>
+    /* Overall container styling */
+    .container.mt-5 {
+        background-color: #ffffff;
+        padding: 40px; /* Adjust as per your desired padding */
+        border-radius: 10px;
+        max-width: 700px; /* Adjusted width for forms, you can change this */
+        margin-top: 50px !important;
+        margin-bottom: 50px;
+    }
+
+    /* Heading styling */
+    h2 {
+        color: #007bff; /* Primary blue for the main heading */
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 2.2em;
+        font-weight: 600;
+        border-bottom: 2px solid #e9ecef; /* Separator line */
+        padding-bottom: 15px;
+    }
+
+    /* Styling for the form container itself (the "card") */
+    .form-container-card {
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 30px; /* Generous padding inside the form card */
+        background-color: #fcfdfe;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding: 10px 15px;
+        height: auto; /* Allow height to adjust */
+    }
+
+    .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* Style for validation messages */
+    .text-danger {
+        font-size: 0.85em;
+        color: #dc3545;
+        margin-top: 5px;
+        display: block; /* Ensure it's on its own line */
+    }
+
+    /* Button styling (consistent with portfolio details and add investment) */
+    .form-actions {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 1em;
+        border-radius: 6px;
+        transition: all 0.2s ease-in-out;
+        min-width: 150px; /* Wider buttons for forms */
+    }
+
+    .btn-warning { /* Specific for the Save Changes button */
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #212529;
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+        }
+
+    .btn-secondary { /* Specific for the Back button */
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+        }
+
+</style>
+
 <div class="container mt-5">
-    <h2>Edit Portfolio</h2>
+   
 
-    <form asp-action="Edit" method="post">
-        <input type="hidden" asp-for="PortfolioId" />
+    <div class="form-container-card">
+        <h2>Edit Portfolio</h2>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="PortfolioId" />
 
-        <div class="form-group mb-3">
-            <label asp-for="PortfolioName" class="form-label"></label>
-            <input asp-for="PortfolioName" class="form-control" />
-            <span asp-validation-for="PortfolioName" class="text-danger"></span>
-        </div>
+            <div class="form-group mb-3">
+                <label asp-for="PortfolioName" class="form-label"></label>
+                <input asp-for="PortfolioName" class="form-control" />
+                <span asp-validation-for="PortfolioName" class="text-danger"></span>
+            </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="Type" class="form-label"></label>
-            <input asp-for="Type" class="form-control" />
-            <span asp-validation-for="Type" class="text-danger"></span>
-        </div>
+            <div class="form-group mb-3">
+                <label asp-for="Type" class="form-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="Description" class="form-label"></label>
-            <input asp-for="Description" class="form-control" />
-            <span asp-validation-for="Description" class="text-danger"></span>
-        </div>
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
 
-        <button type="submit" class="btn btn-warning d-grid d-md-inline mb-2 me-md-2">Save Changes</button>
-        <a asp-action="Index" class="btn btn-secondary d-grid d-md-inline mb-2 me-md-2">Back</a>
-    </form>
+            <div class="form-actions"> 
+                <button type="submit" class="btn " style="background-color:#3498db">Save Changes</button>
+                <a asp-action="Index" class="btn btn-secondary">Back</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 @section Scripts {

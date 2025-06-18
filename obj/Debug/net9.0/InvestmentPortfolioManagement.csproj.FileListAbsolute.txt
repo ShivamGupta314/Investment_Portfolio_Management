@@ -1435,5 +1435,8 @@ C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio
 C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\ref\InvestmentPortfolioManagement.dll
 C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\0uxk4h7wix-mcvypxzckd.gz
 C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\zaiv0i7rrh-bavud2pzkn.gz
-C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\nwq6lcs3sb-pslfn5y5n3.gz
 C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\igmjxmrnk2-lsopz5xze1.gz
+C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\h56jwtle99-wvmu7liuxx.gz
+C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\nwq6lcs3sb-w8u0vcb49j.gz
+C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\om4h487pu3-v6qh86ijp5.gz
+C:\Users\2406706\OneDrive - Cognizant\Desktop\final project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\1lbc523k4z-tle1ps516y.gz

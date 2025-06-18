@@ -3,127 +3,324 @@
     ViewData["Title"] = "Portfolio Details";
 }
 
+<style>
+    /* Overall container styling */
+    .container.mt-5 {
+        background-color: #ffffff; /* White background for main content area */
+        padding: 20px; /* Reduced padding inside */
+        border-radius: 10px; /* Softly rounded corners */
+        max-width: 950px; /* Increased width for the main container */
+        margin-top: 50px !important;
+        margin-bottom: 50px;
+    }
+
+    /* Combined Details and Buttons Container */
+    .details-and-buttons-container {
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 25px; /* Padding inside this container */
+        background-color: #fcfdfe;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Box shadow for this combined section */
+        margin-bottom: 30px; /* Space below this container */
+    }
+
+        /* Heading styling specific to this section */
+        .details-and-buttons-container h2 { /* Targeting h2 specifically inside this container */
+            color: #007bff; /* Primary blue for the main heading */
+            text-align: center;
+            margin-top: 0; /* Remove default top margin */
+            margin-bottom: 25px; /* Adjusted margin for better spacing within the box */
+            font-size: 2.2em;
+            font-weight: 600;
+            border-bottom: 2px solid #e9ecef; /* Separator line */
+            padding-bottom: 15px;
+        }
+
+    /* --- Portfolio Details Section (dl) --- */
+    .portfolio-details-box {
+        font-size: 0.95em; /* Slightly smaller font for details */
+        margin-bottom: 0; /* Remove default margin-bottom from dl as parent container has padding */
+    }
+
+        /* Adjusted dt/dd styling to ensure proper alignment within the Bootstrap row */
+        .portfolio-details-box dt {
+            font-weight: 600;
+            color: #495057;
+            padding: 8px 0;
+            text-align: right; /* Align labels to the right */
+            padding-right: 20px; /* More space between label and value */
+        }
+
+        .portfolio-details-box dd {
+            padding: 8px 0;
+            color: #6c757d;
+            word-break: break-word;
+            text-align: left; /* Ensure values are left-aligned */
+        }
+
+    /* --- Buttons Section --- */
+    .portfolio-actions {
+        display: flex; /* Use flexbox for button layout */
+        flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 15px; /* Space between buttons */
+        margin-top: 30px; /* Space above buttons within the container */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95em; /* Slightly smaller button font */
+        border-radius: 6px;
+        transition: all 0.2s ease-in-out;
+        min-width: 120px; /* Minimum width for consistency */
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+
+    .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #212529;
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+        }
+
+    .btn-info {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        color: #fff;
+    }
+
+        .btn-info:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(23, 162, 184, 0.2);
+        }
+
+
+    /* --- Investments Table Styling --- */
+    hr {
+        border-top: 1px solid #e9ecef; /* Lighter horizontal rule */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3.mt-4 {
+        color: #343a40; /* Darker heading for section title */
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 1.8em; /* Slightly smaller than main heading */
+        font-weight: 600;
+    }
+
+    .table-bordered {
+        border: 1px solid #dee2e6; /* Standard table border color */
+        border-collapse: collapse; /* Ensure borders collapse cleanly */
+        width: 100%; /* Full width table */
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the table (KEPT) */
+        border-radius: 8px; /* Rounded corners for the table container */
+        overflow: hidden; /* Ensures rounded corners apply to content */
+    }
+
+        .table-bordered thead th {
+            background-color: #007bff; /* Primary blue for table header background */
+            color: #fff; /* White text for header */
+            padding: 12px 15px;
+            border: 1px solid #0060d9; /* Darker blue border for header cells */
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .table-bordered tbody td {
+            padding: 10px 15px;
+            border: 1px solid #dee2e6; /* Light grey border for body cells */
+            vertical-align: middle;
+            font-size: 0.9em; /* Smaller font for table data */
+            color: #495057;
+        }
+
+        .table-bordered tbody tr:nth-child(even) {
+            background-color: #f8f9fa; /* Zebra striping for readability */
+        }
+
+        .table-bordered tbody tr:hover {
+            background-color: #e2e6ea; /* Light highlight on row hover */
+            cursor: pointer;
+        }
+
+        .table-bordered tbody tr:last-child td {
+            border-bottom: 0; /* No bottom border for last row cells */
+        }
+
+        /* No investments message styling */
+        .table-bordered tbody td[colspan="6"] {
+            text-align: center;
+            font-style: italic;
+            color: #6c757d;
+            padding: 20px;
+        }
+
+</style>
+
 <div class="container mt-5">
-    <h2>Portfolio Details</h2>
+    <div class="details-and-buttons-container">
+        <h2>Portfolio Details</h2>
 
-    <dl class="row">
-        <dt class="col-sm-3">Name</dt>
-        <dd class="col-sm-9">@Model.Name</dd>
+        <dl class="row portfolio-details-box">
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
 
-        <dt class="col-sm-3">Description</dt>
-        <dd class="col-sm-9">@Model.Description</dd>
+            <dt class="col-sm-3">Description</dt>
+            <dd class="col-sm-9">@Model.Description</dd>
 
-        <dt class="col-sm-3">Type</dt>
-        <dd class="col-sm-9">@Model.Type</dd>
+            <dt class="col-sm-3">Type</dt>
+            <dd class="col-sm-9">@Model.Type</dd>
 
-        <dt class="col-sm-3">Total Value</dt>
-        <dd class="col-sm-9" id="portfolioTotalValue">@Model.TotalValue.ToString("C")</dd> @* Added ID and Currency format *@
+            <dt class="col-sm-3">Total Value</dt>
+            <dd class="col-sm-9" id="portfolioTotalValue">@Model.TotalValue.ToString("C")</dd>
 
-        <dt class="col-sm-3">Created On</dt>
-        <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
-    </dl>
+            <dt class="col-sm-3">Created On</dt>
+            <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
+        </dl>
 
-    <a asp-asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
-    <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
-    <a asp-action="Index" class="btn btn-secondary">Back</a>
-    <a asp-action="AllocationChart" asp-route-id="@Model.PortfolioId" class="btn btn-info">View Allocation Chart</a>
-</div>
+        <div class="portfolio-actions">
+            <a asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
+            <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
+           
+            <a asp-action="AllocationChart" asp-route-id="@Model.PortfolioId" class="btn btn-info">View Allocation Chart</a>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>;
+        </div>
+    </div>
 
-<hr />
-<h3 class="mt-4">Investments in this Portfolio</h3>
+    <hr />
+    <h3 class="mt-4">Investments in this Portfolio</h3>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Asset Name</th>
-            <th>Quantity</th>
-            <th>Current Price</th>
-            <th>Purchased Price</th>
-            <th>Total Value</th>
-            <th>Purchased Date</th>
-        </tr>
-    </thead>
-    <tbody id="investmentsTableBody">
-        @* Added ID to tbody *@
-        @* Initial render of investments (will be updated by AJAX) *@
-        @if (Model?.Investments != null && Model.Investments.Any())
-        {
-            foreach (var investment in Model.Investments)
+    <table class="table table-bordered">
+        <thead>
+          
+            <tr>
+                <th>Asset Name</th>
+                <th>Quantity</th>
+                <th>Current Price</th>
+                <th>Purchased Price</th>
+                <th>Total Value</th>
+                <th>Purchased Date</th>
+            </tr>
+            
+        </thead>
+        <tbody id="investmentsTableBody">
+            @* Initial render of investments (will be updated by AJAX) *@
+            @if (Model?.Investments != null && Model.Investments.Any())
+            {
+                foreach (var investment in Model.Investments)
+                {
+                    <tr>
+                        <td>@investment.Asset.Name</td>
+                        <td>@investment.Quantity</td>
+                        <td>@investment.CurrentPrice.ToString("C")</td>
+                        <td>@investment.PurchasePrice.ToString("C")</td>
+                        <td>@((investment.Asset?.CurrentPrice ?? 0.0M) * investment.Quantity).ToString("C")</td>
+                        <td>@investment.InvestmentDate.ToShortDateString()</td>
+                    </tr>
+                }
+            }
+            else
             {
                 <tr>
-                    <td>@investment.Asset.Name</td>
-                    <td>@investment.Quantity</td>
-                    <td>@investment.CurrentPrice.ToString("C")</td> @* Format CurrentPrice as currency *@
-                    <td>@investment.PurchasePrice.ToString("C")</td> @* Format PurchasePrice as currency *@
-                    <td>@((investment.Asset?.CurrentPrice ?? 0.0M) * investment.Quantity).ToString("C")</td> @* Use Asset's price for calculation and format *@
-                    <td>@investment.InvestmentDate.ToShortDateString()</td>
+                    <td colspan="6">No investments found for this portfolio.</td>
                 </tr>
             }
-        }
-        else
-        {
-            <tr>
-                <td colspan="6">No investments found for this portfolio.</td>
-            </tr>
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
-@section Scripts {
-    <script>
-        const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model
-        const portfolioTotalValueElement = document.getElementById('portfolioTotalValue');
-        const investmentsTableBody = document.getElementById('investmentsTableBody');
+    @section Scripts {
+        <script>
+            const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model
+            const portfolioTotalValueElement = document.getElementById('portfolioTotalValue');
+            const investmentsTableBody = document.getElementById('investmentsTableBody');
 
-        async function updatePortfolioData() {
-            try {
-                const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-
-                // 1. Update Portfolio Total Value
-                if (portfolioTotalValueElement) {
-                    // Format as currency, assuming default locale or specify
-                    portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
-                }
-
-                // 2. Update Investments Table
-                if (investmentsTableBody) {
-                    investmentsTableBody.innerHTML = ''; // Clear existing rows
-
-                    if (data.investments && data.investments.length > 0) {
-                        data.investments.forEach(investment => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `
-                                <td>${investment.assetName}</td>
-                                <td>${investment.quantity}</td>
-                                <td>${investment.currentPrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                <td>${investment.purchasePrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                <td>${investment.totalInvestmentValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                <td>${investment.investmentDate}</td>
-                            `;
-                            investmentsTableBody.appendChild(row);
-                        });
-                    } else {
-                        // Display message if no investments
-                        const noDataRow = document.createElement('tr');
-                        noDataRow.innerHTML = `<td colspan="6">No investments found for this portfolio.</td>`;
-                        investmentsTableBody.appendChild(noDataRow);
+            async function updatePortfolioData() {
+                try {
+                    // Adjust fetch URL if needed, ensure it points to the correct endpoint
+                    const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
+                    const data = await response.json();
+
+                    // 1. Update Portfolio Total Value
+                    if (portfolioTotalValueElement) {
+                        // Using toLocaleString for currency formatting (en-IN and INR as requested)
+                        portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                    }
+
+                    // 2. Update Investments Table
+                    if (investmentsTableBody) {
+                        investmentsTableBody.innerHTML = ''; // Clear existing rows
+
+                        if (data.investments && data.investments.length > 0) {
+                            data.investments.forEach(investment => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `
+                                    <td>${investment.assetName}</td>
+                                    <td>${investment.quantity}</td>
+                                    <td>${investment.currentPrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${investment.purchasePrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${investment.totalInvestmentValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${investment.investmentDate}</td>
+                                `;
+                                investmentsTableBody.appendChild(row);
+                            });
+                        } else {
+                            // Display message if no investments
+                            const noDataRow = document.createElement('tr');
+                            noDataRow.innerHTML = `<td colspan="6">No investments found for this portfolio.</td>`;
+                            investmentsTableBody.appendChild(noDataRow);
+                        }
+                    }
+
+                } catch (error) {
+                    console.error("Error fetching live portfolio data:", error);
+                    // Optionally display an error message on the page
                 }
-
-            } catch (error) {
-                console.error("Error fetching live portfolio data:", error);
-                // Optionally display an error message on the page
             }
-        }
 
-        // Call the function immediately on page load
-        updatePortfolioData();
+            // Call the function immediately on page load
+            updatePortfolioData();
 
-        // Set interval to update every 5 seconds
-        setInterval(updatePortfolioData, 5000);
-    </script>
-}
+            // Set interval to update every 5 seconds
+            setInterval(updatePortfolioData, 5000);
+        </script>
+    }

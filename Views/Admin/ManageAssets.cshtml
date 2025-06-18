@@ -1,60 +1,133 @@
-
 @model InvestmentPortfolioManagement.Models.Asset
 @{
     Layout = ViewData["Layout"]?.ToString();
     ViewData["Title"] = "Manage Assets";
 }
 
-<h2>Create New Asset</h2>
-
-@if (TempData["Success"] != null)
-{
-    <div class="alert alert-success">@TempData["Success"]</div>
-}
-
-<form asp-action="ManageAssets" method="post" class="mt-3">
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label">Name</label>
-        <input asp-for="Name" class="form-control" />
-    </div>
-    <div class="mb-3">
-        <label asp-for="Symbol" class="form-label">Symbol</label>
-        <input asp-for="Symbol" class="form-control" />
-    </div>
-    <div class="mb-3">
-        <label asp-for="AssetType" class="form-label">Asset Type</label>
-        <select asp-for="AssetType" class="form-select">
-            <option>Stock</option>
-            <option>Bond</option>
-            <option>Mutual Fund</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label asp-for="BasePrice" class="form-label">Base Price</label>
-        <input asp-for="BasePrice" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Create Asset</button>
-</form>
-
-<h3 class="mt-5">Existing Assets</h3>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Symbol</th>
-            <th>Type</th>
-            <th>Base Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var asset in ViewBag.AllAssets)
-        {
-            <tr>
-                <td>@asset.Name</td>
-                <td>@asset.Symbol</td>
-                <td>@asset.AssetType</td>
-                <td>@asset.BasePrice</td>
-            </tr>
+<head>
+    <style>
+        /* Styling for the new asset form container */
+        .asset-form-container {
+            width: 400px; /* Sets the width to 600 pixels */
+            padding: 30px; /* Adds space inside the container around its content */
+            border-radius: 8px; /* Slightly rounded corners for a softer look */
+            /* Box shadow for a floating, elevated effect */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adjust values for desired intensity and spread */
+            background-color: #ffffff; /* Optional: Sets a white background for clarity */
         }
-    </tbody>
-</table>
+
+            /* You might want to adjust the margin-top for the heading within the container */
+            .asset-form-container h2 {
+                margin-top: 0; /* Remove default top margin if it creates too much space */
+                margin-bottom: 25px; /* Add some space below the heading */
+                text-align: center; /* Center the "Create New Asset" heading */
+                color: #333; /* Darker text color for the heading */
+            }
+
+            /* Small adjustment for the form itself if needed */
+            .asset-form-container form.mt-3 {
+                margin-top: 0 !important; /* Override the default Bootstrap margin-top if present */
+            }
+
+        /* Flexbox container for side-by-side layout */
+        .content-wrapper {
+            display: flex;
+            gap: 40px; /* Space between the form and the table */
+            margin: 40px auto; /* Centers the wrapper horizontally with some top/bottom margin */
+            max-width: 1200px; /* Max width for the content wrapper */
+            align-items: flex-start; /* Aligns items to the top */
+        }
+
+        /* Adjustments for the table section */
+        .existing-assets-section {
+            flex-grow: 1; /* Allows the table section to grow and take available space */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            display: flex; /* Make it a flex container for its children */
+            flex-direction: column; /* Stack children vertically */
+        }
+
+            .existing-assets-section h3 {
+                margin-top: 0;
+                margin-bottom: 25px;
+                text-align: center;
+                color: #333;
+            }
+
+        /* Container for the table with scrolling */
+        .table-scroll-container {
+            max-height: 400px; /* Set a maximum height for the table container */
+            overflow-y: auto; /* Enable vertical scrolling when content overflows */
+            -webkit-overflow-scrolling: touch; /* Improves scrolling performance on touch devices */
+        }
+
+            /* Ensure the table itself doesn't have extra margins if you want the scrollbar tight */
+            .table-scroll-container table {
+                margin-bottom: 0;
+            }
+    </style>
+</head>
+
+<div class="content-wrapper">
+    <div class="asset-form-container">
+        <center>  <h3>Create New Asset</h3> </center>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+        <form asp-action="ManageAssets" method="post" class="mt-3">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fs-6">Name</label>
+                <input asp-for="Name" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Symbol" class="form-label fs-6">Symbol</label>
+                <input asp-for="Symbol" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label asp-for="AssetType" class="form-label fs-6">Asset Type</label>
+                <select asp-for="AssetType" class="form-select">
+                    <option>Stock</option>
+                    <option>Bond</option>
+                    <option>Mutual Fund</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="BasePrice" class="form-label fs-6" required>Base Price</label>
+                <input asp-for="BasePrice" class="form-control" />
+            </div>
+            <center>   <button type="submit" class="btn btn-primary">Create Asset</button> </center>
+        </form>
+    </div>
+
+    <div class="existing-assets-section">
+        <h3>Existing Assets</h3>
+        <div class="table-scroll-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Type</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var asset in ViewBag.AllAssets)
+                    {
+                        <tr>
+                            <td>@asset.Name</td>
+                            <td>@asset.Symbol</td>
+                            <td>@asset.AssetType</td>
+                            <td>@asset.BasePrice</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

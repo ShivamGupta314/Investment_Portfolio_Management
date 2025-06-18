@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "PackagePath": "staticwebassets\\css\\deleteInvestment.css"
+    },
+    {
       "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "PackagePath": "staticwebassets\\css\\portfolio-table.css"
     },
     {
       "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
@@ -33,12 +41,20 @@
       "PackagePath": "staticwebassets\\images\\cap.png"
     },
     {
+      "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
+      "PackagePath": "staticwebassets\\images\\mob.png"
+    },
+    {
       "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mobile.png",
       "PackagePath": "staticwebassets\\images\\mobile.png"
     },
     {
       "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\home.js",
       "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "PackagePath": "staticwebassets\\js\\portfolio-table.js"
     },
     {
       "Id": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",

@@ -4,9 +4,139 @@
     ViewData["Title"] = "Add Investments to Portfolio";
 }
 
+<style>
+    /* General form styling */
+    .forms {
+        max-width: 600px; /* Limits the form width for better readability on larger screens */
+        margin: 40px auto; /* Centers the form and adds some top/bottom margin */
+        padding: 30px;
+        background-color: #ffffff; /* White background for the form container */
+        border-radius: 8px; /* Slightly rounded corners */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+    }
+
+    h2 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 30px;
+        font-size: 2em; /* Slightly larger heading */
+    }
+
+    /* Form group styling */
+    .form-group {
+        margin-bottom: 20px; /* Space between form groups */
+    }
+
+        .form-group label {
+            display: block; /* Ensures label is on its own line */
+            margin-bottom: 8px; /* Space between label and input */
+            font-weight: 600; /* Slightly bolder labels */
+            color: #555555;
+        }
+
+    /* Styling for select (dropdown) */
+    .form-control {
+        width: 100%; /* Makes inputs and selects take full width of their container */
+        padding: 12px 15px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        -webkit-appearance: none; /* Removes default browser styling for select */
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); /* Custom dropdown arrow */
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 16px 12px;
+    }
+
+        .form-control:focus {
+            border-color: #80bdff; /* Blue border on focus */
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Light blue shadow on focus */
+        }
+
+    /* Multi-select specific adjustments */
+    select[multiple].form-control {
+        height: auto; /* Allows the multi-select to expand as needed */
+        min-height: 150px; /* A reasonable default height for multi-select */
+        overflow-y: auto; /* Adds scrollbar if content exceeds height */
+        padding-right: 12px; /* Adjust padding for multi-select so arrow doesn't interfere */
+        background-image: none; /* Remove custom arrow for multi-select */
+    }
+
+    /* Button styling */
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        text-decoration: none; /* For the anchor button */
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #007bff; /* Standard blue for primary action */
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #004085;
+        }
+
+    .btn-secondary {
+        color: #fff;
+        background-color: #6c757d; /* Grey for secondary action */
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            color: #fff;
+            background-color: #545b62; /* Darker grey on hover */
+            border-color: #4a4e53;
+        }
+
+    /* Margin utilities for buttons */
+    .mt-3 {
+        margin-top: 1rem !important; /* Matches Bootstrap's mt-3 */
+    }
+
+    .mb-2 {
+        margin-bottom: 0.5rem !important; /* Matches Bootstrap's mb-2 */
+    }
+
+    .me-md-2 {
+        margin-right: 0.5rem !important; /* Matches Bootstrap's me-md-2 */
+    }
+
+   
+    .d-md-inline {
+        display: inline-block !important;
+    }
+
+    .d-grid {
+        display: block; /* Reset d-grid on smaller screens */
+    }
+</style>
+
 <h2>Add Investments to Portfolio</h2>
 
-<form asp-action="AddInvestments" method="post">
+<form class="forms" asp-action="AddInvestments" method="post">
     @Html.AntiForgeryToken()
 
     <input type="hidden" asp-for="PortfolioId" />
@@ -18,6 +148,8 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary mt-3">Add to Portfolio</button>
-    <a asp-action="Index" class="btn btn-secondary d-grid d-md-inline mb-2 me-md-2">Back</a>
+    <div class="form-group button-group">
+        <button type="submit" class="btn btn-primary mt-3">Add to Portfolio</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Back</a> @* Changed mb-2 to mt-3 for consistency and better alignment with flexbox *@
+    </div>
 </form>

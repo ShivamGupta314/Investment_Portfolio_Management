@@ -3,6 +3,137 @@
     ViewData["Title"] = "Delete Portfolio";
 }
 
+<style>
+    /* Overall container for the delete page */
+    .container.mt-5 {
+        background-color: #fcfcfc; /* Slightly off-white background */
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft, noticeable shadow */
+        max-width: 700px; /* Constrain width for better readability */
+        margin-top: 50px !important; /* Ensure it's centered and has good top margin */
+        margin-bottom: 50px; /* Add bottom margin too */
+        /* Adjusted base font size for the container */
+        font-size: 0.95em; /* Slightly smaller base font for all text inside container */
+    }
+
+    h2 {
+        color: #dc3545; /* Bootstrap's danger red for "Confirm Delete" heading */
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2em; /* Slightly smaller heading from 2.2em */
+        font-weight: 600;
+        border-bottom: 2px solid #eee; /* Subtle separator */
+        padding-bottom: 15px;
+    }
+
+    /* Styling for alert messages (TempData) */
+    .alert {
+        margin-bottom: 25px; /* More space below alerts */
+        font-size: 1em; /* Adjusted from 1.05em */
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+
+    .alert-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+    }
+
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        border-color: #c3e6cb;
+    }
+
+    /* Specific warning for delete confirmation */
+    .alert-warning {
+        background-color: #fff3cd; /* Brighter warning color */
+        color: #856404;
+        border-color: #ffeeba;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.05em; /* Adjusted from 1.1em */
+        font-weight: 500;
+    }
+
+        .alert-warning strong {
+            color: #c08500; /* Darker yellow for emphasis */
+        }
+
+    /* Description list for portfolio details (now with box-shadow) */
+    .dl-horizontal.row { /* Targeting dl with row class for compatibility */
+        margin-bottom: 30px;
+        border: 1px solid #e9ecef; /* Light border around details */
+        border-radius: 8px;
+        padding: 25px; /* Slightly more padding inside the box */
+        background-color: #fcfdfe;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Added soft box shadow */
+        font-size: 0.9em; /* Smaller font for the details themselves */
+    }
+
+        .dl-horizontal.row dt, .dl-horizontal.row .col-sm-3 { /* Targeting dt and col-sm-3 within this context */
+            font-weight: 600;
+            color: #495057;
+            padding: 8px 0;
+            text-align: right; /* Align labels to the right */
+            padding-right: 15px; /* Space between label and value */
+        }
+
+        .dl-horizontal.row dd, .dl-horizontal.row .col-sm-9 { /* Targeting dd and col-sm-9 within this context */
+            padding: 8px 0;
+            color: #6c757d;
+            word-break: break-word; /* Prevents long words from overflowing */
+        }
+
+    /* Form for buttons (using flexbox for alignment) */
+    form {
+        display: flex; /* Makes the form a flex container */
+        justify-content: center; /* Centers the buttons horizontally */
+        align-items: center; /* Vertically aligns items in the middle */
+        gap: 15px; /* Adds space between buttons */
+        margin-top: 30px;
+    }
+
+    /* Button styling */
+    .btn {
+        padding: 10px 20px; /* Slightly smaller padding for buttons */
+        font-size: 1em; /* Adjusted from 1.1em */
+        border-radius: 6px; /* Slightly more rounded buttons */
+        transition: all 0.2s ease-in-out;
+        min-width: 130px; /* Adjusted min-width for smaller buttons */
+    }
+
+    .btn-danger {
+        background-color: #dc3545; /* Bootstrap danger red */
+        border-color: #dc3545;
+        color: #fff;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+        }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Bootstrap secondary grey */
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+        }
+
+    
+</style>
+
 <div class="container mt-5">
     <h2>Confirm Delete</h2>
 
@@ -16,45 +147,44 @@
         <div class="alert alert-success">@TempData["Success"]</div>
     }
 
-    <div class="alert alert-warning">
-        @* Changed to alert-warning for confirmation prompt *@
-        <p>Are you sure you want to delete the portfolio <strong>"@Model.Name"</strong>?</p>
+    <div class="alert alert-warning fs-6">
+        <p>Are you sure you want to delete the portfolio **"@Model.Name"**?</p>
         <p>This action cannot be undone.</p>
     </div>
 
     <dl class="row">
-        <dt class="col-sm-3">Portfolio ID</dt> @* Added Portfolio ID for clarity *@
+        @* No need for an extra class here, as the CSS targets dl.row *@
+        <dt class="col-sm-3">Portfolio ID</dt>
         <dd class="col-sm-9">@Model.PortfolioId</dd>
 
         <dt class="col-sm-3">Name</dt>
         <dd class="col-sm-9">@Model.Name</dd>
 
-        <dt class="col-sm-3">Description</dt> @* Added Description *@
+        <dt class="col-sm-3">Description</dt>
         <dd class="col-sm-9">@Model.Description</dd>
 
         <dt class="col-sm-3">Type</dt>
         <dd class="col-sm-9">@Model.Type</dd>
 
         <dt class="col-sm-3">Total Value</dt>
-        <dd class="col-sm-9">@Model.TotalValue.ToString("C")</dd> @* **CHANGED: Formatted as Currency** *@
+        <dd class="col-sm-9">@Model.TotalValue.ToString("C")</dd>
 
-        <dt class="col-sm-3">Created Date</dt> @* Added Created Date *@
+        <dt class="col-sm-3">Created Date</dt>
         <dd class="col-sm-9">@Model.CreatedDate.ToShortDateString()</dd>
     </dl>
 
     @* Form to submit the deletion request *@
     <form asp-action="Delete" method="post">
-        @* **Action is "Delete" (the ActionName), not "DeleteConfirmed"** *@
-        <input type="hidden" asp-for="PortfolioId" /> @* Pass the ID to the POST action *@
-        @Html.AntiForgeryToken() @* Crucial for security *@
+        <input type="hidden" asp-for="PortfolioId" />
+        @Html.AntiForgeryToken()
 
-        <button type="submit" class="btn btn-danger d-grid d-md-inline mb-2 me-md-2">Confirm Delete</button>
-        <a asp-action="Index" class="btn btn-secondary d-grid d-md-inline mb-2 me-md-2">Cancel</a>
+        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    } @* Not strictly needed for delete, but harmless *@
+    }
 }

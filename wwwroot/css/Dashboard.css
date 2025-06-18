@@ -28,7 +28,7 @@
     z-index: -1;
 }
 .imagecon {
-    background-image: url('/images/mobile.png');
+    background-image: url('/images/mob.png');
     background-size: cover;
     width: 20%;
     height: 450px;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QR+PJOc4IOgM5nPFLibHaAWkoqiwPPWR7eJus5cN80o=",
+  "Hash": "DkzJx7+qkenAroNcRQjv9NcAwp6BEJ30/4IPgAwuvgw=",
   "Source": "InvestmentPortfolioManagement",
   "BasePath": "_content/InvestmentPortfolioManagement",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\1lbc523k4z-tle1ps516y.gz",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "css/deleteInvestment#[.{fingerprint=tle1ps516y}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "j55qqwex0w",
+      "Integrity": "aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css"
     },
     {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\d6aca0k1yq-x0q3zqp4vz.gz",
@@ -143,6 +164,27 @@
       "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\bundle\\InvestmentPortfolioManagement.styles.css"
     },
     {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\h56jwtle99-wvmu7liuxx.gz",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "js/portfolio-table#[.{fingerprint=wvmu7liuxx}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1klv7j3wza",
+      "Integrity": "H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js"
+    },
+    {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\igmjxmrnk2-lsopz5xze1.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
@@ -164,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\admin.css"
     },
     {
-      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-pslfn5y5n3.gz",
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-w8u0vcb49j.gz",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/InvestmentPortfolioManagement",
-      "RelativePath": "css/Dashboard#[.{fingerprint=pslfn5y5n3}]?.css.gz",
+      "RelativePath": "css/Dashboard#[.{fingerprint=w8u0vcb49j}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,11 +220,32 @@
       "RelatedAsset": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\Dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bmy1e3io5p",
-      "Integrity": "gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48=",
+      "Fingerprint": "auwmi80177",
+      "Integrity": "wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\Dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\om4h487pu3-v6qh86ijp5.gz",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "css/portfolio-table#[.{fingerprint=v6qh86ijp5}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "boho6swour",
+      "Integrity": "eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css"
     },
     {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\q57ceovgn7-61n19gt1b8.gz",
@@ -346,11 +409,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pslfn5y5n3",
-      "Integrity": "59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU=",
+      "Fingerprint": "w8u0vcb49j",
+      "Integrity": "4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "css/deleteInvestment#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tle1ps516y",
+      "Integrity": "z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\deleteInvestment.css"
     },
     {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\navbar.css",
@@ -372,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\navbar.css"
+    },
+    {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "css/portfolio-table#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v6qh86ijp5",
+      "Integrity": "115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\portfolio-table.css"
     },
     {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
@@ -458,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\images\\cap.png"
     },
     {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "images/mob#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k2uov1lrq6",
+      "Integrity": "xB6q5eYzxrCHujydomgJQrnjZKI8iPw1bdlqK8osC9M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mob.png"
+    },
+    {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mobile.png",
       "SourceId": "InvestmentPortfolioManagement",
       "SourceType": "Discovered",
@@ -498,6 +624,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "SourceId": "InvestmentPortfolioManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\",
+      "BasePath": "_content/InvestmentPortfolioManagement",
+      "RelativePath": "js/portfolio-table#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wvmu7liuxx",
+      "Integrity": "pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\portfolio-table.js"
     },
     {
       "Identity": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
@@ -906,12 +1053,12 @@
     },
     {
       "Route": "css/Dashboard.css",
-      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-pslfn5y5n3.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-w8u0vcb49j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001111111111"
+          "Quality": "0.001106194690"
         }
       ],
       "ResponseHeaders": [
@@ -921,15 +1068,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "899"
+          "Value": "903"
         },
         {
           "Name": "ETag",
-          "Value": "\"gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48=\""
+          "Value": "\"wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -949,13 +1096,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU=\""
+          "Value": "W/\"4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU="
+          "Value": "sha256-4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4="
         }
       ]
     },
@@ -970,7 +1117,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3255"
+          "Value": "3252"
         },
         {
           "Name": "Content-Type",
@@ -978,11 +1125,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU=\""
+          "Value": "\"4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -992,13 +1139,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU="
+          "Value": "sha256-4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4="
         }
       ]
     },
     {
       "Route": "css/Dashboard.css.gz",
-      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-pslfn5y5n3.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-w8u0vcb49j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1007,7 +1154,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "899"
+          "Value": "903"
         },
         {
           "Name": "Content-Type",
@@ -1015,11 +1162,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48=\""
+          "Value": "\"wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1037,18 +1184,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48="
+          "Value": "sha256-wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU="
         }
       ]
     },
     {
-      "Route": "css/Dashboard.pslfn5y5n3.css",
-      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-pslfn5y5n3.gz",
+      "Route": "css/Dashboard.w8u0vcb49j.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-w8u0vcb49j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001111111111"
+          "Quality": "0.001106194690"
         }
       ],
       "ResponseHeaders": [
@@ -1058,15 +1205,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "899"
+          "Value": "903"
         },
         {
           "Name": "ETag",
-          "Value": "\"gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48=\""
+          "Value": "\"wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1086,13 +1233,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU=\""
+          "Value": "W/\"4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pslfn5y5n3"
+          "Value": "w8u0vcb49j"
         },
         {
           "Name": "label",
@@ -1100,12 +1247,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU="
+          "Value": "sha256-4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4="
         }
       ]
     },
     {
-      "Route": "css/Dashboard.pslfn5y5n3.css",
+      "Route": "css/Dashboard.w8u0vcb49j.css",
       "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\Dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1115,7 +1262,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3255"
+          "Value": "3252"
         },
         {
           "Name": "Content-Type",
@@ -1123,11 +1270,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU=\""
+          "Value": "\"4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1137,7 +1284,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pslfn5y5n3"
+          "Value": "w8u0vcb49j"
         },
         {
           "Name": "label",
@@ -1145,13 +1292,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-59hHn4USSx6Z5Uz4drOytalzQ/JoML0GaZ7VpHFnuBU="
+          "Value": "sha256-4IcB/DpNNX/vycfmss0qZWL+n0mlJfHZfLRSrxnBNR4="
         }
       ]
     },
     {
-      "Route": "css/Dashboard.pslfn5y5n3.css.gz",
-      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-pslfn5y5n3.gz",
+      "Route": "css/Dashboard.w8u0vcb49j.css.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\nwq6lcs3sb-w8u0vcb49j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1160,7 +1307,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "899"
+          "Value": "903"
         },
         {
           "Name": "Content-Type",
@@ -1168,11 +1315,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48=\""
+          "Value": "\"wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 17:32:49 GMT"
+          "Value": "Tue, 17 Jun 2025 09:28:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1190,7 +1337,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pslfn5y5n3"
+          "Value": "w8u0vcb49j"
         },
         {
           "Name": "label",
@@ -1198,7 +1345,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gz9mzdnEuoFpxmqWxKumdai2HtTNaRPNKIfdPq45S48="
+          "Value": "sha256-wgFEho2TI8sRas5whYYbXMXSbJoZzUUX7fEf3M/0+JU="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\1lbc523k4z-tle1ps516y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000728332119"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1372"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.css.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\1lbc523k4z-tle1ps516y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.tle1ps516y.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\1lbc523k4z-tle1ps516y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000728332119"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1372"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tle1ps516y"
+        },
+        {
+          "Name": "label",
+          "Value": "css/deleteInvestment.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.tle1ps516y.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tle1ps516y"
+        },
+        {
+          "Name": "label",
+          "Value": "css/deleteInvestment.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b81MTXhcrEwtYw9ugZoA4jIzuMkr120N/lHD1Kqbk="
+        }
+      ]
+    },
+    {
+      "Route": "css/deleteInvestment.tle1ps516y.css.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\1lbc523k4z-tle1ps516y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 17:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tle1ps516y"
+        },
+        {
+          "Name": "label",
+          "Value": "css/deleteInvestment.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aWk13/5JlnLwoxebvwmQ5aq1FMccCyeje+3Wdr1g4y0="
         }
       ]
     },
@@ -1497,6 +1942,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-3ylLI6jTbXBmUSV92HYFPUleiryh7BXmN6CvDyz64WI="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\om4h487pu3-v6qh86ijp5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001253132832"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "797"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.css.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\om4h487pu3-v6qh86ijp5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.v6qh86ijp5.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\om4h487pu3-v6qh86ijp5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001253132832"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "797"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6qh86ijp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/portfolio-table.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.v6qh86ijp5.css",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6qh86ijp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/portfolio-table.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-115UshDtUtBOBNMZwgEkW8RAQ0ZDCXnjti5jsIblfqg="
+        }
+      ]
+    },
+    {
+      "Route": "css/portfolio-table.v6qh86ijp5.css.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\om4h487pu3-v6qh86ijp5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 15:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6qh86ijp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/portfolio-table.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eyXHAwIvbNANf5wkfxuUROLi9IpPfaRrJtWqL5wlIOo="
         }
       ]
     },
@@ -2257,6 +3000,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-2SWiZgVsCju8OV5fdIR25Mr7J4OvSnMoa5CpOvXJc0Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/mob.k2uov1lrq6.png",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xB6q5eYzxrCHujydomgJQrnjZKI8iPw1bdlqK8osC9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 05:57:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k2uov1lrq6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/mob.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xB6q5eYzxrCHujydomgJQrnjZKI8iPw1bdlqK8osC9M="
+        }
+      ]
+    },
+    {
+      "Route": "images/mob.png",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xB6q5eYzxrCHujydomgJQrnjZKI8iPw1bdlqK8osC9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 05:57:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xB6q5eYzxrCHujydomgJQrnjZKI8iPw1bdlqK8osC9M="
         }
       ]
     },
@@ -3233,6 +4058,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-UDgh6nKCA1u7EIBNCeior2EWot8MMhYk5/pWI+hgo5c="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.js",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\h56jwtle99-wvmu7liuxx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001119820829"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.js",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.js.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\h56jwtle99-wvmu7liuxx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.wvmu7liuxx.js",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\h56jwtle99-wvmu7liuxx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001119820829"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvmu7liuxx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/portfolio-table.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.wvmu7liuxx.js",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvmu7liuxx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/portfolio-table.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLW3AldrPkKqLwc2FNFP3+9fKcbipUHmgSveofguTGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/portfolio-table.wvmu7liuxx.js.gz",
+      "AssetFile": "C:\\Users\\2406706\\OneDrive - Cognizant\\Desktop\\final project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\compressed\\h56jwtle99-wvmu7liuxx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:41:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvmu7liuxx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/portfolio-table.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H777Eyo72Pufohonh3ernNV6LLEuycBkFGH9vkTv6jQ="
         }
       ]
     },

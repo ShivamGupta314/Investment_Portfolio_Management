@@ -1,0 +1,72 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body {
+    /*background: #ADD8E6;*/ /* Light Blue page background */
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 50px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    width: 100%;
+    table-layout: fixed; /* Retained for fixed header column alignment */
+}
+
+thead {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: white 1px;
+    background-color: #3498db; /* Blue color for the header */
+}
+
+.tbl-content {
+    background-color: #ffffff; /* White background for the table body */
+    border: 1px solid #ccc; /* Simple border around the table content */
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff; /* White text for the blue header */
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #333; /* Darker text for readability on white background */
+    border-bottom: solid 1px #eee; /* Light gray border for table rows */
+}
+
+.portfolio-actions {
+    min-width: 400px; /* Increased from 350px to 400px, adjust as needed */
+}
+
+/* Default scrollbar styles (custom ones removed) */
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none;
+}
