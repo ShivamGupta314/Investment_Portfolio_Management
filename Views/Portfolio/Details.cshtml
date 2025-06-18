@@ -1,4 +1,4 @@
-@model InvestmentPortfolioManagement.Models.Portfolio
+﻿@model InvestmentPortfolioManagement.Models.Portfolio
 @{
     ViewData["Title"] = "Portfolio Details";
 }
@@ -192,6 +192,20 @@
             padding: 20px;
         }
 
+    /* Styles for profit/loss indication */
+    .profit {
+        color: #28a745; /* Green for profit */
+        font-weight: bold;
+    }
+
+    .loss {
+        color: #dc3545; /* Red for loss */
+        font-weight: bold;
+    }
+
+    .neutral {
+        color: #6c757d; /* Grey for no change */
+    }
 </style>
 
 <div class="container mt-5">
@@ -218,9 +232,9 @@
         <div class="portfolio-actions">
             <a asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
             <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
-           
+
             <a asp-action="AllocationChart" asp-route-id="@Model.PortfolioId" class="btn btn-info">View Allocation Chart</a>
-            <a asp-action="Index" class="btn btn-secondary">Back</a>;
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
         </div>
     </div>
 
@@ -229,16 +243,15 @@
 
     <table class="table table-bordered">
         <thead>
-          
             <tr>
                 <th>Asset Name</th>
                 <th>Quantity</th>
                 <th>Current Price</th>
                 <th>Purchased Price</th>
                 <th>Total Value</th>
+                <th>P/L</th> @* Added new column for Profit/Loss *@
                 <th>Purchased Date</th>
             </tr>
-            
         </thead>
         <tbody id="investmentsTableBody">
             @* Initial render of investments (will be updated by AJAX) *@
@@ -246,12 +259,29 @@
             {
                 foreach (var investment in Model.Investments)
                 {
+                    // === FIX FOR CS0019 ERROR ===
+                    // Ensure currentAssetPrice is explicitly decimal, handling nulls with 0.0M
+                    decimal currentAssetPrice = investment.Asset?.CurrentPrice ?? 0.0M;
+
+                    // Explicitly cast investment.PurchasePrice to decimal just to be absolutely sure.
+                    // Even if it's already decimal, this removes any ambiguity for the compiler.
+                    decimal purchasePrice = (decimal)investment.PurchasePrice;
+
+                    // Now, both operands are explicitly decimal, resolving the type mismatch.
+                    decimal profitLoss = currentAssetPrice - purchasePrice;
+                    // === END FIX ===
+
+                    string profitLossClass = profitLoss > 0 ? "profit" : (profitLoss < 0 ? "loss" : "neutral");
+                    string profitLossIcon = profitLoss > 0 ? "▲" : (profitLoss < 0 ? "▼" : "—"); // Unicode arrows
+                    string formattedProfitLoss = $"{profitLoss.ToString("C")} <span class='{profitLossClass}'>({profitLossIcon})</span>";
+
                     <tr>
                         <td>@investment.Asset.Name</td>
                         <td>@investment.Quantity</td>
-                        <td>@investment.CurrentPrice.ToString("C")</td>
-                        <td>@investment.PurchasePrice.ToString("C")</td>
-                        <td>@((investment.Asset?.CurrentPrice ?? 0.0M) * investment.Quantity).ToString("C")</td>
+                        <td>@currentAssetPrice.ToString("C")</td> @* Using the explicit decimal variable *@
+                        <td>@purchasePrice.ToString("C")</td> @* Using the explicit decimal variable *@
+                        <td>@((currentAssetPrice * investment.Quantity)).ToString("C")</td> @* Using currentAssetPrice here too *@
+                        <td class="@profitLossClass">@Html.Raw(formattedProfitLoss)</td> @* New P/L column *@
                         <td>@investment.InvestmentDate.ToShortDateString()</td>
                     </tr>
                 }
@@ -259,7 +289,7 @@
             else
             {
                 <tr>
-                    <td colspan="6">No investments found for this portfolio.</td>
+                    <td colspan="7">No investments found for this portfolio.</td> @* Changed colspan to 7 *@
                 </tr>
             }
         </tbody>
@@ -273,7 +303,6 @@
 
             async function updatePortfolioData() {
                 try {
-                    // Adjust fetch URL if needed, ensure it points to the correct endpoint
                     const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
@@ -282,7 +311,6 @@
 
                     // 1. Update Portfolio Total Value
                     if (portfolioTotalValueElement) {
-                        // Using toLocaleString for currency formatting (en-IN and INR as requested)
                         portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
                     }
 
@@ -293,12 +321,38 @@
                         if (data.investments && data.investments.length > 0) {
                             data.investments.forEach(investment => {
                                 const row = document.createElement('tr');
+
+                                // Calculate Profit/Loss in JavaScript
+                                // JSON values come as numbers, parseFloat ensures they are treated as such
+                                const currentPriceJs = parseFloat(investment.currentPrice);
+                                const purchasePriceJs = parseFloat(investment.purchasePrice);
+                                const profitOrLoss = currentPriceJs - purchasePriceJs;
+
+                                let profitLossClass = '';
+                                let profitLossIcon = '';
+
+                                if (profitOrLoss > 0) {
+                                    profitLossClass = 'profit';
+                                    profitLossIcon = '▲'; // Upward triangle
+                                } else if (profitOrLoss < 0) {
+                                    profitLossClass = 'loss';
+                                    profitLossIcon = '▼'; // Downward triangle
+                                } else {
+                                    profitLossClass = 'neutral';
+                                    profitLossIcon = '—'; // Dash for no change
+                                }
+
+                                // Format profit/loss value with currency and icon
+                                const formattedProfitLoss = `${profitOrLoss.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })} <span class="${profitLossClass}">(${profitLossIcon})</span>`;
+
+
                                 row.innerHTML = `
                                     <td>${investment.assetName}</td>
                                     <td>${investment.quantity}</td>
-                                    <td>${investment.currentPrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                    <td>${investment.purchasePrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                    <td>${investment.totalInvestmentValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${currentPriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${purchasePriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td>${(currentPriceJs * investment.quantity).toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
+                                    <td class="${profitLossClass}">${formattedProfitLoss}</td>
                                     <td>${investment.investmentDate}</td>
                                 `;
                                 investmentsTableBody.appendChild(row);
@@ -306,7 +360,7 @@
                         } else {
                             // Display message if no investments
                             const noDataRow = document.createElement('tr');
-                            noDataRow.innerHTML = `<td colspan="6">No investments found for this portfolio.</td>`;
+                            noDataRow.innerHTML = `<td colspan="7">No investments found for this portfolio.</td>`; // Changed colspan to 7
                             investmentsTableBody.appendChild(noDataRow);
                         }
                     }
