@@ -1627,3 +1627,10 @@ C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management Sy
 C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\obj\Debug\net9.0\InvestmentPortfolioManagement.pdb
 C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\obj\Debug\net9.0\InvestmentPortfolioManagement.genruntimeconfig.cache
 C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\obj\Debug\net9.0\ref\InvestmentPortfolioManagement.dll
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\igmjxmrnk2-lsopz5xze1.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\nwq6lcs3sb-w8u0vcb49j.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\1lbc523k4z-tle1ps516y.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\zaiv0i7rrh-bavud2pzkn.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\om4h487pu3-v6qh86ijp5.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\0uxk4h7wix-mcvypxzckd.gz
+D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\h56jwtle99-wvmu7liuxx.gz

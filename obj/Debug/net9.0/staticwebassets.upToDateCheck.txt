@@ -1,16 +1,16 @@
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\js\home.js
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\deleteInvestment.css
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\site.css
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\js\portfolio-table.js
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\admin.css
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\Dashboard.css
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\portfolio-table.css
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\favicon.ico
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\js\site.js
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-C:\Users\2406683\OneDrive - Cognizant\Desktop\Investment Portfolio Management System\Investment_Portfolio_Management\wwwroot\css\navbar.css
+D:\Investment_Portfolio_Management\wwwroot\js\home.js
+D:\Investment_Portfolio_Management\wwwroot\css\deleteInvestment.css
+D:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
+D:\Investment_Portfolio_Management\wwwroot\css\site.css
+D:\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
+D:\Investment_Portfolio_Management\wwwroot\js\portfolio-table.js
+D:\Investment_Portfolio_Management\wwwroot\css\admin.css
+D:\Investment_Portfolio_Management\wwwroot\css\Dashboard.css
+D:\Investment_Portfolio_Management\wwwroot\css\portfolio-table.css
+D:\Investment_Portfolio_Management\wwwroot\favicon.ico
+D:\Investment_Portfolio_Management\wwwroot\js\site.js
+D:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\Investment_Portfolio_Management\wwwroot\css\navbar.css
 wwwroot\css\admin.css
 wwwroot\css\Dashboard.css
 wwwroot\css\deleteInvestment.css

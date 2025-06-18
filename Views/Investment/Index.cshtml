@@ -1,12 +1,33 @@
-﻿@model List<Investment>
-
+﻿@model List<InvestmentPortfolioManagement.Models.Investment>
 @{
-    ViewBag.Title = "Investment Portfolio";
+    ViewBag.Title = "My Investments";
 }
 
-@* Ensure portfolio-table.css is linked in _Layout.cshtml, or link it here if this view is standalone *@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />
 <link rel="stylesheet" href="~/css/portfolio-table.css" asp-append-version="true" />
+<style>
+    /* Add specific styles here if portfolio-table.css doesn't have them */
+    .profit {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .loss {
+        color: #dc3545;
+        font-weight: bold;
+    }
+
+    .neutral {
+        color: #6c757d;
+    }
+
+    .btn-sm-chart {
+        padding: .25rem .5rem;
+        font-size: .8rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+    }
+</style>
 
 <section>
     <center><h2>My Investments</h2></center>
@@ -25,9 +46,9 @@
                     <th>Current Price</th>
                     <th>Purchased Price</th>
                     <th>Total Value</th>
+                    <th>P/L Per Unit</th>
                     <th>Purchased Date</th>
-                    @* Add a header for actions if you plan to include Edit/Delete for investments * @
-                    @* <th>Actions</th> *@
+                    <th>Actions</th>
                 </tr>
             </thead>
         </table>
@@ -35,34 +56,198 @@
 
     <div class="tbl-content">
         <table cellpadding="0" cellspacing="0" border="0">
-            <tbody>
-                @foreach (var investment in Model)
-                {
-                    <tr>
-                        <td>@investment.Asset.Name</td>
-                        <td>@investment.Quantity</td>
-                        <td>@investment.CurrentPrice.ToString("C")</td> @* Format as currency *@
-                        <td>@investment.PurchasePrice.ToString("C")</td> @* Format as currency *@
-                        <td>@((investment.CurrentPrice * investment.Quantity).ToString("C"))</td> @* Format as currency *@
-                        <td>@investment.InvestmentDate.ToShortDateString()</td>
-                        @* Add action buttons here if needed * @
-                        @* <td class="investment-actions">
-                            <div class="d-flex flex-wrap gap-1">
-                                <a asp-action="EditInvestment" asp-route-id="@investment.InvestmentId" class="btn btn-warning btn-sm" aria-label="Edit Investment"><i class="fas fa-edit"></i></a>
-                                <form asp-action="DeleteInvestment" asp-route-id="@investment.InvestmentId" method="post" class="d-inline"
-                                      onsubmit="return confirm('Are you sure you want to delete this investment?');">
-                                    <button type="submit" class="btn btn-danger btn-sm" aria-label="Delete Investment"><i class="fas fa-trash-alt"></i></button>
-                                </form>
-                            </div>
-                        </td> *@
-                    </tr>
-                }
+            <tbody id="allInvestmentsTableBody">
+                <!-- Content is rendered dynamically by AJAX -->
+                <tr>
+                    <td colspan="8" style="text-align:center; padding: 20px;">Loading investments...</td>
+                </tr>
             </tbody>
         </table>
     </div>
-    <center>
-    <a href="@Url.Action("Create", new { portfolioId = ViewBag.PortfolioId })" class="btn mt-3" style="background-color:#3498db; color:white">
-        <i class="fas fa-plus"></i> Invest in this Portfolio
-        </a>
-    </center>
 </section>
+
+<!-- BOOTSTRAP MODAL FOR CHART -->
+<div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chartModalLabel">Asset Performance</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <canvas id="performanceChartCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        (function() {
+            const investmentsTableBody = document.getElementById('allInvestmentsTableBody');
+            const chartModalElement = document.getElementById('chartModal');
+            const chartModal = new bootstrap.Modal(chartModalElement);
+            const chartModalLabel = document.getElementById('chartModalLabel');
+            const ctx = document.getElementById('performanceChartCanvas').getContext('2d');
+
+            let performanceChart = null;
+            let chartUpdateInterval = null;
+
+            // --- 1. MAIN TABLE RENDERING FUNCTION ---
+            async function updateInvestmentsTable() {
+                try {
+                    const response = await fetch('/Investment/GetUserInvestmentsLive');
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const investments = await response.json();
+
+                    investmentsTableBody.innerHTML = '';
+
+                    if (investments && investments.length > 0) {
+                        investments.forEach(inv => {
+                            const row = document.createElement('tr');
+                            const currentPrice = parseFloat(inv.currentPrice);
+                            const purchasePrice = parseFloat(inv.purchasePrice);
+                            const profitOrLoss = currentPrice - purchasePrice;
+                            const profitLossClass = profitOrLoss > 0 ? 'profit' : (profitOrLoss < 0 ? 'loss' : 'neutral');
+                            const profitLossIcon = profitOrLoss > 0 ? '▲' : (profitOrLoss < 0 ? '▼' : '—');
+
+                            const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                            const formattedProfitLoss = `<span class="${profitLossClass}">${formatAsCurrency(profitOrLoss)} (${profitLossIcon})</span>`;
+
+                            row.innerHTML = `
+                                <td>${inv.assetName}</td>
+                                <td>${inv.quantity}</td>
+                                <td>${formatAsCurrency(currentPrice)}</td>
+                                <td>${formatAsCurrency(purchasePrice)}</td>
+                                <td>${formatAsCurrency(currentPrice * inv.quantity)}</td>
+                                <td>${formattedProfitLoss}</td>
+                                <td>${inv.investmentDate}</td>
+                                <td>
+                                    <button class="btn btn-info btn-sm-chart view-chart-btn"
+                                            data-asset-id="${inv.assetId}"
+                                            data-asset-name="${inv.assetName}"
+                                            data-purchase-price="${purchasePrice}"
+                                            data-current-price="${currentPrice}">
+                                        <i class="fas fa-chart-line"></i> Chart
+                                    </button>
+                                </td>
+                            `;
+                            investmentsTableBody.appendChild(row);
+                        });
+                    } else {
+                        investmentsTableBody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px; font-style: italic;">You have no investments yet.</td></tr>`;
+                    }
+                } catch (error) {
+                    console.error("Error fetching live investment data:", error);
+                }
+            }
+
+            // --- 2. CHART LOGIC ---
+
+            // A) Function to LAUNCH the chart (called on button click)
+            function launchLiveChart(assetId, assetName, purchasePrice, currentPrice) {
+                if (performanceChart) { performanceChart.destroy(); }
+
+                chartModalLabel.textContent = `${assetName} Live Performance`;
+
+                performanceChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Purchased', new Date().toLocaleTimeString()],
+                        datasets: [{
+                            // We hide the label in options, but it's good practice to keep it
+                            label: 'Price (INR)',
+                            data: [purchasePrice, currentPrice],
+                            borderColor: 'rgb(54, 162, 235)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            fill: true
+                        }]
+                    },
+                    // === INTEGRATED: Your new options object ===
+                    options: {
+                        animation: { duration: 300 },
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                ticks: {
+                                    callback: value => '₹' + value.toLocaleString('en-IN')
+                                }
+                            }
+                        },
+                        elements: {
+                            line: { tension: 0.4 }, // Smooth line
+                            point: { radius: 0 }    // No dots
+                        },
+                        plugins: {
+                            legend: { display: false }
+                        }
+                    }
+                });
+
+                chartModalElement.dataset.currentAssetId = assetId;
+                chartModal.show();
+            }
+
+            // B) Function to UPDATE the chart (called by the interval)
+            // === INTEGRATED: Your new update function ===
+            async function updateLiveChart() {
+                const assetId = chartModalElement.dataset.currentAssetId;
+                if (!assetId || !performanceChart) return;
+
+                try {
+                    const response = await fetch('/Investment/GetUserInvestmentsLive');
+                    const investments = await response.json();
+                    const target = investments.find(inv => inv.assetId === assetId);
+
+                    if (target) {
+                        const newPrice = parseFloat(target.currentPrice);
+                        const newLabel = new Date().toLocaleTimeString();
+
+                        performanceChart.data.labels.push(newLabel);
+                        performanceChart.data.datasets[0].data.push(newPrice);
+
+                        // Remove older data if needed (for cleaner display)
+                        const maxPoints = 30;
+                        if (performanceChart.data.labels.length > maxPoints) {
+                            performanceChart.data.labels.shift();
+                            performanceChart.data.datasets[0].data.shift();
+                        }
+
+                        performanceChart.update();
+                    }
+                } catch (error) {
+                    console.error('Error during chart update:', error);
+                }
+            }
+
+            // --- 3. EVENT LISTENERS ---
+            investmentsTableBody.addEventListener('click', function(event) {
+                const button = event.target.closest('.view-chart-btn');
+                if (button) {
+                    const { assetId, assetName, purchasePrice, currentPrice } = button.dataset;
+                    launchLiveChart(assetId, assetName, parseFloat(purchasePrice), parseFloat(currentPrice));
+                }
+            });
+
+            chartModalElement.addEventListener('shown.bs.modal', function() {
+                if (chartUpdateInterval) clearInterval(chartUpdateInterval);
+                chartUpdateInterval = setInterval(updateLiveChart, 3000);
+            });
+
+            chartModalElement.addEventListener('hidden.bs.modal', function() {
+                clearInterval(chartUpdateInterval);
+                if (performanceChart) {
+                    performanceChart.destroy();
+                    performanceChart = null;
+                }
+            });
+
+            // --- 4. INITIAL EXECUTION ---
+            updateInvestmentsTable();
+            setInterval(updateInvestmentsTable, 5000);
+        })();
+    </script>
+}

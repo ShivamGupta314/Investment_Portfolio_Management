@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\",
+  "WorkspaceRootPath": "D:\\Investment_Portfolio_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\portfolio\\addinvestments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\addinvestments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\portfolio\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\portfolio\\addinvestments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\addinvestments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\portfolio\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\users\\2406683\\onedrive - cognizant\\desktop\\investment portfolio management system\\investment_portfolio_management\\wwwroot\\css\\portfolio-table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|d:\\investment_portfolio_management\\wwwroot\\css\\portfolio-table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:wwwroot\\css\\portfolio-table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -62,73 +62,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Investment\\Index.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Investment\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Investment\\Index.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Investment\\Index.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Investment\\Index.cshtml",
               "RelativeToolTip": "Views\\Investment\\Index.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwC0AAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T12:28:08.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Details.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
               "RelativeToolTip": "Views\\Portfolio\\Details.cshtml",
               "ViewState": "AgIAAF4BAAAAAAAAAAAqwHwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T11:52:34.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddInvestments.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\AddInvestments.cshtml",
-              "RelativeDocumentMoniker": "Views\\Portfolio\\AddInvestments.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\AddInvestments.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\AddInvestments.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T11:52:22.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T11:52:34.352Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\Index.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AddInvestments.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\AddInvestments.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\AddInvestments.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\AddInvestments.cshtml",
+              "RelativeToolTip": "Views\\Portfolio\\AddInvestments.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T11:52:01.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T11:52:22.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
+              "RelativeToolTip": "Views\\Portfolio\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T11:52:01.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\appsettings.json",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACjAAAAAAAAAA==",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-18T11:33:59.013Z",
               "EditorCaption": ""
@@ -137,9 +150,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Program.cs",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Program.cs",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,9 +162,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -161,9 +174,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -173,9 +186,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
               "RelativeToolTip": "Views\\User\\Login.cshtml",
               "ViewState": "AgIAAI8AAAAAAAAAAAAQwJ8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -185,9 +198,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
               "RelativeToolTip": "Views\\User\\Register.cshtml",
               "ViewState": "AgIAAKcAAAAAAAAAAAAQwLAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -195,41 +208,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Edit.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Portfolio\\Edit.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Portfolio\\Edit.cshtml",
               "RelativeToolTip": "Views\\Portfolio\\Edit.cshtml",
               "ViewState": "AgIAAHgAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T17:41:46.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T17:41:46.283Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAD4AAAAAAAAAAAAlwEwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T04:06:32.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T04:06:32.858Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "portfolio-table.css",
-              "DocumentMoniker": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+              "DocumentMoniker": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\portfolio-table.css",
-              "ToolTip": "C:\\Users\\2406683\\OneDrive - Cognizant\\Desktop\\Investment Portfolio Management System\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+              "ToolTip": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
               "RelativeToolTip": "wwwroot\\css\\portfolio-table.css",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-17T18:49:04.678Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 599,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
