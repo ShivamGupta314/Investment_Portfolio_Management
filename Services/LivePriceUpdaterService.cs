@@ -121,7 +121,7 @@ namespace InvestmentPortfolioManagement.Services
                     // No need for context.SaveChangesAsync() here, as AssetService handles it.
                 }
 
-                await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken); // Update every 5 seconds
+                await Task.Delay(TimeSpan.FromSeconds(1), stoppingToken); // Update every 5 seconds
             }
         }
     }

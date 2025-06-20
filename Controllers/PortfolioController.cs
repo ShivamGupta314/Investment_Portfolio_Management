@@ -403,6 +403,7 @@ namespace InvestmentPortfolioManagement.Controllers
             var investmentData = portfolio.Investments.Select(inv => new
             {
                 investmentId = inv.InvestmentId, // Include ID if you ever need to reference it
+                assetId = inv.Asset.AssetId, // ADDED: Pass AssetId for chart functionality
                 assetName = inv.Asset?.Name, // Use null-conditional operator for safety
                 quantity = inv.Quantity,
                 // **IMPORTANT:** Use Asset.CurrentPrice for the most up-to-date value
@@ -420,6 +421,32 @@ namespace InvestmentPortfolioManagement.Controllers
                 totalValue = portfolio.TotalValue, // This is already updated by background service/AssetService
                 investments = investmentData
             });
+        }
+
+        // --- NEW ACTION FOR CHART DATA ---
+        [HttpGet]
+        public async Task<IActionResult> GetAssetCurrentPrice(string id) // 'id' will be assetId (string Guid)
+        {
+            // Ensure the passed 'id' is a valid GUID
+            if (!Guid.TryParse(id, out Guid assetGuid))
+            {
+                // Log the error or return a specific error message
+                return BadRequest("Invalid asset ID format.");
+            }
+
+            // Fetch only the necessary data (CurrentPrice and Name) for the given AssetId
+            var asset = await _context.Assets
+                                      .Where(a => a.AssetId == assetGuid)
+                                      .Select(a => new { a.CurrentPrice, a.Name })
+                                      .FirstOrDefaultAsync();
+
+            if (asset == null)
+            {
+                return NotFound(new { message = "Asset not found." });
+            }
+
+            // Return the current price and name as JSON
+            return Json(new { currentPrice = asset.CurrentPrice, assetName = asset.Name });
         }
 
         // GET: /Portfolio/Create

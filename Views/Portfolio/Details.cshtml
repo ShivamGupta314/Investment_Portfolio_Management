@@ -3,6 +3,8 @@
     ViewData["Title"] = "Portfolio Details";
 }
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
     /* Overall container styling */
     .container.mt-5 {
@@ -127,6 +129,22 @@
             box-shadow: 0 4px 8px rgba(23, 162, 184, 0.2);
         }
 
+    /* Chart button specific styling */
+    .btn-outline-primary.btn-sm-chart {
+        color: #007bff;
+        border-color: #007bff;
+        background-color: transparent;
+        padding: 5px 10px;
+        font-size: 0.85em;
+        min-width: unset; /* Override min-width for smaller button */
+    }
+
+        .btn-outline-primary.btn-sm-chart:hover {
+            color: #fff;
+            background-color: #007bff;
+            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+        }
+
 
     /* --- Investments Table Styling --- */
     hr {
@@ -185,7 +203,7 @@
         }
 
         /* No investments message styling */
-        .table-bordered tbody td[colspan="6"] {
+        .table-bordered tbody td[colspan="8"] { /* UPDATED colspan */
             text-align: center;
             font-style: italic;
             color: #6c757d;
@@ -193,14 +211,24 @@
         }
 
     /* Styles for profit/loss indication */
+    .profit, .loss, .neutral {
+        font-weight: bold;
+        /* NEW: Prevent text wrapping in the cell */
+        white-space: nowrap;
+        /* NEW: Hide overflowing content */
+        overflow: hidden;
+        /* NEW: Add ellipsis for truncated text */
+        text-overflow: ellipsis;
+        /* Optional: set a minimum width if cells are still too narrow, adjust as needed */
+        /* min-width: 100px; */
+    }
+
     .profit {
         color: #28a745; /* Green for profit */
-        font-weight: bold;
     }
 
     .loss {
         color: #dc3545; /* Red for loss */
-        font-weight: bold;
     }
 
     .neutral {
@@ -249,8 +277,9 @@
                 <th>Current Price</th>
                 <th>Purchased Price</th>
                 <th>Total Value</th>
-                <th>P/L</th> @* Added new column for Profit/Loss *@
+                <th>P/L</th>
                 <th>Purchased Date</th>
+                <th>Actions</th> @* ADDED NEW HEADER *@
             </tr>
         </thead>
         <tbody id="investmentsTableBody">
@@ -283,24 +312,79 @@
                         <td>@((currentAssetPrice * investment.Quantity)).ToString("C")</td> @* Using currentAssetPrice here too *@
                         <td class="@profitLossClass">@Html.Raw(formattedProfitLoss)</td> @* New P/L column *@
                         <td>@investment.InvestmentDate.ToShortDateString()</td>
+                        <td>
+                            <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
+                                    data-asset-id="@investment.Asset.AssetId"
+                                    data-asset-name="@investment.Asset.Name"
+                                    data-purchase-price="@investment.PurchasePrice.ToString(System.Globalization.CultureInfo.InvariantCulture)"
+                                    data-current-price="@currentAssetPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)" 
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#chartModal">
+                                <i class="fa-solid fa-chart-line"></i> View Chart
+                            </button>
+                        </td>
                     </tr>
                 }
             }
             else
             {
                 <tr>
-                    <td colspan="7">No investments found for this portfolio.</td> @* Changed colspan to 7 *@
+                    <td colspan="8">No investments found for this portfolio.</td>
                 </tr>
             }
         </tbody>
     </table>
 
+    @* --- CHART MODAL (Add this section) --- *@
+    <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chartModalLabel">Asset Performance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="chartLoadingIndicator" class="text-center my-3" style="display:none;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading chart data...</span>
+                        </div>
+                        <p>Loading chart data...</p>
+                    </div>
+                    <div id="chartErrorMessage" class="alert alert-danger" style="display:none;"></div>
+                    <canvas id="performanceChartCanvas" style="display:none;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* --- END CHART MODAL --- *@
+
+
     @section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
+            // Existing JavaScript for portfolio updates
             const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model
             const portfolioTotalValueElement = document.getElementById('portfolioTotalValue');
             const investmentsTableBody = document.getElementById('investmentsTableBody');
 
+            // --- NEW CHART-RELATED ELEMENTS & VARIABLES ---
+            const chartModalElement = document.getElementById('chartModal');
+            // Initialize Bootstrap Modal using its constructor
+            const chartModal = new bootstrap.Modal(chartModalElement);
+            const chartModalLabel = document.getElementById('chartModalLabel');
+            const ctx = document.getElementById('performanceChartCanvas').getContext('2d');
+            const chartCanvas = document.getElementById('performanceChartCanvas');
+            const chartLoadingIndicator = document.getElementById('chartLoadingIndicator');
+            const chartErrorMessage = document.getElementById('chartErrorMessage');
+
+            let performanceChart = null;
+            let chartUpdateInterval = null;
+
+            // Helper to format currency (can be reused)
+            const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+
+
+            // Existing updatePortfolioData function (keep it as is for table updates)
             async function updatePortfolioData() {
                 try {
                     const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
@@ -322,8 +406,6 @@
                             data.investments.forEach(investment => {
                                 const row = document.createElement('tr');
 
-                                // Calculate Profit/Loss in JavaScript
-                                // JSON values come as numbers, parseFloat ensures they are treated as such
                                 const currentPriceJs = parseFloat(investment.currentPrice);
                                 const purchasePriceJs = parseFloat(investment.purchasePrice);
                                 const profitOrLoss = currentPriceJs - purchasePriceJs;
@@ -333,18 +415,16 @@
 
                                 if (profitOrLoss > 0) {
                                     profitLossClass = 'profit';
-                                    profitLossIcon = '▲'; // Upward triangle
+                                    profitLossIcon = '▲';
                                 } else if (profitOrLoss < 0) {
                                     profitLossClass = 'loss';
-                                    profitLossIcon = '▼'; // Downward triangle
+                                    profitLossIcon = '▼';
                                 } else {
                                     profitLossClass = 'neutral';
-                                    profitLossIcon = '—'; // Dash for no change
+                                    profitLossIcon = '—';
                                 }
 
-                                // Format profit/loss value with currency and icon
                                 const formattedProfitLoss = `${profitOrLoss.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })} <span class="${profitLossClass}">(${profitLossIcon})</span>`;
-
 
                                 row.innerHTML = `
                                     <td>${investment.assetName}</td>
@@ -354,27 +434,279 @@
                                     <td>${(currentPriceJs * investment.quantity).toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
                                     <td class="${profitLossClass}">${formattedProfitLoss}</td>
                                     <td>${investment.investmentDate}</td>
+                                    <td>
+                                        <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
+                                                data-asset-id="${investment.assetId}"
+                                                data-asset-name="${investment.assetName}"
+                                                data-purchase-price="${purchasePriceJs}"
+                                                data-current-price="${currentPriceJs}"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#chartModal">
+                                                <i class="fa-solid fa-chart-line fa-beat fa-lg"></i>
+                                        </button>
+                                    </td>
                                 `;
                                 investmentsTableBody.appendChild(row);
                             });
                         } else {
-                            // Display message if no investments
                             const noDataRow = document.createElement('tr');
-                            noDataRow.innerHTML = `<td colspan="7">No investments found for this portfolio.</td>`; // Changed colspan to 7
+                            noDataRow.innerHTML = `<td colspan="8">No investments found for this portfolio.</td>`; // CHANGED colspan to 8
                             investmentsTableBody.appendChild(noDataRow);
                         }
                     }
 
                 } catch (error) {
                     console.error("Error fetching live portfolio data:", error);
-                    // Optionally display an error message on the page
                 }
             }
 
-            // Call the function immediately on page load
+            // --- NEW CHART LOGIC (copied from Investment Index, adjusted for 'seconds' in labels) ---
+
+            // Function to fetch historical data (MOCK FUNCTION - YOU NEED TO IMPLEMENT THIS ON BACKEND)
+            // This function should ideally fetch actual historical price data from your backend
+            // for the given assetId.
+            async function getHistoricalPrices(assetId) {
+                // In a real application, you'd make an AJAX call here:
+                // For example:
+                // const response = await fetch(`/Investment/GetAssetHistoricalPrices?assetId=${assetId}`);
+                // if (!response.ok) throw new Error(`Failed to fetch historical data: ${response.status}`);
+                // return await response.json(); // Expected format: [{ timestamp: "...", price: ... }, ...]
+
+                // MOCK DATA FOR DEMONSTRATION (replace with real API call or a service that provides historical data)
+                // This generates 60 data points simulating 60 seconds of price movement
+                console.warn("Using mock historical data. Implement /Investment/GetAssetHistoricalPrices (or similar) on your backend for real data.");
+                const now = new Date();
+                const mockData = [];
+                const initialPrice = 1000 + Math.random() * 500; // Random starting price
+                for (let i = 0; i < 60; i++) { // Generate 60 points (e.g., last 60 seconds)
+                    const time = new Date(now.getTime() - (60 - i) * 1000); // 1-second intervals
+                    // Simple price simulation with some fluctuation
+                    const price = initialPrice + (Math.sin(i / 5) * 20) + (Math.random() - 0.5) * 10;
+                    mockData.push({
+                        timestamp: time.toISOString(),
+                        price: price
+                    });
+                }
+                return mockData;
+            }
+
+            // A) Function to LAUNCH the chart (called on button click)
+            async function launchLiveChart(assetId, assetName, purchasePrice, initialCurrentPrice) {
+                // Clear previous chart and hide canvas, show loading
+                if (performanceChart) { performanceChart.destroy(); }
+                chartCanvas.style.display = 'none';
+                chartErrorMessage.style.display = 'none';
+                chartLoadingIndicator.style.display = 'block';
+
+                chartModalLabel.textContent = `${assetName} Performance`;
+                // Store the asset ID on the modal element for later updates
+                chartModalElement.dataset.currentAssetId = assetId;
+
+                let labels = [];
+                let prices = [];
+
+                try {
+                    // Fetch historical data
+                    const historicalData = await getHistoricalPrices(assetId);
+
+                    if (historicalData && historicalData.length > 0) {
+                        labels = historicalData.map(d => new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+                        prices = historicalData.map(d => parseFloat(d.price));
+                    } else {
+                        // Fallback if no historical data, start with purchase and initial current
+                        labels = ['Purchased', new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })];
+                        prices = [purchasePrice, initialCurrentPrice];
+                    }
+
+                    // Determine line color based on the current price relative to purchase price
+                    const lineColor = initialCurrentPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)'; // Green for profit, Red for loss
+
+                    performanceChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                {
+                                    label: 'Current Price (INR)',
+                                    data: prices,
+                                    borderColor: lineColor,
+                                    backgroundColor: lineColor.replace('rgb', 'rgba').replace(')', ', 0.2)'), // Light fill for the area below the line
+                                    fill: true,
+                                    tension: 0.4, // Smooths the line
+                                    pointRadius: 0 // Hides individual data points
+                                },
+                                {
+                                    label: 'Purchased Price',
+                                    data: new Array(labels.length).fill(purchasePrice), // Constant line at purchase price
+                                    borderColor: 'rgb(0, 123, 255)', // Blue for purchased price
+                                    borderDash: [5, 5], // Dashed line
+                                    backgroundColor: 'transparent',
+                                    pointRadius: 0,
+                                    borderWidth: 1
+                                }
+                            ]
+                        },
+                        options: {
+                            animation: { duration: 300 }, // Smooth animation for updates
+                            responsive: true,
+                            maintainAspectRatio: false, // Allows chart to resize freely within its container
+                            scales: {
+                                y: {
+                                    beginAtZero: false, // Prices might not start at zero
+                                    ticks: {
+                                        callback: value => '₹' + value.toLocaleString('en-IN') // Format y-axis labels as currency
+                                    },
+                                    grid: {
+                                        color: 'rgba(0,0,0,0.05)' // Light grid lines
+                                    }
+                                },
+                                x: {
+                                    display: true,
+                                    title: {
+                                        display: true,
+                                        text: 'Time'
+                                    },
+                                    ticks: {
+                                        autoSkip: true,
+                                        maxRotation: 0,
+                                        minRotation: 0,
+                                        maxTicksLimit: 10 // Control density of x-axis labels
+                                    },
+                                    grid: {
+                                        color: 'rgba(0,0,0,0.05)'
+                                    }
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    labels: {
+                                        boxWidth: 20
+                                    }
+                                },
+                                tooltip: {
+                                    mode: 'index',
+                                    intersect: false,
+                                    callbacks: {
+                                        title: function(context) {
+                                            return `Time: ${context[0].label}`;
+                                        },
+                                        label: function(context) {
+                                            let label = context.dataset.label || '';
+                                            if (label) {
+                                                label += ': ';
+                                            }
+                                            if (context.parsed.y !== null) {
+                                                label += formatAsCurrency(context.parsed.y);
+                                            }
+                                            return label;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    chartCanvas.style.display = 'block'; // Show canvas after chart is created
+
+                } catch (error) {
+                    console.error('Error fetching historical data or creating chart:', error);
+                    chartErrorMessage.textContent = `Failed to load chart data: ${error.message}. Please try again later.`;
+                    chartErrorMessage.style.display = 'block';
+                } finally {
+                    chartLoadingIndicator.style.display = 'none'; // Hide loading indicator regardless of success/failure
+                }
+            }
+
+            // B) Function to UPDATE the chart (called by the interval)
+            async function updateLiveChart() {
+                const assetId = chartModalElement.dataset.currentAssetId;
+                if (!assetId || !performanceChart) return; // Only update if modal is open and chart exists
+
+                try {
+                    // Fetch only the relevant asset's current price
+                    // YOU NEED TO CREATE THE GetAssetCurrentPrice ENDPOINT in your PortfolioController (see below)
+                    const response = await fetch(`/Portfolio/GetAssetCurrentPrice/${assetId}`);
+                    if (!response.ok) {
+                        // If asset not found or other HTTP error, hide chart and show error
+                        chartModal.hide(); // Close the chart
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json(); // Expected: { currentPrice: X.XX, assetName: "..." }
+
+                    if (data && data.currentPrice !== undefined) {
+                        const newPrice = parseFloat(data.currentPrice);
+                        const newLabel = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+                        // Add new data point
+                        performanceChart.data.labels.push(newLabel);
+                        performanceChart.data.datasets[0].data.push(newPrice);
+
+                        // Ensure the purchase price line extends with the new data point
+                        const purchasePrice = performanceChart.data.datasets[1].data[0]; // Get the initial purchase price
+                        performanceChart.data.datasets[1].data.push(purchasePrice);
+
+                        // Dynamically change line color based on real-time profit/loss
+                        performanceChart.data.datasets[0].borderColor = newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)';
+                        performanceChart.data.datasets[0].backgroundColor = (newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)').replace('rgb', 'rgba').replace(')', ', 0.2)');
+
+
+                        // Keep a fixed number of data points (e.g., last 60 seconds) for a "rolling" chart
+                        const maxPoints = 60;
+                        if (performanceChart.data.labels.length > maxPoints) {
+                            performanceChart.data.labels.shift(); // Remove oldest label
+                            performanceChart.data.datasets[0].data.shift(); // Remove oldest current price
+                            performanceChart.data.datasets[1].data.shift(); // Remove oldest purchase price point
+                        }
+
+                        performanceChart.update(); // Update the chart
+                    } else {
+                        // If the asset data is invalid or asset no longer exists
+                        chartModal.hide(); // Close the chart
+                        console.warn(`Asset with ID ${assetId} not found or current price data is missing for chart update.`);
+                    }
+
+                } catch (error) {
+                    console.error('Error during chart update:', error);
+                    // Optionally display error in modal or log it
+                }
+            }
+
+            // --- EVENT LISTENERS ---
+            // Event delegation for dynamically added buttons
+            // Listen for clicks on the table body to catch "View Chart" buttons
+            investmentsTableBody.addEventListener('click', function(event) {
+                const button = event.target.closest('.view-chart-btn');
+                if (button) {
+                    // Get data attributes
+                    const { assetId, assetName, purchasePrice, currentPrice } = button.dataset;
+                    // parseFloat is important as data-attributes are strings
+                    launchLiveChart(assetId, assetName, parseFloat(purchasePrice), parseFloat(currentPrice));
+                }
+            });
+
+            // When the chart modal is shown, start the update interval
+            chartModalElement.addEventListener('shown.bs.modal', function() {
+                if (chartUpdateInterval) clearInterval(chartUpdateInterval); // Clear any existing interval
+                chartUpdateInterval = setInterval(updateLiveChart, 1000); // Update chart every 1 second
+            });
+
+            // When the chart modal is hidden, clear the update interval and destroy the chart
+            chartModalElement.addEventListener('hidden.bs.modal', function() {
+                clearInterval(chartUpdateInterval);
+                if (performanceChart) {
+                    performanceChart.destroy(); // Destroy the chart instance to free up memory
+                    performanceChart = null; // Clear the reference
+                }
+            });
+
+            // --- INITIAL EXECUTION ---
+            // Call the function immediately on page load to populate the investments table
             updatePortfolioData();
 
-            // Set interval to update every 5 seconds
-            setInterval(updatePortfolioData, 5000);
+            // Set interval to update the entire portfolio table data every 5 seconds
+            // This will re-render the table rows, updating current prices and P/L for all investments
+            setInterval(updatePortfolioData, 1000);
         </script>
     }
+</div>

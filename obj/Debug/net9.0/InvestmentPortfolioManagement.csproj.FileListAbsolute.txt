@@ -1634,3 +1634,10 @@ D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\zaiv0i7rrh-bavud2
 D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\om4h487pu3-v6qh86ijp5.gz
 D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\0uxk4h7wix-mcvypxzckd.gz
 D:\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\h56jwtle99-wvmu7liuxx.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\igmjxmrnk2-lsopz5xze1.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\nwq6lcs3sb-w8u0vcb49j.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\1lbc523k4z-tle1ps516y.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\zaiv0i7rrh-bavud2pzkn.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\om4h487pu3-v6qh86ijp5.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\0uxk4h7wix-mcvypxzckd.gz
+C:\Training\Project\Investment_Portfolio_Management\obj\Debug\net9.0\compressed\h56jwtle99-wvmu7liuxx.gz

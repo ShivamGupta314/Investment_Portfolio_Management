@@ -1,10 +1,12 @@
 ﻿@model List<InvestmentPortfolioManagement.Models.Investment>
+
 @{
     ViewBag.Title = "My Investments";
 }
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />
 <link rel="stylesheet" href="~/css/portfolio-table.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
     /* Add specific styles here if portfolio-table.css doesn't have them */
     .profit {
@@ -27,6 +29,32 @@
         line-height: 1.5;
         border-radius: .2rem;
     }
+
+    /* Additional styles to ensure full width for tables within tbl-header/tbl-content */
+    .tbl-header table,
+    .tbl-content table {
+        width: 100%; /* Ensure tables take full width of their containers */
+        table-layout: fixed; /* Fix table layout for consistent column widths */
+    }
+
+        .tbl-content table td,
+        .tbl-header table th {
+            padding: 8px 10px; /* Adjust padding for cells */
+            overflow: hidden; /* Hide overflow content */
+            text-overflow: ellipsis; /* Add ellipsis for long text */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+    /* Make sure actions column is not too wide, adjust as needed */
+    .tbl-header th:last-child,
+    .tbl-content td:last-child {
+        width: 100px; /* Example width for actions column */
+        text-align: center;
+        /* OVERRIDE FOR PERFORMANCE COLUMN to show full name and allow wrapping */
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
 </style>
 
 <section>
@@ -48,7 +76,7 @@
                     <th>Total Value</th>
                     <th>P/L Per Unit</th>
                     <th>Purchased Date</th>
-                    <th>Actions</th>
+                    <th>Track</th>
                 </tr>
             </thead>
         </table>
@@ -57,16 +85,19 @@
     <div class="tbl-content">
         <table cellpadding="0" cellspacing="0" border="0">
             <tbody id="allInvestmentsTableBody">
-                <!-- Content is rendered dynamically by AJAX -->
                 <tr>
                     <td colspan="8" style="text-align:center; padding: 20px;">Loading investments...</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <center>
+        <a href="@Url.Action("Create", "Investment")" class="btn mt-3" style="background-color:#3498db; color:white">
+            <i class="fas fa-plus"></i> Add New Investment
+        </a>
+    </center>
 </section>
 
-<!-- BOOTSTRAP MODAL FOR CHART -->
 <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -75,14 +106,20 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <canvas id="performanceChartCanvas"></canvas>
+                <div id="chartLoadingIndicator" class="text-center my-3" style="display:none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading chart data...</span>
+                    </div>
+                    <p>Loading chart data...</p>
+                </div>
+                <div id="chartErrorMessage" class="alert alert-danger" style="display:none;"></div>
+                <canvas id="performanceChartCanvas" style="display:none;"></canvas>
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
-    <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         (function() {
@@ -91,9 +128,15 @@
             const chartModal = new bootstrap.Modal(chartModalElement);
             const chartModalLabel = document.getElementById('chartModalLabel');
             const ctx = document.getElementById('performanceChartCanvas').getContext('2d');
+            const chartCanvas = document.getElementById('performanceChartCanvas');
+            const chartLoadingIndicator = document.getElementById('chartLoadingIndicator');
+            const chartErrorMessage = document.getElementById('chartErrorMessage');
 
             let performanceChart = null;
             let chartUpdateInterval = null;
+
+            // Helper to format currency
+            const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
 
             // --- 1. MAIN TABLE RENDERING FUNCTION ---
             async function updateInvestmentsTable() {
@@ -102,7 +145,7 @@
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     const investments = await response.json();
 
-                    investmentsTableBody.innerHTML = '';
+                    investmentsTableBody.innerHTML = ''; // Clear existing rows
 
                     if (investments && investments.length > 0) {
                         investments.forEach(inv => {
@@ -113,8 +156,11 @@
                             const profitLossClass = profitOrLoss > 0 ? 'profit' : (profitOrLoss < 0 ? 'loss' : 'neutral');
                             const profitLossIcon = profitOrLoss > 0 ? '▲' : (profitOrLoss < 0 ? '▼' : '—');
 
-                            const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
                             const formattedProfitLoss = `<span class="${profitLossClass}">${formatAsCurrency(profitOrLoss)} (${profitLossIcon})</span>`;
+
+                            const purchaseDate = new Date(inv.investmentDate);
+                            const formattedPurchaseDate = purchaseDate instanceof Date && !isNaN(purchaseDate) ?
+                                purchaseDate.toLocaleDateString() : 'N/A';
 
                             row.innerHTML = `
                                 <td>${inv.assetName}</td>
@@ -123,14 +169,14 @@
                                 <td>${formatAsCurrency(purchasePrice)}</td>
                                 <td>${formatAsCurrency(currentPrice * inv.quantity)}</td>
                                 <td>${formattedProfitLoss}</td>
-                                <td>${inv.investmentDate}</td>
+                                <td>${formattedPurchaseDate}</td>
                                 <td>
-                                    <button class="btn btn-info btn-sm-chart view-chart-btn"
+                                    <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
                                             data-asset-id="${inv.assetId}"
                                             data-asset-name="${inv.assetName}"
                                             data-purchase-price="${purchasePrice}"
                                             data-current-price="${currentPrice}">
-                                        <i class="fas fa-chart-line"></i> Chart
+                                            <i class="fa-solid fa-chart-line fa-beat fa-lg"></i>
                                     </button>
                                 </td>
                             `;
@@ -139,87 +185,201 @@
                     } else {
                         investmentsTableBody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px; font-style: italic;">You have no investments yet.</td></tr>`;
                     }
+
                 } catch (error) {
-                    console.error("Error fetching live investment data:", error);
+                    console.error("Error fetching live investment data for table:", error);
+                    investmentsTableBody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px; color: red;">Failed to load investments. Please try again later.</td></tr>`;
                 }
             }
 
             // --- 2. CHART LOGIC ---
 
+            // Function to fetch historical data (MOCK FUNCTION - YOU NEED TO IMPLEMENT THIS ON BACKEND)
+            async function getHistoricalPrices(assetId) {
+                // MOCK DATA FOR DEMONSTRATION (replace with real API call)
+                console.warn("Using mock historical data. Implement /Investment/GetAssetHistoricalPrices for real data.");
+                const now = new Date();
+                const mockData = [];
+                for (let i = 0; i < 60; i++) { // Generate 60 points (e.g., last 60 minutes)
+                    const time = new Date(now.getTime() - (60 - i) * 60 * 1000); // 1 minute intervals
+                    // Simulate some price fluctuation around a base price
+                    const basePrice = 100 + (Math.random() - 0.5) * 20; // Example base price around 100
+                    mockData.push({
+                        timestamp: time.toISOString(),
+                        price: basePrice + Math.sin(i / 10) * 5 + Math.random() * 2 // Add some sine wave for variation
+                    });
+                }
+                return mockData;
+            }
+
+
             // A) Function to LAUNCH the chart (called on button click)
-            function launchLiveChart(assetId, assetName, purchasePrice, currentPrice) {
+            async function launchLiveChart(assetId, assetName, purchasePrice, initialCurrentPrice) {
+                // Clear previous chart and hide canvas, show loading
                 if (performanceChart) { performanceChart.destroy(); }
+                chartCanvas.style.display = 'none';
+                chartErrorMessage.style.display = 'none';
+                chartLoadingIndicator.style.display = 'block';
 
-                chartModalLabel.textContent = `${assetName} Live Performance`;
+                chartModalLabel.textContent = `${assetName} Performance`;
+                chartModalElement.dataset.currentAssetId = assetId;
 
-                performanceChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: ['Purchased', new Date().toLocaleTimeString()],
-                        datasets: [{
-                            // We hide the label in options, but it's good practice to keep it
-                            label: 'Price (INR)',
-                            data: [purchasePrice, currentPrice],
-                            borderColor: 'rgb(54, 162, 235)',
-                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                            fill: true
-                        }]
-                    },
-                    // === INTEGRATED: Your new options object ===
-                    options: {
-                        animation: { duration: 300 },
-                        responsive: true,
-                        scales: {
-                            y: {
-                                beginAtZero: false,
-                                ticks: {
-                                    callback: value => '₹' + value.toLocaleString('en-IN')
+                let labels = [];
+                let prices = [];
+
+                try {
+                    // Fetch historical data
+                    const historicalData = await getHistoricalPrices(assetId);
+
+                    if (historicalData && historicalData.length > 0) {
+                        labels = historicalData.map(d => new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+                        prices = historicalData.map(d => parseFloat(d.price));
+                    } else {
+                        // Fallback if no historical data, start with purchase and current
+                        labels = ['Purchased', new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })];
+                        prices = [purchasePrice, initialCurrentPrice];
+                    }
+
+                    // Add purchase price line (as a separate dataset or by adding a line)
+                    // For simplicity, let's just make the price line responsive to profit/loss
+                    const lineColor = initialCurrentPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)'; // Green for profit, Red for loss
+
+                    performanceChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                {
+                                    label: 'Current Price (INR)',
+                                    data: prices,
+                                    borderColor: lineColor,
+                                    backgroundColor: lineColor.replace('rgb', 'rgba').replace(')', ', 0.2)'), // Transparent background
+                                    fill: true,
+                                    tension: 0.4, // Smooth line
+                                    pointRadius: 0 // No dots
+                                },
+                                {
+                                    label: 'Purchased Price',
+                                    data: new Array(labels.length).fill(purchasePrice), // Flat line at purchase price
+                                    borderColor: 'rgb(0, 123, 255)', // Blue for purchase price
+                                    borderDash: [5, 5], // Dashed line
+                                    backgroundColor: 'transparent',
+                                    pointRadius: 0,
+                                    borderWidth: 1
+                                }
+                            ]
+                        },
+                        options: {
+                            animation: { duration: 300 },
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: false,
+                                    ticks: {
+                                        callback: value => '₹' + value.toLocaleString('en-IN')
+                                    },
+                                    grid: {
+                                        color: 'rgba(0,0,0,0.05)' // Light grid lines
+                                    }
+                                },
+                                x: {
+                                    display: true,
+                                    title: {
+                                        display: true,
+                                        text: 'Time'
+                                    },
+                                    grid: {
+                                        color: 'rgba(0,0,0,0.05)' // Light grid lines
+                                    }
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: true, // Show legend for both datasets
+                                    labels: {
+                                        boxWidth: 20
+                                    }
+                                },
+                                tooltip: {
+                                    mode: 'index',
+                                    intersect: false,
+                                    callbacks: {
+                                        title: function(context) {
+                                            return `Time: ${context[0].label}`;
+                                        },
+                                        label: function(context) {
+                                            let label = context.dataset.label || '';
+                                            if (label) {
+                                                label += ': ';
+                                            }
+                                            if (context.parsed.y !== null) {
+                                                label += formatAsCurrency(context.parsed.y);
+                                            }
+                                            return label;
+                                        }
+                                    }
                                 }
                             }
-                        },
-                        elements: {
-                            line: { tension: 0.4 }, // Smooth line
-                            point: { radius: 0 }    // No dots
-                        },
-                        plugins: {
-                            legend: { display: false }
                         }
-                    }
-                });
+                    });
 
-                chartModalElement.dataset.currentAssetId = assetId;
+                    chartCanvas.style.display = 'block'; // Show canvas after chart is created
+
+                } catch (error) {
+                    console.error('Error fetching historical data or creating chart:', error);
+                    chartErrorMessage.textContent = `Failed to load chart data: ${error.message}. Please try again later.`;
+                    chartErrorMessage.style.display = 'block';
+                } finally {
+                    chartLoadingIndicator.style.display = 'none'; // Hide loading indicator
+                }
+
                 chartModal.show();
             }
 
             // B) Function to UPDATE the chart (called by the interval)
-            // === INTEGRATED: Your new update function ===
             async function updateLiveChart() {
                 const assetId = chartModalElement.dataset.currentAssetId;
                 if (!assetId || !performanceChart) return;
 
                 try {
                     const response = await fetch('/Investment/GetUserInvestmentsLive');
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     const investments = await response.json();
                     const target = investments.find(inv => inv.assetId === assetId);
 
                     if (target) {
                         const newPrice = parseFloat(target.currentPrice);
-                        const newLabel = new Date().toLocaleTimeString();
+                        const newLabel = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
+                        // Update main price dataset
                         performanceChart.data.labels.push(newLabel);
                         performanceChart.data.datasets[0].data.push(newPrice);
 
-                        // Remove older data if needed (for cleaner display)
-                        const maxPoints = 30;
+                        // Update purchase price dataset (ensure it extends with new data points)
+                        performanceChart.data.datasets[1].data.push(performanceChart.data.datasets[1].data[0]); // Keep the first purchase price
+
+                        // Change line color based on current price vs purchase price
+                        const purchasePrice = performanceChart.data.datasets[1].data[0]; // Get the initial purchase price
+                        performanceChart.data.datasets[0].borderColor = newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)';
+                        performanceChart.data.datasets[0].backgroundColor = (newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)').replace('rgb', 'rgba').replace(')', ', 0.2)');
+
+                        // Remove older data to keep the chart from getting too crowded
+                        const maxPoints = 60; // Display last 60 data points (e.g., last 60 minutes if updated every 1s)
                         if (performanceChart.data.labels.length > maxPoints) {
                             performanceChart.data.labels.shift();
                             performanceChart.data.datasets[0].data.shift();
+                            performanceChart.data.datasets[1].data.shift();
                         }
-
                         performanceChart.update();
+                    } else {
+                        // If the asset is no longer found (e.g., deleted), close the chart
+                        chartModal.hide();
                     }
+
                 } catch (error) {
                     console.error('Error during chart update:', error);
+                    // No need to show error in modal for continuous updates, just log
                 }
             }
 
@@ -233,11 +393,14 @@
             });
 
             chartModalElement.addEventListener('shown.bs.modal', function() {
-                if (chartUpdateInterval) clearInterval(chartUpdateInterval);
-                chartUpdateInterval = setInterval(updateLiveChart, 3000);
+                // When modal is shown, start chart update interval
+                if (chartUpdateInterval) clearInterval(chartUpdateInterval); // Clear any old intervals
+                // Update chart every 3 seconds for less frequent updates and better performance
+                chartUpdateInterval = setInterval(updateLiveChart, 1000);
             });
 
             chartModalElement.addEventListener('hidden.bs.modal', function() {
+                // When modal is hidden, clear chart update interval and destroy chart instance
                 clearInterval(chartUpdateInterval);
                 if (performanceChart) {
                     performanceChart.destroy();
@@ -246,8 +409,10 @@
             });
 
             // --- 4. INITIAL EXECUTION ---
-            updateInvestmentsTable();
-            setInterval(updateInvestmentsTable, 5000);
+            updateInvestmentsTable(); // Initial load of the table
+            // Update table less frequently, perhaps every 5 seconds, as live updates might be too much
+            setInterval(updateInvestmentsTable, 1000);
+
         })();
     </script>
 }
