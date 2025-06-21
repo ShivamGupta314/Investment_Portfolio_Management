@@ -1,5 +1,7 @@
+using System;
 using System.ComponentModel.DataAnnotations;
-using InvestmentPortfolioManagement.Common;
+using System.ComponentModel.DataAnnotations.Schema;
+using InvestmentPortfolioManagement.Common; 
 
 namespace InvestmentPortfolioManagement.Models
 {
@@ -8,12 +10,18 @@ namespace InvestmentPortfolioManagement.Models
         [Key]
         public Guid RiskProfileId { get; set; }
 
+        [Required]
         public Guid UserId { get; set; }
 
-        [Required]
-        public RiskLevel RiskLevel { get; set; }   
-        public string Description { get; set; }
+        [ForeignKey("UserId")]
+        public User? User { get; set; } 
 
-        public DateTime AssessedOn { get; set; } = DateTime.UtcNow;
+        [Required]
+        public RiskLevel RiskLevel { get; set; } 
+
+        public string Description { get; set; } = string.Empty; 
+
+        [Required]
+        public DateTime AssessedOn { get; set; } = DateTime.UtcNow; 
     }
 }

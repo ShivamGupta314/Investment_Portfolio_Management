@@ -1,4 +1,5 @@
 ﻿@model InvestmentPortfolioManagement.Models.Portfolio
+
 @{
     ViewData["Title"] = "Portfolio Details";
 }
@@ -8,231 +9,262 @@
 <style>
     /* Overall container styling */
     .container.mt-5 {
-        background-color: #ffffff; /* White background for main content area */
-        padding: 20px; /* Reduced padding inside */
-        border-radius: 10px; /* Softly rounded corners */
-        max-width: 950px; /* Increased width for the main container */
-        margin-top: 50px !important;
-        margin-bottom: 50px;
+        background-color: #ffffff; /* White background for main content area */ @*/*  */*@
+        padding: 20px; /* Reduced padding inside */ @*/*  */*@
+        border-radius: 10px; /* Softly rounded corners */ @*/*  */*@
+        max-width: 950px; /* Increased width for the main container */ @*/*  */*@
+        margin-top: 50px !important; @*/*  */*@
+        margin-bottom: 50px; @*/*  */*@
     }
 
     /* Combined Details and Buttons Container */
     .details-and-buttons-container {
-        border: 1px solid #e9ecef;
-        border-radius: 8px;
-        padding: 25px; /* Padding inside this container */
-        background-color: #fcfdfe;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Box shadow for this combined section */
-        margin-bottom: 30px; /* Space below this container */
+        border: 1px solid #e9ecef; @*/*  */*@
+        border-radius: 8px; @*/*  */*@
+        padding: 25px; /* Padding inside this container */ @*/*  */*@
+        background-color: #fcfdfe; @*/*  */*@
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Box shadow for this combined section */ @*/*  */*@
+        margin-bottom: 30px; /* Space below this container */ @*/*  */*@
     }
 
         /* Heading styling specific to this section */
-        .details-and-buttons-container h2 { /* Targeting h2 specifically inside this container */
-            color: #007bff; /* Primary blue for the main heading */
-            text-align: center;
-            margin-top: 0; /* Remove default top margin */
-            margin-bottom: 25px; /* Adjusted margin for better spacing within the box */
-            font-size: 2.2em;
-            font-weight: 600;
-            border-bottom: 2px solid #e9ecef; /* Separator line */
-            padding-bottom: 15px;
+        .details-and-buttons-container h2 { /* Targeting h2 specifically inside this container */ @*/*  */*@
+            color: #007bff; /* Primary blue for the main heading */ @*/*  */*@
+            text-align: center; @*/*  */*@
+            margin-top: 0; /* Remove default top margin */ @*/*  */*@
+            margin-bottom: 25px; /* Adjusted margin for better spacing within the box */ @*/*  */*@
+            font-size: 2.2em; @*/*  */*@
+            font-weight: 600; @*/*  */*@
+            border-bottom: 2px solid #e9ecef; /* Separator line */ @*/*  */*@
+            padding-bottom: 15px; @*/*  */*@
         }
 
     /* --- Portfolio Details Section (dl) --- */
     .portfolio-details-box {
-        font-size: 0.95em; /* Slightly smaller font for details */
-        margin-bottom: 0; /* Remove default margin-bottom from dl as parent container has padding */
+        font-size: 0.95em; /* Slightly smaller font for details */ @*/*  */*@
+        margin-bottom: 0; /* Remove default margin-bottom from dl as parent container has padding */ @*/*  */*@
     }
 
         /* Adjusted dt/dd styling to ensure proper alignment within the Bootstrap row */
-        .portfolio-details-box dt {
-            font-weight: 600;
-            color: #495057;
-            padding: 8px 0;
-            text-align: right; /* Align labels to the right */
-            padding-right: 20px; /* More space between label and value */
+        .portfolio-details-box dt { @*/*  */*@
+            font-weight: 600; @*/*  */*@
+            color: #495057; @*/*  */*@
+            padding: 8px 0; @*/*  */*@
+            text-align: right; /* Align labels to the right */ @*/*  */*@
+            padding-right: 20px; /* More space between label and value */ @*/*  */*@
         }
 
-        .portfolio-details-box dd {
-            padding: 8px 0;
-            color: #6c757d;
-            word-break: break-word;
-            text-align: left; /* Ensure values are left-aligned */
+        .portfolio-details-box dd { @*/*  */*@
+            padding: 8px 0; @*/*  */*@
+            color: #6c757d; @*/*  */*@
+            word-break: break-word; @*/*  */*@
+            text-align: left; /* Ensure values are left-aligned */ @*/*  */*@
         }
 
     /* --- Buttons Section --- */
     .portfolio-actions {
-        display: flex; /* Use flexbox for button layout */
-        flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */
-        justify-content: center; /* Center buttons horizontally */
-        gap: 15px; /* Space between buttons */
-        margin-top: 30px; /* Space above buttons within the container */
+        display: flex; /* Use flexbox for button layout */ @*/*  */*@
+        flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */ @*/*  */*@
+        justify-content: center; /* Center buttons horizontally */ @*/*  */*@
+        gap: 15px; /* Space between buttons */ @*/*  */*@
+        margin-top: 30px; /* Space above buttons within the container */ @*/*  */*@
     }
 
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.95em; /* Slightly smaller button font */
-        border-radius: 6px;
-        transition: all 0.2s ease-in-out;
-        min-width: 120px; /* Minimum width for consistency */
+    .btn { @*/*  */*@
+        padding: 10px 20px; @*/*  */*@
+        font-size: 0.95em; /* Slightly smaller button font */ @*/*  */*@
+        border-radius: 6px; @*/*  */*@
+        transition: all 0.2s ease-in-out; @*/*  */*@
+        min-width: 120px; /* Minimum width for consistency */ @*/*  */*@
     }
 
-    .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-        color: #fff;
+    .btn-primary { @*/*  */*@
+        background-color: #007bff; @*/*  */*@
+        border-color: #007bff; @*/*  */*@
+        color: #fff; @*/*  */*@
     }
 
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        .btn-primary:hover { @*/*  */*@
+            background-color: #0056b3; @*/*  */*@
+            border-color: #004085; @*/*  */*@
+            transform: translateY(-2px); @*/*  */*@
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); @*/*  */*@
         }
 
-    .btn-warning {
-        background-color: #ffc107;
-        border-color: #ffc107;
-        color: #212529;
+    .btn-warning { @*/*  */*@
+        background-color: #ffc107; @*/*  */*@
+        border-color: #ffc107; @*/*  */*@
+        color: #212529; @*/*  */*@
     }
 
-        .btn-warning:hover {
-            background-color: #e0a800;
-            border-color: #d39e00;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+        .btn-warning:hover { @*/*  */*@
+            background-color: #e0a800; @*/*  */*@
+            border-color: #d39e00; @*/*  */*@
+            transform: translateY(-2px); @*/*  */*@
+            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2); @*/*  */*@
         }
 
-    .btn-secondary {
-        background-color: #6c757d;
-        border-color: #6c757d;
-        color: #fff;
+    .btn-secondary { @*/*  */*@
+        background-color: #6c757d; @*/*  */*@
+        border-color: #6c757d; @*/*  */*@
+        color: #fff; @*/*  */*@
     }
 
-        .btn-secondary:hover {
-            background-color: #5a6268;
-            border-color: #545b62;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+        .btn-secondary:hover { @*/*  */*@
+            background-color: #5a6268; @*/*  */*@
+            border-color: #545b62; @*/*  */*@
+            transform: translateY(-2px); @*/*  */*@
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2); @*/*  */*@
         }
 
-    .btn-info {
-        background-color: #17a2b8;
-        border-color: #17a2b8;
-        color: #fff;
+    .btn-info { @*/*  */*@
+        background-color: #17a2b8; @*/*  */*@
+        border-color: #17a2b8; @*/*  */*@
+        color: #fff; @*/*  */*@
     }
 
-        .btn-info:hover {
-            background-color: #138496;
-            border-color: #117a8b;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(23, 162, 184, 0.2);
+        .btn-info:hover { @*/*  */*@
+            background-color: #138496; @*/*  */*@
+            border-color: #117a8b; @*/*  */*@
+            transform: translateY(-2px); @*/*  */*@
+            box-shadow: 0 4px 8px rgba(23, 162, 184, 0.2); @*/*  */*@
         }
 
     /* Chart button specific styling */
     .btn-outline-primary.btn-sm-chart {
-        color: #007bff;
-        border-color: #007bff;
-        background-color: transparent;
-        padding: 5px 10px;
-        font-size: 0.85em;
-        min-width: unset; /* Override min-width for smaller button */
+        color: #007bff; @*/*  */*@
+        border-color: #007bff; @*/*  */*@
+        background-color: transparent; @*/*  */*@
+        padding: 5px 10px; @*/*  */*@
+        font-size: 0.85em; @*/*  */*@
+        min-width: unset; /* Override min-width for smaller button */ @*/*  */*@
     }
 
-        .btn-outline-primary.btn-sm-chart:hover {
-            color: #fff;
-            background-color: #007bff;
-            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+        .btn-outline-primary.btn-sm-chart:hover { @*/*  */*@
+            color: #fff; @*/*  */*@
+            background-color: #007bff; @*/*  */*@
+            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2); @*/*  */*@
         }
 
 
     /* --- Investments Table Styling --- */
     hr {
-        border-top: 1px solid #e9ecef; /* Lighter horizontal rule */
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        border-top: 1px solid #e9ecef; /* Lighter horizontal rule */ @*/*  */*@
+        margin-top: 2rem; @*/*  */*@
+        margin-bottom: 2rem; @*/*  */*@
     }
 
     h3.mt-4 {
-        color: #343a40; /* Darker heading for section title */
-        text-align: center;
-        margin-bottom: 25px;
-        font-size: 1.8em; /* Slightly smaller than main heading */
-        font-weight: 600;
+        color: #343a40; /* Darker heading for section title */ @*/*  */*@
+        text-align: center; @*/*  */*@
+        margin-bottom: 25px; @*/*  */*@
+        font-size: 1.8em; /* Slightly smaller than main heading */ @*/*  */*@
+        font-weight: 600; @*/*  */*@
     }
 
     .table-bordered {
-        border: 1px solid #dee2e6; /* Standard table border color */
-        border-collapse: collapse; /* Ensure borders collapse cleanly */
-        width: 100%; /* Full width table */
-        margin-bottom: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the table (KEPT) */
-        border-radius: 8px; /* Rounded corners for the table container */
-        overflow: hidden; /* Ensures rounded corners apply to content */
+        border: 1px solid #dee2e6; /* Standard table border color */ @*/*  */*@
+        border-collapse: collapse; /* Ensure borders collapse cleanly */ @*/*  */*@
+        width: 100%; /* Full width table */ @*/*  */*@
+        margin-bottom: 20px; @*/*  */*@
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the table (KEPT) */ @*/*  */*@
+        border-radius: 8px; /* Rounded corners for the table container */ @*/*  */*@
+        overflow: hidden; /* Ensures rounded corners apply to content */ @*/*  */*@
     }
 
         .table-bordered thead th {
-            background-color: #007bff; /* Primary blue for table header background */
-            color: #fff; /* White text for header */
-            padding: 12px 15px;
-            border: 1px solid #0060d9; /* Darker blue border for header cells */
-            text-align: left;
-            font-weight: 600;
-            font-size: 0.95em;
+            background-color: #007bff; /* Primary blue for table header background */ @*/*  */*@
+            color: #fff; /* White text for header */ @*/*  */*@
+            padding: 12px 15px; @*/*  */*@
+            border: 1px solid #0060d9; /* Darker blue border for header cells */ @*/*  */*@
+            text-align: left; @*/*  */*@
+            font-weight: 600; @*/*  */*@
+            font-size: 0.95em; @*/*  */*@
         }
 
         .table-bordered tbody td {
-            padding: 10px 15px;
-            border: 1px solid #dee2e6; /* Light grey border for body cells */
-            vertical-align: middle;
-            font-size: 0.9em; /* Smaller font for table data */
-            color: #495057;
+            padding: 10px 15px; @*/*  */*@
+            border: 1px solid #dee2e6; /* Light grey border for body cells */ @*/*  */*@
+            vertical-align: middle; @*/*  */*@
+            font-size: 0.9em; /* Smaller font for table data */ @*/*  */*@
+            color: #495057; @*/*  */*@
         }
 
         .table-bordered tbody tr:nth-child(even) {
-            background-color: #f8f9fa; /* Zebra striping for readability */
+            background-color: #f8f9fa; /* Zebra striping for readability */ @*/*  */*@
         }
 
         .table-bordered tbody tr:hover {
-            background-color: #e2e6ea; /* Light highlight on row hover */
-            cursor: pointer;
+            background-color: #e2e6ea; /* Light highlight on row hover */ @*/*  */*@
+            cursor: pointer; @*/*  */*@
         }
 
         .table-bordered tbody tr:last-child td {
-            border-bottom: 0; /* No bottom border for last row cells */
+            border-bottom: 0; /* No bottom border for last row cells */ @*/*  */*@
         }
 
         /* No investments message styling */
-        .table-bordered tbody td[colspan="8"] { /* UPDATED colspan */
-            text-align: center;
-            font-style: italic;
-            color: #6c757d;
-            padding: 20px;
+        .table-bordered tbody td[colspan="8"] { /* UPDATED colspan */ @*/*  */*@
+            text-align: center; @*/*  */*@
+            font-style: italic; @*/*  */*@
+            color: #6c757d; @*/*  */*@
+            padding: 20px; @*/*  */*@
         }
 
     /* Styles for profit/loss indication */
     .profit, .loss, .neutral {
-        font-weight: bold;
-        /* NEW: Prevent text wrapping in the cell */
-        white-space: nowrap;
-        /* NEW: Hide overflowing content */
-        overflow: hidden;
-        /* NEW: Add ellipsis for truncated text */
-        text-overflow: ellipsis;
-        /* Optional: set a minimum width if cells are still too narrow, adjust as needed */
-        /* min-width: 100px; */
+        font-weight: bold; @*/*  */*@
+        /* NEW: Prevent text wrapping in the cell */ @*/*  */*@
+        white-space: nowrap; @*/*  */*@
+        /* NEW: Hide overflowing content */ @*/*  */*@
+        overflow: hidden; @*/*  */*@
+        /* NEW: Add ellipsis for truncated text */ @*/*  */*@
+        text-overflow: ellipsis; @*/*  */*@
+        /* Optional: set a minimum width if cells are still too narrow, adjust as needed */ @*/*  */*@
+        /* min-width: 100px;  */
     }
 
     .profit {
-        color: #28a745; /* Green for profit */
+        color: #28a745; /* Green for profit */ @*/*  */*@
     }
 
     .loss {
-        color: #dc3545; /* Red for loss */
+        color: #dc3545; /* Red for loss */ @*/*  */*@
     }
 
     .neutral {
-        color: #6c757d; /* Grey for no change */
+        color: #6c757d; /* Grey for no change */ @*/*  */*@
+    }
+
+    /* --- NEW: Risk Level Specific Styles --- */
+    .risk-level-low {
+        color: #28a745;
+        font-weight: bold;
+    }
+    /* Green */
+    .risk-level-medium {
+        color: #ffc107;
+        font-weight: bold;
+    }
+    /* Orange */
+    .risk-level-high {
+        color: #dc3545;
+        font-weight: bold;
+    }
+    /* Red */
+    .risk-level-none {
+        color: #6c757d;
+        font-weight: bold;
+    }
+    /* Gray for 'None' or default */
+
+    /* Chart container for portfolio risk history */
+    .chart-container-risk {
+        position: relative;
+        height: 300px; /* Fixed height for the chart */
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 </style>
 
@@ -247,7 +279,7 @@
             <dt class="col-sm-3">Description</dt>
             <dd class="col-sm-9">@Model.Description</dd>
 
-            <dt class="col-sm-3">Type</dt>
+            <dt class="col-sm-3">Type</dt> @*/*  */*@
             <dd class="col-sm-9">@Model.Type</dd>
 
             <dt class="col-sm-3">Total Value</dt>
@@ -258,7 +290,7 @@
         </dl>
 
         <div class="portfolio-actions">
-            <a asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a>
+            <a asp-controller="Portfolio" asp-action="AddInvestments" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-primary">Add Investment</a> @*/*  */*@
             <a asp-action="Edit" asp-route-id="@Model.PortfolioId" class="btn btn-warning">Edit</a>
 
             <a asp-action="AllocationChart" asp-route-id="@Model.PortfolioId" class="btn btn-info">View Allocation Chart</a>
@@ -267,446 +299,633 @@
     </div>
 
     <hr />
+    <h3 class="mt-4"><i class="fas fa-chart-line"></i> Portfolio Risk Analysis</h3>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div id="portfolioRiskAnalysisSection" class="p-3 border rounded mb-3">
+                <p class="text-muted">Loading risk data...</p>
+            </div>
+
+            <button id="recalculatePortfolioRiskBtn" class="btn btn-info btn-sm">
+                <i class="fas fa-calculator"></i> Recalculate Risk
+            </button>
+        </div>
+    </div>
+
+    <hr />
+    <h3 class="mt-4"><i class="fas fa-history"></i> Risk Trend Over Time</h3>
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="chart-container-risk">
+                <canvas id="riskTrendChart"></canvas>
+            </div>
+            <p class="text-muted mt-2" id="riskHistoryLoadingMessage">Loading risk history...</p>
+            <div id="riskHistoryMessage" class="mt-2"></div>
+        </div>
+    </div>
+    <hr />
     <h3 class="mt-4">Investments in this Portfolio</h3>
 
     <table class="table table-bordered">
         <thead>
             <tr>
+                @*/*  */*@
                 <th>Asset Name</th>
                 <th>Quantity</th>
                 <th>Current Price</th>
                 <th>Purchased Price</th>
                 <th>Total Value</th>
-                <th>P/L</th>
+                <th>P/L</th> @*/*  */*@
                 <th>Purchased Date</th>
-                <th>Actions</th> @* ADDED NEW HEADER *@
+                <th>Actions</th> @* ADDED NEW HEADER *@ @*/*  */*@
             </tr>
         </thead>
         <tbody id="investmentsTableBody">
             @* Initial render of investments (will be updated by AJAX) *@
-            @if (Model?.Investments != null && Model.Investments.Any())
+            @if (Model?.Investments != null && Model.Investments.Any()) @*/*  */*@
             {
                 foreach (var investment in Model.Investments)
                 {
-                    // === FIX FOR CS0019 ERROR ===
-                    // Ensure currentAssetPrice is explicitly decimal, handling nulls with 0.0M
-                    decimal currentAssetPrice = investment.Asset?.CurrentPrice ?? 0.0M;
+                    // === FIX FOR CS0019 ERROR === @*/*  */*@
+                    // Ensure currentAssetPrice is explicitly decimal, handling nulls with 0.0M @*/*  */*@
+                    decimal currentAssetPrice = investment.Asset?.CurrentPrice ?? 0.0M; @*/*  */*@
 
-                    // Explicitly cast investment.PurchasePrice to decimal just to be absolutely sure.
-                    // Even if it's already decimal, this removes any ambiguity for the compiler.
-                    decimal purchasePrice = (decimal)investment.PurchasePrice;
+                    // Explicitly cast investment.PurchasePrice to decimal just to be absolutely sure. @*/*  */*@
+                    // Even if it's already decimal, this removes any ambiguity for the compiler. @*/*  */*@
+                    decimal purchasePrice = (decimal)investment.PurchasePrice; @*/*  */*@
+                    // Now, both operands are explicitly decimal, resolving the type mismatch. @*/*  */*@
+                    decimal profitLoss = currentAssetPrice - purchasePrice; @*/*  */*@
+                    // === END FIX === @*/*  */*@
 
-                    // Now, both operands are explicitly decimal, resolving the type mismatch.
-                    decimal profitLoss = currentAssetPrice - purchasePrice;
-                    // === END FIX ===
-
-                    string profitLossClass = profitLoss > 0 ? "profit" : (profitLoss < 0 ? "loss" : "neutral");
-                    string profitLossIcon = profitLoss > 0 ? "▲" : (profitLoss < 0 ? "▼" : "—"); // Unicode arrows
-                    string formattedProfitLoss = $"{profitLoss.ToString("C")} <span class='{profitLossClass}'>({profitLossIcon})</span>";
-
+                    string profitLossClass = profitLoss > 0 ? "profit" : (profitLoss < 0 ? "loss" : "neutral"); @*/*  */*@
+                    string profitLossIcon = profitLoss > 0 ? "▲" : (profitLoss < 0 ? "▼" : "—"); // Unicode arrows @*/*  */*@
+                    string formattedProfitLoss = $"{profitLoss.ToString("C")} <span class='{profitLossClass}'>({profitLossIcon})</span>"; @*/*  */*@
                     <tr>
+                        @*/*  */*@
                         <td>@investment.Asset.Name</td>
                         <td>@investment.Quantity</td>
                         <td>@currentAssetPrice.ToString("C")</td> @* Using the explicit decimal variable *@
-                        <td>@purchasePrice.ToString("C")</td> @* Using the explicit decimal variable *@
-                        <td>@((currentAssetPrice * investment.Quantity)).ToString("C")</td> @* Using currentAssetPrice here too *@
-                        <td class="@profitLossClass">@Html.Raw(formattedProfitLoss)</td> @* New P/L column *@
+                        <td>@purchasePrice.ToString("C")</td> @* Using the explicit decimal variable *@ 
+                        <td>@((currentAssetPrice * investment.Quantity)).ToString("C")</td> @* Using currentAssetPrice here too *@ @*/*  */*@
+                        <td class="@profitLossClass">@Html.Raw(formattedProfitLoss)</td> @* New P/L column *@ @*/*  */*@
                         <td>@investment.InvestmentDate.ToShortDateString()</td>
                         <td>
+
                             <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
                                     data-asset-id="@investment.Asset.AssetId"
                                     data-asset-name="@investment.Asset.Name"
-                                    data-purchase-price="@investment.PurchasePrice.ToString(System.Globalization.CultureInfo.InvariantCulture)"
-                                    data-current-price="@currentAssetPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)" 
-                                    data-bs-toggle="modal"
+                                    data-purchase-price="@investment.PurchasePrice.ToString(System.Globalization.CultureInfo.InvariantCulture)" /* * /
+                                    data-current-price="@currentAssetPrice.ToString(System.Globalization.CultureInfo.InvariantCulture)" /* * /
+                                    data-bs-toggle="modal" 
                                     data-bs-target="#chartModal">
-                                <i class="fa-solid fa-chart-line"></i> View Chart
+                                @*/*  */*@
+                                <i class="fa-solid fa-chart-line"></i> View Chart @*/*  */*@
                             </button>
                         </td>
                     </tr>
                 }
-            }
+            } @*/*  */*@
             else
             {
                 <tr>
                     <td colspan="8">No investments found for this portfolio.</td>
                 </tr>
             }
-        </tbody>
+        </tbody> @*/*  */*@
     </table>
 
-    @* --- CHART MODAL (Add this section) --- *@
+    @* --- CHART MODAL (Add this section) --- *@ @*/*  */*@
     <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+        @*/*  */*@
         <div class="modal-dialog modal-lg">
+            @*/*  */*@
             <div class="modal-content">
+                @*/*  */*@
                 <div class="modal-header">
-                    <h5 class="modal-title" id="chartModalLabel">Asset Performance</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    @*/*  */*@
+                    <h5 class="modal-title" id="chartModalLabel">Asset Performance</h5> @*/*  */*@
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> @*/*  */*@
                 </div>
                 <div class="modal-body">
+                    @*/*  */*@
                     <div id="chartLoadingIndicator" class="text-center my-3" style="display:none;">
+                        @*/*  */*@
                         <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Loading chart data...</span>
+                            @*/*  */*@
+                            <span class="visually-hidden">Loading chart data...</span> @*/*  */*@
                         </div>
-                        <p>Loading chart data...</p>
+                        <p>Loading chart data...</p> @*/*  */*@
                     </div>
-                    <div id="chartErrorMessage" class="alert alert-danger" style="display:none;"></div>
-                    <canvas id="performanceChartCanvas" style="display:none;"></canvas>
+                    <div id="chartErrorMessage" class="alert alert-danger" style="display:none;"></div> @*/*  */*@
+                    <canvas id="performanceChartCanvas" style="display:none;"></canvas> @*/*  */*@
                 </div>
             </div>
         </div>
     </div>
-    @* --- END CHART MODAL --- *@
+    @* --- END CHART MODAL --- *@ @*/*  */*@
 
+</div> @* End of main container *@
 
-    @section Scripts {
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
-            // Existing JavaScript for portfolio updates
-            const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model
-            const portfolioTotalValueElement = document.getElementById('portfolioTotalValue');
-            const investmentsTableBody = document.getElementById('investmentsTableBody');
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    @* <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" /> *@
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> *@
 
-            // --- NEW CHART-RELATED ELEMENTS & VARIABLES ---
-            const chartModalElement = document.getElementById('chartModal');
-            // Initialize Bootstrap Modal using its constructor
-            const chartModal = new bootstrap.Modal(chartModalElement);
-            const chartModalLabel = document.getElementById('chartModalLabel');
-            const ctx = document.getElementById('performanceChartCanvas').getContext('2d');
-            const chartCanvas = document.getElementById('performanceChartCanvas');
-            const chartLoadingIndicator = document.getElementById('chartLoadingIndicator');
-            const chartErrorMessage = document.getElementById('chartErrorMessage');
+    <script>
+        // Existing JavaScript for portfolio updates
+        const portfolioId = "@Model.PortfolioId"; // Get portfolio ID from model @*/*  */*@
+        const portfolioTotalValueElement = document.getElementById('portfolioTotalValue'); @*/*  */*@
+        const investmentsTableBody = document.getElementById('investmentsTableBody'); @*/*  */*@
 
-            let performanceChart = null;
-            let chartUpdateInterval = null;
+        // --- NEW CHART-RELATED ELEMENTS & VARIABLES (from your provided code) ---
+        const chartModalElement = document.getElementById('chartModal'); @*/*  */*@
+        // Initialize Bootstrap Modal using its constructor
+        const chartModal = new bootstrap.Modal(chartModalElement); @*/*  */*@
+        const chartModalLabel = document.getElementById('chartModalLabel'); @*/*  */*@
+        const ctx = document.getElementById('performanceChartCanvas').getContext('2d'); @*/*  */*@
+        const chartCanvas = document.getElementById('performanceChartCanvas'); @*/*  */*@
+        const chartLoadingIndicator = document.getElementById('chartLoadingIndicator'); @*/*  */*@
+        const chartErrorMessage = document.getElementById('chartErrorMessage'); @*/*  */*@
+        let performanceChart = null; @*/*  */*@
+        let chartUpdateInterval = null; @*/*  */*@
 
-            // Helper to format currency (can be reused)
-            const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+        // Helper to format currency (can be reused) @*/*  */*@
+        const formatAsCurrency = (value) => value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' }); @*/*  */*@
 
-
-            // Existing updatePortfolioData function (keep it as is for table updates)
-            async function updatePortfolioData() {
-                try {
-                    const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`);
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    const data = await response.json();
-
-                    // 1. Update Portfolio Total Value
-                    if (portfolioTotalValueElement) {
-                        portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
-                    }
-
-                    // 2. Update Investments Table
-                    if (investmentsTableBody) {
-                        investmentsTableBody.innerHTML = ''; // Clear existing rows
-
-                        if (data.investments && data.investments.length > 0) {
-                            data.investments.forEach(investment => {
-                                const row = document.createElement('tr');
-
-                                const currentPriceJs = parseFloat(investment.currentPrice);
-                                const purchasePriceJs = parseFloat(investment.purchasePrice);
-                                const profitOrLoss = currentPriceJs - purchasePriceJs;
-
-                                let profitLossClass = '';
-                                let profitLossIcon = '';
-
-                                if (profitOrLoss > 0) {
-                                    profitLossClass = 'profit';
-                                    profitLossIcon = '▲';
-                                } else if (profitOrLoss < 0) {
-                                    profitLossClass = 'loss';
-                                    profitLossIcon = '▼';
-                                } else {
-                                    profitLossClass = 'neutral';
-                                    profitLossIcon = '—';
-                                }
-
-                                const formattedProfitLoss = `${profitOrLoss.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })} <span class="${profitLossClass}">(${profitLossIcon})</span>`;
-
-                                row.innerHTML = `
-                                    <td>${investment.assetName}</td>
-                                    <td>${investment.quantity}</td>
-                                    <td>${currentPriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                    <td>${purchasePriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                    <td>${(currentPriceJs * investment.quantity).toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td>
-                                    <td class="${profitLossClass}">${formattedProfitLoss}</td>
-                                    <td>${investment.investmentDate}</td>
-                                    <td>
-                                        <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
-                                                data-asset-id="${investment.assetId}"
-                                                data-asset-name="${investment.assetName}"
-                                                data-purchase-price="${purchasePriceJs}"
-                                                data-current-price="${currentPriceJs}"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#chartModal">
-                                                <i class="fa-solid fa-chart-line fa-beat fa-lg"></i>
-                                        </button>
-                                    </td>
-                                `;
-                                investmentsTableBody.appendChild(row);
-                            });
-                        } else {
-                            const noDataRow = document.createElement('tr');
-                            noDataRow.innerHTML = `<td colspan="8">No investments found for this portfolio.</td>`; // CHANGED colspan to 8
-                            investmentsTableBody.appendChild(noDataRow);
-                        }
-                    }
-
-                } catch (error) {
-                    console.error("Error fetching live portfolio data:", error);
+        // Existing updatePortfolioData function (keep it as is for table updates) @*/*  */*@
+        async function updatePortfolioData() {
+            try {
+                const response = await fetch(`/Portfolio/GetPortfolioLiveUpdates/${portfolioId}`); @*/*  */*@
+                if (!response.ok) { @*/*  */*@
+                    throw new Error(`HTTP error! status: ${response.status}`); @*/*  */*@
                 }
-            }
-
-            // --- NEW CHART LOGIC (copied from Investment Index, adjusted for 'seconds' in labels) ---
-
-            // Function to fetch historical data (MOCK FUNCTION - YOU NEED TO IMPLEMENT THIS ON BACKEND)
-            // This function should ideally fetch actual historical price data from your backend
-            // for the given assetId.
-            async function getHistoricalPrices(assetId) {
-                // In a real application, you'd make an AJAX call here:
-                // For example:
-                // const response = await fetch(`/Investment/GetAssetHistoricalPrices?assetId=${assetId}`);
-                // if (!response.ok) throw new Error(`Failed to fetch historical data: ${response.status}`);
-                // return await response.json(); // Expected format: [{ timestamp: "...", price: ... }, ...]
-
-                // MOCK DATA FOR DEMONSTRATION (replace with real API call or a service that provides historical data)
-                // This generates 60 data points simulating 60 seconds of price movement
-                console.warn("Using mock historical data. Implement /Investment/GetAssetHistoricalPrices (or similar) on your backend for real data.");
-                const now = new Date();
-                const mockData = [];
-                const initialPrice = 1000 + Math.random() * 500; // Random starting price
-                for (let i = 0; i < 60; i++) { // Generate 60 points (e.g., last 60 seconds)
-                    const time = new Date(now.getTime() - (60 - i) * 1000); // 1-second intervals
-                    // Simple price simulation with some fluctuation
-                    const price = initialPrice + (Math.sin(i / 5) * 20) + (Math.random() - 0.5) * 10;
-                    mockData.push({
-                        timestamp: time.toISOString(),
-                        price: price
-                    });
+                const data = await response.json(); @*/*  */*@
+                // 1. Update Portfolio Total Value @*/*  */*@
+                if (portfolioTotalValueElement) { @*/*  */*@
+                    portfolioTotalValueElement.textContent = data.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' }); @*/*  */*@
                 }
-                return mockData;
-            }
 
-            // A) Function to LAUNCH the chart (called on button click)
-            async function launchLiveChart(assetId, assetName, purchasePrice, initialCurrentPrice) {
-                // Clear previous chart and hide canvas, show loading
-                if (performanceChart) { performanceChart.destroy(); }
-                chartCanvas.style.display = 'none';
-                chartErrorMessage.style.display = 'none';
-                chartLoadingIndicator.style.display = 'block';
+                // 2. Update Investments Table @*/*  */*@
+                if (investmentsTableBody) { @*/*  */*@
+                    investmentsTableBody.innerHTML = ''; // Clear existing rows @*/*  */*@
 
-                chartModalLabel.textContent = `${assetName} Performance`;
-                // Store the asset ID on the modal element for later updates
-                chartModalElement.dataset.currentAssetId = assetId;
+                    if (data.investments && data.investments.length > 0) { @*/*  */*@
+                        data.investments.forEach(investment => { @*/*  */*@
+                            const row = document.createElement('tr'); @*/*  */*@
 
-                let labels = [];
-                let prices = [];
+                            const currentPriceJs = parseFloat(investment.currentPrice); @*/*  */*@
+                            const purchasePriceJs = parseFloat(investment.purchasePrice); @*/*  */*@
+                            const profitOrLoss = currentPriceJs - purchasePriceJs; @*/*  */*@
 
-                try {
-                    // Fetch historical data
-                    const historicalData = await getHistoricalPrices(assetId);
+                            let profitLossClass = ''; @*/*  */*@
+                            let profitLossIcon = ''; @*/*  */*@
 
-                    if (historicalData && historicalData.length > 0) {
-                        labels = historicalData.map(d => new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
-                        prices = historicalData.map(d => parseFloat(d.price));
+                            if (profitOrLoss > 0) { @*/*  */*@
+                                profitLossClass = 'profit'; @*/*  */*@
+                                profitLossIcon = '▲'; @*/*  */*@
+                            } else if (profitOrLoss < 0) { @*/*  */*@
+                                profitLossClass = 'loss'; @*/*  */*@
+                                profitLossIcon = '▼'; @*/*  */*@
+                            } else { @*/*  */*@
+                                profitLossClass = 'neutral'; @*/*  */*@
+                                profitLossIcon = '—'; @*/*  */*@
+                            }
+
+                            const formattedProfitLoss = `${profitOrLoss.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })} <span class="${profitLossClass}">(${profitLossIcon})</span>`; @*/*  */*@
+                            row.innerHTML = `
+                                <td>${investment.assetName}</td>
+                                <td>${investment.quantity}</td>
+                                <td>${currentPriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td> @*/*  */*@
+                                <td>${purchasePriceJs.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td> @*/*  */*@
+                                <td>${(currentPriceJs * investment.quantity).toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</td> @*/*  */*@
+                                <td class="${profitLossClass}">${formattedProfitLoss}</td> @*/*  */*@
+                                <td>${investment.investmentDate}</td>
+                                <td> @*/*  */*@
+                                    <button class="btn btn-outline-primary btn-sm-chart view-chart-btn"
+                                            data-asset-id="${investment.assetId}" @*/*  */*@
+                                            data-asset-name="${investment.assetName}" @*/*  */*@
+                                            data-purchase-price="${purchasePriceJs}" @*/*  */*@
+                                            data-current-price="${currentPriceJs}" @*/*  */*@
+                                            data-bs-toggle="modal" @*/*  */*@
+                                            data-bs-target="#chartModal"> @*/*  */*@
+                                        <i class="fa-solid fa-chart-line fa-beat fa-lg"></i> @*/*  */*@
+                                    </button>
+                                </td>
+                            `; @*/*  */*@
+                            investmentsTableBody.appendChild(row); @*/*  */*@
+                        });
                     } else {
-                        // Fallback if no historical data, start with purchase and initial current
-                        labels = ['Purchased', new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })];
-                        prices = [purchasePrice, initialCurrentPrice];
+                        const noDataRow = document.createElement('tr'); @*/*  */*@
+                        noDataRow.innerHTML = `<td colspan="8">No investments found for this portfolio.</td>`; // CHANGED colspan to 8 @*/*  */*@
+                        investmentsTableBody.appendChild(noDataRow); @*/*  */*@
                     }
+                }
 
-                    // Determine line color based on the current price relative to purchase price
-                    const lineColor = initialCurrentPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)'; // Green for profit, Red for loss
+            } catch (error) {
+                console.error("Error fetching live portfolio data:", error); @*/*  */*@
+            }
+        }
 
-                    performanceChart = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: labels,
-                            datasets: [
-                                {
-                                    label: 'Current Price (INR)',
-                                    data: prices,
-                                    borderColor: lineColor,
-                                    backgroundColor: lineColor.replace('rgb', 'rgba').replace(')', ', 0.2)'), // Light fill for the area below the line
-                                    fill: true,
-                                    tension: 0.4, // Smooths the line
-                                    pointRadius: 0 // Hides individual data points
+        // --- NEW CHART LOGIC (copied from Investment Index, adjusted for 'seconds' in labels) --- @*/*  */*@
+
+        // Function to fetch historical data (MOCK FUNCTION - YOU NEED TO IMPLEMENT THIS ON BACKEND) @*/*  */*@
+        // This function should ideally fetch actual historical price data from your backend @*/*  */*@
+        // for the given assetId. @*/*  */*@
+        async function getHistoricalPrices(assetId) { @*/*  */*@
+            // In a real application, you'd make an AJAX call here: @*/*  */*@
+            // For example: @*/*  */*@
+            // const response = await fetch(`/Investment/GetAssetHistoricalPrices?assetId=${assetId}`); @*/*  */*@
+            // if (!response.ok) throw new Error(`Failed to fetch historical data: ${response.status}`); @*/*  */*@
+            // return await response.json(); @*/*  */*@
+            // Expected format: [{ timestamp: "...", price: ... }, ...] @*/*  */*@
+
+            // MOCK DATA FOR DEMONSTRATION (replace with real API call or a service that provides historical data) @*/*  */*@
+            // This generates 60 data points simulating 60 seconds of price movement @*/*  */*@
+            console.warn("Using mock historical data. Implement /Investment/GetAssetHistoricalPrices (or similar) on your backend for real data."); @*/*  */*@
+            const now = new Date(); @*/*  */*@
+            const mockData = []; @*/*  */*@
+            const initialPrice = 1000 + Math.random() * 500; // Random starting price @*/*  */*@
+            for (let i = 0; i < 60; i++) { // Generate 60 points (e.g., last 60 seconds) @*/*  */*@
+                const time = new Date(now.getTime() - (60 - i) * 1000); // 1-second intervals @*/*  */*@
+                // Simple price simulation with some fluctuation @*/*  */*@
+                const price = initialPrice + (Math.sin(i / 5) * 20) + (Math.random() - 0.5) * 10; @*/*  */*@
+                mockData.push({ @*/*  */*@
+                    timestamp: time.toISOString(), @*/*  */*@
+                    price: price @*/*  */*@
+                }); @*/*  */*@
+            }
+            return mockData; @*/*  */*@
+        }
+
+        // A) Function to LAUNCH the chart (called on button click) @*/*  */*@
+        async function launchLiveChart(assetId, assetName, purchasePrice, initialCurrentPrice) { @*/*  */*@
+            // Clear previous chart and hide canvas, show loading @*/*  */*@
+            if (performanceChart) { performanceChart.destroy(); } @*/*  */*@
+            chartCanvas.style.display = 'none'; @*/*  */*@
+            chartErrorMessage.style.display = 'none'; @*/*  */*@
+            chartLoadingIndicator.style.display = 'block'; @*/*  */*@
+
+            chartModalLabel.textContent = `${assetName} Performance`; @*/*  */*@
+            // Store the asset ID on the modal element for later updates @*/*  */*@
+            chartModalElement.dataset.currentAssetId = assetId; @*/*  */*@
+            let labels = []; @*/*  */*@
+            let prices = []; @*/*  */*@
+
+            try {
+                // Fetch historical data @*/*  */*@
+                const historicalData = await getHistoricalPrices(assetId); @*/*  */*@
+                if (historicalData && historicalData.length > 0) { @*/*  */*@
+                    labels = historicalData.map(d => new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })); @*/*  */*@
+                    prices = historicalData.map(d => parseFloat(d.price)); @*/*  */*@
+                } else {
+                    // Fallback if no historical data, start with purchase and initial current @*/*  */*@
+                    labels = ['Purchased', new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })]; @*/*  */*@
+                    prices = [purchasePrice, initialCurrentPrice]; @*/*  */*@
+                }
+
+                // Determine line color based on the current price relative to purchase price @*/*  */*@
+                const lineColor = initialCurrentPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)'; // Green for profit, Red for loss @*/*  */*@
+
+                performanceChart = new Chart(ctx, { @*/*  */*@
+                    type: 'line', @*/*  */*@
+                    data: { @*/*  */*@
+                        labels: labels, @*/*  */*@
+                        datasets: [ @*/*  */*@
+                            { @*/*  */*@
+                                label: 'Current Price (INR)', @*/*  */*@
+                                data: prices, @*/*  */*@
+                                borderColor: lineColor, @*/*  */*@
+                                backgroundColor: lineColor.replace('rgb', 'rgba').replace(')', ', 0.2)'), // Light fill for the area below the line @*/*  */*@
+                                fill: true, @*/*  */*@
+                                tension: 0.4, // Smooths the line @*/*  */*@
+                                pointRadius: 0 // Hides individual data points @*/*  */*@
+                            },
+                            { @*/*  */*@
+                                label: 'Purchased Price', @*/*  */*@
+                                data: new Array(labels.length).fill(purchasePrice), // Constant line at purchase price @*/*  */*@
+                                borderColor: 'rgb(0, 123, 255)', // Blue for purchased price @*/*  */*@
+                                borderDash: [5, 5], // Dashed line @*/*  */*@
+                                backgroundColor: 'transparent', @*/*  */*@
+                                pointRadius: 0, @*/*  */*@
+                                borderWidth: 1 @*/*  */*@
+                            }
+                        ]
+                    },
+                    options: { @*/*  */*@
+                        animation: { duration: 300 }, // Smooth animation for updates @*/*  */*@
+                        responsive: true, @*/*  */*@
+                        maintainAspectRatio: false, // Allows chart to resize freely within its container @*/*  */*@
+                        scales: { @*/*  */*@
+                            y: { @*/*  */*@
+                                beginAtZero: false, // Prices might not start at zero @*/*  */*@
+                                ticks: { @*/*  */*@
+                                    callback: value => '₹' + value.toLocaleString('en-IN') // Format y-axis labels as currency @*/*  */*@
                                 },
-                                {
-                                    label: 'Purchased Price',
-                                    data: new Array(labels.length).fill(purchasePrice), // Constant line at purchase price
-                                    borderColor: 'rgb(0, 123, 255)', // Blue for purchased price
-                                    borderDash: [5, 5], // Dashed line
-                                    backgroundColor: 'transparent',
-                                    pointRadius: 0,
-                                    borderWidth: 1
-                                }
-                            ]
-                        },
-                        options: {
-                            animation: { duration: 300 }, // Smooth animation for updates
-                            responsive: true,
-                            maintainAspectRatio: false, // Allows chart to resize freely within its container
-                            scales: {
-                                y: {
-                                    beginAtZero: false, // Prices might not start at zero
-                                    ticks: {
-                                        callback: value => '₹' + value.toLocaleString('en-IN') // Format y-axis labels as currency
-                                    },
-                                    grid: {
-                                        color: 'rgba(0,0,0,0.05)' // Light grid lines
-                                    }
-                                },
-                                x: {
-                                    display: true,
-                                    title: {
-                                        display: true,
-                                        text: 'Time'
-                                    },
-                                    ticks: {
-                                        autoSkip: true,
-                                        maxRotation: 0,
-                                        minRotation: 0,
-                                        maxTicksLimit: 10 // Control density of x-axis labels
-                                    },
-                                    grid: {
-                                        color: 'rgba(0,0,0,0.05)'
-                                    }
+                                grid: { @*/*  */*@
+                                    color: 'rgba(0,0,0,0.05)' // Light grid lines @*/*  */*@
                                 }
                             },
-                            plugins: {
-                                legend: {
-                                    display: true,
-                                    labels: {
-                                        boxWidth: 20
-                                    }
+                            x: { @*/*  */*@
+                                display: true, @*/*  */*@
+                                title: { @*/*  */*@
+                                    display: true, @*/*  */*@
+                                    text: 'Time' @*/*  */*@
                                 },
-                                tooltip: {
-                                    mode: 'index',
-                                    intersect: false,
-                                    callbacks: {
-                                        title: function(context) {
-                                            return `Time: ${context[0].label}`;
-                                        },
-                                        label: function(context) {
-                                            let label = context.dataset.label || '';
-                                            if (label) {
-                                                label += ': ';
-                                            }
-                                            if (context.parsed.y !== null) {
-                                                label += formatAsCurrency(context.parsed.y);
-                                            }
-                                            return label;
+                                ticks: { @*/*  */*@
+                                    autoSkip: true, @*/*  */*@
+                                    maxRotation: 0, @*/*  */*@
+                                    minRotation: 0, @*/*  */*@
+                                    maxTicksLimit: 10 // Control density of x-axis labels @*/*  */*@
+                                },
+                                grid: { @*/*  */*@
+                                    color: 'rgba(0,0,0,0.05)' @*/*  */*@
+                                }
+                            }
+                        },
+                        plugins: { @*/*  */*@
+                            legend: { @*/*  */*@
+                                display: true, @*/*  */*@
+                                labels: { @*/*  */*@
+                                    boxWidth: 20 @*/*  */*@
+                                }
+                            },
+                            tooltip: { @*/*  */*@
+                                mode: 'index', @*/*  */*@
+                                intersect: false, @*/*  */*@
+                                callbacks: { @*/*  */*@
+                                    title: function(context) { @*/*  */*@
+                                        return `Time: ${context[0].label}`; @*/*  */*@
+                                    },
+                                    label: function(context) { @*/*  */*@
+                                        let label = context.dataset.label || ''; @*/*  */*@
+                                        if (label) { @*/*  */*@
+                                            label += ': '; @*/*  */*@
                                         }
+                                        if (context.parsed.y !== null) { @*/*  */*@
+                                            label += formatAsCurrency(context.parsed.y); @*/*  */*@
+                                        }
+                                        return label; @*/*  */*@
                                     }
                                 }
                             }
                         }
-                    });
-
-                    chartCanvas.style.display = 'block'; // Show canvas after chart is created
-
-                } catch (error) {
-                    console.error('Error fetching historical data or creating chart:', error);
-                    chartErrorMessage.textContent = `Failed to load chart data: ${error.message}. Please try again later.`;
-                    chartErrorMessage.style.display = 'block';
-                } finally {
-                    chartLoadingIndicator.style.display = 'none'; // Hide loading indicator regardless of success/failure
-                }
-            }
-
-            // B) Function to UPDATE the chart (called by the interval)
-            async function updateLiveChart() {
-                const assetId = chartModalElement.dataset.currentAssetId;
-                if (!assetId || !performanceChart) return; // Only update if modal is open and chart exists
-
-                try {
-                    // Fetch only the relevant asset's current price
-                    // YOU NEED TO CREATE THE GetAssetCurrentPrice ENDPOINT in your PortfolioController (see below)
-                    const response = await fetch(`/Portfolio/GetAssetCurrentPrice/${assetId}`);
-                    if (!response.ok) {
-                        // If asset not found or other HTTP error, hide chart and show error
-                        chartModal.hide(); // Close the chart
-                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    const data = await response.json(); // Expected: { currentPrice: X.XX, assetName: "..." }
+                }); @*/*  */*@
+                chartCanvas.style.display = 'block'; // Show canvas after chart is created @*/*  */*@
 
-                    if (data && data.currentPrice !== undefined) {
-                        const newPrice = parseFloat(data.currentPrice);
-                        const newLabel = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            } catch (error) {
+                console.error('Error fetching historical data or creating chart:', error); @*/*  */*@
+                chartErrorMessage.textContent = `Failed to load chart data: ${error.message}. Please try again later.`; @*/*  */*@
+                chartErrorMessage.style.display = 'block'; @*/*  */*@
+            } finally {
+                chartLoadingIndicator.style.display = 'none'; // Hide loading indicator regardless of success/failure @*/*  */*@
+            }
+        }
 
-                        // Add new data point
-                        performanceChart.data.labels.push(newLabel);
-                        performanceChart.data.datasets[0].data.push(newPrice);
+        // B) Function to UPDATE the chart (called by the interval) @*/*  */*@
+        async function updateLiveChart() { @*/*  */*@
+            const assetId = chartModalElement.dataset.currentAssetId; @*/*  */*@
+            if (!assetId || !performanceChart) return; // Only update if modal is open and chart exists @*/*  */*@
 
-                        // Ensure the purchase price line extends with the new data point
-                        const purchasePrice = performanceChart.data.datasets[1].data[0]; // Get the initial purchase price
-                        performanceChart.data.datasets[1].data.push(purchasePrice);
+            try {
+                // Fetch only the relevant asset's current price
+                // YOU NEED TO CREATE THE GetAssetCurrentPrice ENDPOINT in your PortfolioController (see below) @*/*  */*@
+                const response = await fetch(`/Portfolio/GetAssetCurrentPrice/${assetId}`); @*/*  */*@
+                if (!response.ok) { @*/*  */*@
+                    // If asset not found or other HTTP error, hide chart and show error @*/*  */*@
+                    chartModal.hide(); // Close the chart @*/*  */*@
+                    throw new Error(`HTTP error! status: ${response.status}`); @*/*  */*@
+                }
+                const data = await response.json(); @*/*  */*@
+                // Expected: { currentPrice: X.XX, assetName: "..." } @*/*  */*@
 
-                        // Dynamically change line color based on real-time profit/loss
-                        performanceChart.data.datasets[0].borderColor = newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)';
-                        performanceChart.data.datasets[0].backgroundColor = (newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)').replace('rgb', 'rgba').replace(')', ', 0.2)');
+                if (data && data.currentPrice !== undefined) { @*/*  */*@
+                    const newPrice = parseFloat(data.currentPrice); @*/*  */*@
+                    const newLabel = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); @*/*  */*@
+                    // Add new data point @*/*  */*@
+                    performanceChart.data.labels.push(newLabel); @*/*  */*@
+                    performanceChart.data.datasets[0].data.push(newPrice); @*/*  */*@
 
+                    // Ensure the purchase price line extends with the new data point @*/*  */*@
+                    const purchasePrice = performanceChart.data.datasets[1].data[0]; // Get the initial purchase price @*/*  */*@
+                    performanceChart.data.datasets[1].data.push(purchasePrice); @*/*  */*@
+                    // Dynamically change line color based on real-time profit/loss @*/*  */*@
+                    performanceChart.data.datasets[0].borderColor = newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)'; @*/*  */*@
+                    performanceChart.data.datasets[0].backgroundColor = (newPrice >= purchasePrice ? 'rgb(40, 167, 69)' : 'rgb(220, 53, 69)').replace('rgb', 'rgba').replace(')', ', 0.2)'); @*/*  */*@
+                    // Keep a fixed number of data points (e.g., last 60 seconds) for a "rolling" chart @*/*  */*@
+                    const maxPoints = 60; @*/*  */*@
+                    if (performanceChart.data.labels.length > maxPoints) { @*/*  */*@
+                        performanceChart.data.labels.shift(); // Remove oldest label @*/*  */*@
+                        performanceChart.data.datasets[0].data.shift(); // Remove oldest current price @*/*  */*@
+                        performanceChart.data.datasets[1].data.shift(); // Remove oldest purchase price point @*/*  */*@
+                    }
 
-                        // Keep a fixed number of data points (e.g., last 60 seconds) for a "rolling" chart
-                        const maxPoints = 60;
-                        if (performanceChart.data.labels.length > maxPoints) {
-                            performanceChart.data.labels.shift(); // Remove oldest label
-                            performanceChart.data.datasets[0].data.shift(); // Remove oldest current price
-                            performanceChart.data.datasets[1].data.shift(); // Remove oldest purchase price point
-                        }
+                    performanceChart.update(); // Update the chart @*/*  */*@
+                } else {
+                    // If the asset data is invalid or asset no longer exists @*/*  */*@
+                    chartModal.hide(); // Close the chart @*/*  */*@
+                    console.warn(`Asset with ID ${assetId} not found or current price data is missing for chart update.`); @*/*  */*@
+                }
 
-                        performanceChart.update(); // Update the chart
+            } catch (error) {
+                console.error('Error during chart update:', error); @*/*  */*@
+                // Optionally display error in modal or log it @*/*  */*@
+            }
+        }
+
+        // --- NEW RISK MANAGEMENT JAVASCRIPT ---
+
+        // Function to Load and Display Latest Portfolio Risk
+        function loadPortfolioRisk() {
+            $('#portfolioRiskAnalysisSection').html('<p class="text-info"><i class="fas fa-sync-alt fa-spin"></i> Loading latest risk data...</p>');
+            $.ajax({
+                url: `/api/Risk/viewPortfolioRiskAnalysis/${portfolioId}`,
+                method: 'GET',
+                success: function (data) {
+                    if (data) {
+                        $('#portfolioRiskAnalysisSection').html(`
+                            <p><strong>Current Risk Level:</strong> <span class="risk-level-${data.riskLevel.toLowerCase()}">${data.riskLevel}</span></p>
+                            <p><strong>Risk Score:</strong> ${data.riskScore.toFixed(2)} / 100</p>
+                            <p><strong>Last Assessed:</strong> ${new Date(data.analysisDate).toLocaleString()}</p>
+                            <details>
+                                <summary>View Details</summary>
+                                <pre style="white-space: pre-wrap; word-wrap: break-word;">${data.analysisDetails || 'No detailed analysis available.'}</pre>
+                            </details>
+                        `);
                     } else {
-                        // If the asset data is invalid or asset no longer exists
-                        chartModal.hide(); // Close the chart
-                        console.warn(`Asset with ID ${assetId} not found or current price data is missing for chart update.`);
+                        $('#portfolioRiskAnalysisSection').html('<p class="text-warning"><i class="fas fa-exclamation-triangle"></i> No recent risk analysis found. Click "Recalculate Risk" to generate one.</p>');
                     }
-
-                } catch (error) {
-                    console.error('Error during chart update:', error);
-                    // Optionally display error in modal or log it
+                },
+                error: function (xhr, status, error) {
+                    $('#portfolioRiskAnalysisSection').html(`<p class="text-danger"><i class="fas fa-times-circle"></i> Failed to load risk data: ${xhr.responseJSON?.message || error}</p>`);
                 }
+            });
+        }
+
+        // Function to Load and Display Portfolio Risk History (Chart)
+        let portfolioRiskTrendChart = null; // Declare a variable to hold the Chart.js instance for risk trend
+        function loadPortfolioRiskHistory() {
+            $('#riskHistoryLoadingMessage').html('<p class="text-info"><i class="fas fa-sync-alt fa-spin"></i> Loading risk history...</p>');
+            $('#riskHistoryMessage').empty(); // Clear any previous error/info messages
+            $.ajax({
+                url: `/api/Risk/viewPortfolioRiskHistory/${portfolioId}?days=90`, // Fetch last 90 days of history
+                method: 'GET',
+                success: function (data) {
+                    $('#riskHistoryLoadingMessage').empty(); // Clear loading message
+
+                    if (data && data.length > 0) {
+                        const labels = data.map(item => new Date(item.analysisDate).toLocaleDateString());
+                        const riskScores = data.map(item => item.riskScore);
+                        const riskLevels = data.map(item => item.riskLevel);
+
+                        const ctxRisk = document.getElementById('riskTrendChart').getContext('2d');
+                        // Destroy existing chart if it exists to prevent re-rendering issues
+                        if (portfolioRiskTrendChart instanceof Chart) {
+                            portfolioRiskTrendChart.destroy();
+                        }
+                        portfolioRiskTrendChart = new Chart(ctxRisk, {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Portfolio Risk Score',
+                                    data: riskScores,
+                                    borderColor: 'rgb(75, 192, 192)',
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                    tension: 0.3,
+                                    fill: true, // Fill area below the line
+                                    borderWidth: 2,
+                                    pointRadius: 3, // Show points
+                                    pointBackgroundColor: 'rgb(75, 192, 192)'
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false, // Allow custom height/width via CSS
+                                plugins: {
+                                    title: {
+                                        display: true,
+                                        text: 'Portfolio Risk Trend (Last 90 Days)'
+                                    },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                // Display score and corresponding level
+                                                const score = context.raw;
+                                                const level = riskLevels[context.dataIndex];
+                                                return `${label}${score.toFixed(2)} (${level})`;
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        title: {
+                                            display: true,
+                                            text: 'Risk Score (0-100)'
+                                        },
+                                        max: 100 // Risk score is 0-100
+                                    },
+                                    x: {
+                                        title: {
+                                            display: true,
+                                            text: 'Date'
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    } else {
+                        $('#riskHistoryMessage').html('<p class="text-info"><i class="fas fa-info-circle"></i> Not enough risk history data available to display a chart for the last 90 days.</p>');
+                        // Clear canvas if no data
+                        const ctxRisk = document.getElementById('riskTrendChart').getContext('2d');
+                        if (portfolioRiskTrendChart instanceof Chart) {
+                            portfolioRiskTrendChart.destroy();
+                        }
+                        ctxRisk.clearRect(0, 0, ctxRisk.canvas.width, ctxRisk.canvas.height);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#riskHistoryLoadingMessage').empty();
+                    $('#riskHistoryMessage').html(`<p class="text-danger"><i class="fas fa-times-circle"></i> Failed to load risk history: ${xhr.responseJSON?.message || error}</p>`);
+                }
+            });
+        }
+
+
+        // --- EVENT LISTENERS (your existing ones + new risk ones) ---
+        // Event delegation for dynamically added buttons @*/*  */*@
+        // Listen for clicks on the table body to catch "View Chart" buttons @*/*  */*@
+        investmentsTableBody.addEventListener('click', function(event) { @*/*  */*@
+            const button = event.target.closest('.view-chart-btn'); @*/*  */*@
+            if (button) { @*/*  */*@
+                // Get data attributes @*/*  */*@
+                const { assetId, assetName, purchasePrice, currentPrice } = button.dataset; @*/*  */*@
+
+                // parseFloat is important as data-attributes are strings @*/*  */*@
+                launchLiveChart(assetId, assetName, parseFloat(purchasePrice), parseFloat(currentPrice)); @*/*  */*@
             }
+        }); @*/*  */*@
 
-            // --- EVENT LISTENERS ---
-            // Event delegation for dynamically added buttons
-            // Listen for clicks on the table body to catch "View Chart" buttons
-            investmentsTableBody.addEventListener('click', function(event) {
-                const button = event.target.closest('.view-chart-btn');
-                if (button) {
-                    // Get data attributes
-                    const { assetId, assetName, purchasePrice, currentPrice } = button.dataset;
-                    // parseFloat is important as data-attributes are strings
-                    launchLiveChart(assetId, assetName, parseFloat(purchasePrice), parseFloat(currentPrice));
+        // When the chart modal is shown, start the update interval @*/*  */*@
+        chartModalElement.addEventListener('shown.bs.modal', function() { @*/*  */*@
+            if (chartUpdateInterval) clearInterval(chartUpdateInterval); // Clear any existing interval @*/*  */*@
+            chartUpdateInterval = setInterval(updateLiveChart, 1000); // Update chart every 1 second @*/*  */*@
+        }); @*/*  */*@
+
+        // When the chart modal is hidden, clear the update interval and destroy the chart @*/*  */*@
+        chartModalElement.addEventListener('hidden.bs.modal', function() { @*/*  */*@
+            clearInterval(chartUpdateInterval); @*/*  */*@
+            if (performanceChart) { @*/*  */*@
+                performanceChart.destroy(); // Destroy the chart instance to free up memory @*/*  */*@
+                performanceChart = null; // Clear the reference @*/*  */*@
+            }
+        }); @*/*  */*@
+
+        // --- Recalculate Portfolio Risk Button Click Event ---
+        $('#recalculatePortfolioRiskBtn').on('click', function () {
+            var $btn = $(this);
+            $btn.text('Recalculating...').prop('disabled', true).prepend('<i class="fas fa-spinner fa-spin me-2"></i>'); // Use me-2 for margin-right in Bootstrap 5
+            $('#portfolioRiskAnalysisSection').html('<p class="text-info"><i class="fas fa-sync-alt fa-spin"></i> Recalculating portfolio risk...</p>');
+
+            $.ajax({
+                url: `/api/Risk/calculatePortfolioRisk/${portfolioId}`,
+                method: 'POST',
+                success: function (data) {
+                    // toastr.success('Risk recalculated successfully!'); // Uncomment if using Toastr
+                    alert('Risk recalculated successfully!'); // Basic alert if no Toastr
+                    loadPortfolioRisk(); // Reload the displayed risk data
+                    loadPortfolioRiskHistory(); // Also reload history
+                },
+                error: function (xhr, status, error) {
+                    // toastr.error(`Error during recalculation: ${xhr.responseJSON?.message || error}`); // Uncomment if using Toastr
+                    alert(`Error during recalculation: ${xhr.responseJSON?.message || error}`); // Basic alert if no Toastr
+                    loadPortfolioRisk(); // Try to load existing data if recalculation failed
+                },
+                complete: function () {
+                    $btn.html('<i class="fas fa-calculator"></i> Recalculate Risk').prop('disabled', false);
                 }
             });
+        });
 
-            // When the chart modal is shown, start the update interval
-            chartModalElement.addEventListener('shown.bs.modal', function() {
-                if (chartUpdateInterval) clearInterval(chartUpdateInterval); // Clear any existing interval
-                chartUpdateInterval = setInterval(updateLiveChart, 1000); // Update chart every 1 second
-            });
 
-            // When the chart modal is hidden, clear the update interval and destroy the chart
-            chartModalElement.addEventListener('hidden.bs.modal', function() {
-                clearInterval(chartUpdateInterval);
-                if (performanceChart) {
-                    performanceChart.destroy(); // Destroy the chart instance to free up memory
-                    performanceChart = null; // Clear the reference
-                }
-            });
+        // --- INITIAL EXECUTION ---
+        // Call the function immediately on page load to populate the investments table @*/*  */*@
+        updatePortfolioData(); @*/*  */*@
+        // Set interval to update the entire portfolio table data every 5 seconds @*/*  */*@
+        // This will re-render the table rows, updating current prices and P/L for all investments @*/*  */*@
+        setInterval(updatePortfolioData, 1000); @*/*  */*@
 
-            // --- INITIAL EXECUTION ---
-            // Call the function immediately on page load to populate the investments table
-            updatePortfolioData();
+        // Call functions to load risk data on page load
+        loadPortfolioRisk();
+        loadPortfolioRiskHistory();
 
-            // Set interval to update the entire portfolio table data every 5 seconds
-            // This will re-render the table rows, updating current prices and P/L for all investments
-            setInterval(updatePortfolioData, 1000);
-        </script>
-    }
-</div>
+    </script>
+}

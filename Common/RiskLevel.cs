@@ -1,5 +1,10 @@
 ﻿namespace InvestmentPortfolioManagement.Common
 {
     public enum RiskLevel
-    { Low, Medium, High }
+    {
+        None, // Added a 'None' state for default or unassigned
+        Low,
+        Medium,
+        High
+    }
 }

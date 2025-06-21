@@ -83,12 +83,12 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
 
-        public IActionResult Risk(Guid portfolioId)
-        {
-            var level = _riskService.GetRiskLevel(portfolioId);
-            ViewBag.RiskLevel = level;
-            return View();
-        }
+        //public IActionResult Risk(Guid portfolioId)
+        //{
+        //    var level = _riskService.GetRiskLevel(portfolioId);
+        //    ViewBag.RiskLevel = level;
+        //    return View();
+        //}
 
         //public IActionResult ExportPdf(Guid portfolioId)
         //{

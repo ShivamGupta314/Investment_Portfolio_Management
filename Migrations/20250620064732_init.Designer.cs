@@ -4,6 +4,7 @@ using InvestmentPortfolioManagement.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InvestmentPortfolioManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250620064732_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -166,34 +169,6 @@ namespace InvestmentPortfolioManagement.Migrations
                     b.ToTable("Portfolios");
                 });
 
-            modelBuilder.Entity("InvestmentPortfolioManagement.Models.PortfolioRiskAnalysis", b =>
-                {
-                    b.Property<Guid>("PortfolioRiskAnalysisId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("AnalysisDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("AnalysisDetails")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("PortfolioId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("RiskLevel")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("RiskScore")
-                        .HasColumnType("decimal(18, 2)");
-
-                    b.HasKey("PortfolioRiskAnalysisId");
-
-                    b.HasIndex("PortfolioId");
-
-                    b.ToTable("PortfolioRiskAnalyses");
-                });
-
             modelBuilder.Entity("InvestmentPortfolioManagement.Models.Report", b =>
                 {
                     b.Property<Guid>("ReportId")
@@ -231,8 +206,6 @@ namespace InvestmentPortfolioManagement.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("RiskProfileId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("RiskProfile");
                 });
@@ -316,28 +289,6 @@ namespace InvestmentPortfolioManagement.Migrations
                         .WithMany("Portfolios")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("InvestmentPortfolioManagement.Models.PortfolioRiskAnalysis", b =>
-                {
-                    b.HasOne("InvestmentPortfolioManagement.Models.Portfolio", "Portfolio")
-                        .WithMany()
-                        .HasForeignKey("PortfolioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Portfolio");
-                });
-
-            modelBuilder.Entity("InvestmentPortfolioManagement.Models.RiskProfile", b =>
-                {
-                    b.HasOne("InvestmentPortfolioManagement.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("User");

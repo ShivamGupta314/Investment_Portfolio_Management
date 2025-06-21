@@ -16,6 +16,7 @@ namespace InvestmentPortfolioManagement.Data
         public DbSet<Asset> Assets { get; set; } // ✅ Add this line
         public DbSet<Performance> Performances { get; set; }
         public DbSet<RiskProfile> RiskProfiles { get; set; }
+        public DbSet<PortfolioRiskAnalysis> PortfolioRiskAnalyses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -41,7 +42,18 @@ namespace InvestmentPortfolioManagement.Data
                 .HasForeignKey(i => i.PortfolioId)
                 .OnDelete(DeleteBehavior.Cascade); // Explicitly set to cascade (this is the default anyway)
 
+            modelBuilder.Entity<RiskProfile>()
+               .HasOne(rp => rp.User)
+               .WithMany() // Or specify a navigation property in User if you add ICollection<RiskProfile>
+               .HasForeignKey(rp => rp.UserId)
+               .OnDelete(DeleteBehavior.Restrict); // Or .Cascade, depending on your policy
 
+            // Example for PortfolioRiskAnalysis to Portfolio
+            modelBuilder.Entity<PortfolioRiskAnalysis>()
+                .HasOne(pra => pra.Portfolio)
+                .WithMany() // Or specify a navigation property in Portfolio if you add ICollection<PortfolioRiskAnalysis>
+                .HasForeignKey(pra => pra.PortfolioId)
+                .OnDelete(DeleteBehavior.Cascade); // If portfolio is deleted, its risk analyses are too
         }
     }
 }

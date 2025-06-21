@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "CalculatePortfolioRisk",
+    "RelativePath": "api/Risk/calculatePortfolioRisk/{portfolioId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "portfolioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "GetUserRiskProfile",
+    "RelativePath": "api/Risk/getUserRiskProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "SetUserRiskProfile",
+    "RelativePath": "api/Risk/setUserRiskProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "InvestmentPortfolioManagement.Controllers.UserRiskProfileCreateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "ViewPortfolioRiskAnalysis",
+    "RelativePath": "api/Risk/viewPortfolioRiskAnalysis/{portfolioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "portfolioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "ViewPortfolioRiskHistory",
+    "RelativePath": "api/Risk/viewPortfolioRiskHistory/{portfolioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "portfolioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
