@@ -1,89 +1,265 @@
 @model InvestmentPortfolioManagement.ViewModels.InvestmentViewModel
 
 @{
-    ViewData["Title"] = "Add Investment";
+    ViewData["Title"] = "Add New Investment";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container py-4">
-    <div class="row justify-content-center">
-        @* Adjusted column size for a consistent form width, similar to Create Portfolio *@
-        <div class="col-lg-6 col-md-8">
-            <div class="card shadow-sm border-0" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; ">
-                <div class="card-header  bg-gradient text-white" style="background-color:#3498db">
-                 <center>
-                        <h2 class="card-title mb-0 fs-4" >
-                        <i class="fas fa-coins"></i> Add New Investment
-                    </h2>
-                    </center>
-                </div>
-                <div class="card-body p-4">
-                    @* Display TempData messages *@
-                    @if (TempData["Success"] != null)
-                    {
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <i class="bi bi-check-circle-fill me-2"></i> @TempData["Success"]
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    }
-                    @if (TempData["Error"] != null)
-                    {
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["Error"]
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    }
+<!-- Styles from your previous correct version are good -->
+<style>
+    .add-investment-container {
+        max-width: 900px;
+        margin: 40px auto;
+    }
 
-                    @* Display validation summary for non-field specific errors *@
-                    @Html.ValidationSummary(false, "", new { @class = "text-danger mb-3" })
+    .add-investment-card {
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+    }
 
-                    <form asp-action="Create" asp-controller="Investment" method="post">
-                        @Html.AntiForgeryToken()
-                        <input type="hidden" asp-for="PortfolioId" />
+    .card-header-custom {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+    }
 
-                        <div class="row g-3">
-                            @* Using Bootstrap grid for spacing and responsiveness *@
-                            <div class="col-md-12">
-                                @* Full width for the select asset dropdown *@
-                                <div class="form-floating mb-3">
-                                    <select asp-for="AssetId" class="form-select" required>
-                                        <option value=""></option>
-                                        @foreach (var asset in Model.AvailableAssets)
-                                        {
-                                            <option value="@asset.AssetId">@asset.Name (@asset.Symbol)</option>
-                                        }
-                                    </select>
-                                    <label asp-for="AssetId">Select Asset</label> @* Label goes after select for floating effect *@
-                                    <span asp-validation-for="AssetId" class="text-danger"></span>
+    .step-label {
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #0d6efd;
+        display: inline-block;
+    }
+
+    .asset-browser {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+    }
+
+    .asset-card {
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+    }
+
+        .asset-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .asset-card.selected {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+            background-color: #f0f7ff;
+        }
+
+    .asset-card-header {
+        padding: 0.75rem;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .asset-card-symbol {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #343a40;
+    }
+
+    .asset-card-name {
+        font-size: 0.85rem;
+        color: #6c757d;
+    }
+
+    .asset-card-body {
+        padding: 0.75rem;
+    }
+
+    .price-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .price-label {
+        color: #6c757d;
+    }
+
+    .price-value {
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    .live-price {
+        font-size: 1.1rem !important;
+        transition: color 0.5s ease, background-color 0.5s ease;
+    }
+
+    .price-up {
+        color: #198754 !important;
+    }
+
+    .price-down {
+        color: #dc3545 !important;
+    }
+
+    .flash-up {
+        animation: flash-green 1s;
+    }
+
+    .flash-down {
+        animation: flash-red 1s;
+    }
+
+    @@keyframes flash-green {
+        0% {
+            background-color: rgba(25, 135, 84, 0.2);
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    @@keyframes flash-red {
+        0% {
+            background-color: rgba(220, 53, 69, 0.2);
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    .quantity-stepper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .quantity-stepper .btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+
+        .quantity-stepper .quantity-input {
+            width: 80px;
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            border: none;
+        }
+
+    .confirmation-box {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+    }
+
+    .est-cost-label {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #6c757d;
+    }
+
+    .est-cost-value {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: #0d6efd;
+    }
+</style>
+
+<div class="add-investment-container">
+    <div class="card add-investment-card">
+        <div class="card-header-custom py-3">
+            <h2 class="card-title mb-0 fs-4"><i class="fas fa-shopping-cart me-2"></i> Create New Investment</h2>
+        </div>
+        <div class="card-body p-4 p-md-5">
+            <form asp-action="Create" asp-controller="Investment" method="post" id="addInvestmentForm">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="PortfolioId" />
+                <input type="hidden" asp-for="AssetId" />
+                <input type="hidden" asp-for="Quantity" value="1" />
+
+                <!-- Step 1: Select an Asset -->
+                <div class="mb-5">
+                    <h5 class="step-label">1. Choose Your Asset</h5>
+                    <div class="asset-browser" id="assetBrowser">
+                        @foreach (var asset in Model.AvailableAssets)
+                        {
+                            <div class="asset-card"
+                                 data-asset-id="@asset.AssetId"
+                                 data-asset-name="@asset.Name">
+                                <div class="asset-card-header">
+                                    <span class="asset-card-symbol">@asset.Symbol</span>
+                                    <span class="badge bg-secondary float-end mt-1">@asset.AssetType</span>
+                                    <div class="asset-card-name">@asset.Name</div>
+                                </div>
+                                <div class="asset-card-body">
+                                    <div class="price-item">
+                                        <span class="price-label">Base Price</span>
+                                        <span class="price-value">@asset.BasePrice.ToString("C")</span>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="price-item">
+                                        <span class="price-label">Live Price</span>
+                                        <span class="price-value live-price" id="price_@asset.AssetId" data-price-value="@asset.CurrentPrice">
+                                            @asset.CurrentPrice.ToString("C")
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-12">
-                                @* Full width for the quantity input *@
-                                <div class="form-floating mb-4">
-                                    @* Increased mb for more spacing before buttons *@
-                                    <input asp-for="Quantity" class="form-control" required min="1" placeholder="Quantity" />
-                                    <label asp-for="Quantity"></label>
-                                    <span asp-validation-for="Quantity" class="text-danger"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <div class="d-flex justify-content-between">
-                            <a asp-controller="Investment" asp-action="Index" asp-route-portfolioId="@Model.PortfolioId" class="btn btn-outline-secondary">
-                                <i class="fas fa-arrow-left"></i> Back to Investments
-                            </a>
-                        
-                            <button type="submit" class="btn" style=" background-color:#3498db">
-                                <i class="fas fa-plus-circle"></i> Add Investment
-                            </button>
-                          
-                        </div>
-                    </form>
+                        }
+                    </div>
+                    <span asp-validation-for="AssetId" class="text-danger d-block mt-2 text-center"></span>
                 </div>
-            </div>
+
+                <!-- Step 2: Set Quantity -->
+                <div class="mb-5">
+                    <h5 class="step-label">2. Set Quantity</h5>
+                    <div class="quantity-stepper p-3 text-center">
+                        <button type="button" class="btn btn-outline-danger" id="quantity-minus">-</button>
+                        <input type="text" id="quantity-display" class="quantity-input" value="1" readonly>
+                        <button type="button" class="btn btn-outline-success" id="quantity-plus">+</button>
+                    </div>
+                    <span asp-validation-for="Quantity" class="text-danger d-block mt-2 text-center"></span>
+                </div>
+
+                <!-- Step 3: Confirmation -->
+                <div class="mb-4">
+                    <h5 class="step-label">3. Confirm Investment</h5>
+                    <div class="confirmation-box text-center">
+                        <div id="summaryContent">
+                            <p class="text-muted m-0 p-4">Please select an asset to see your order summary.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg" id="submitBtn" disabled>
+                        <i class="fas fa-check-circle me-2"></i> Confirm and Add Investment
+                    </button>
+                    <a asp-controller="Portfolio" asp-action="Details" asp-route-id="@Model.PortfolioId" class="btn btn-light text-center">
+                        Cancel
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -93,10 +269,129 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     <script>
-        // Enable Bootstrap 5 tooltips (if you have any data-bs-toggle="tooltip" attributes)
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+        document.addEventListener('DOMContentLoaded', function () {
+            // === DOM ELEMENT REFERENCES ===
+            const assetBrowser = document.getElementById('assetBrowser');
+            const hiddenAssetIdInput = document.getElementById('AssetId');
+            const hiddenQuantityInput = document.getElementById('Quantity');
+            const qtyDisplay = document.getElementById('quantity-display');
+            const summaryContent = document.getElementById('summaryContent');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // === STATE VARIABLES ===
+            let selectedAsset = null;
+            let currentQuantity = 1;
+
+            // === EVENT HANDLER FUNCTIONS ===
+
+            function handleAssetSelection(e) {
+                const card = e.target.closest('.asset-card');
+                if (!card) return;
+
+                assetBrowser.querySelectorAll('.asset-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+
+                const livePriceElement = document.getElementById(`price_${card.dataset.assetId}`);
+
+                selectedAsset = {
+                    id: card.dataset.assetId,
+                    name: card.dataset.assetName,
+                    price: parseFloat(livePriceElement.dataset.priceValue)
+                };
+
+                hiddenAssetIdInput.value = selectedAsset.id;
+                submitBtn.disabled = false;
+                updateSummary();
+            }
+
+            function handleQuantityChange(amount) {
+                let newQuantity = currentQuantity + amount;
+                if (newQuantity < 1) newQuantity = 1;
+                currentQuantity = newQuantity;
+                qtyDisplay.value = currentQuantity;
+                hiddenQuantityInput.value = currentQuantity;
+                updateSummary();
+            }
+
+            function updateSummary() {
+                if (!selectedAsset) {
+                    summaryContent.innerHTML = '<p class="text-muted m-0 p-4">Please select an asset to see your order summary.</p>';
+                    return;
+                }
+                const totalCost = selectedAsset.price * currentQuantity;
+                summaryContent.innerHTML = `
+                    <div class="p-2">
+                        <p class="mb-1 text-muted">You are about to invest in:</p>
+                        <h4 class="fw-bold text-dark">${currentQuantity} x ${selectedAsset.name}</h4>
+                        <p class="mt-3 est-cost-label">Estimated Total Cost</p>
+                        <div class="est-cost-value">${totalCost.toLocaleString('en-IN', { style: 'currency', currency: 'INR' })}</div>
+                    </div>
+                `;
+            }
+
+            // --- THE CORE LIVE UPDATE FUNCTION ---
+            // This is the function that does the work.
+            async function updateLivePrices() {
+                try {
+                    const response = await fetch('/Asset/GetLiveAssetPrices');
+                    if (!response.ok) {
+                        console.error("Server error fetching prices:", response.status);
+                        return; // Stop this cycle if there's a server error.
+                    }
+
+                    const prices = await response.json();
+
+                    prices.forEach(assetPrice => {
+                        const priceElement = document.getElementById(`price_${assetPrice.assetId}`);
+                        if (priceElement) {
+                            const oldPrice = parseFloat(priceElement.dataset.priceValue) || 0;
+                            const newPrice = parseFloat(assetPrice.currentPrice);
+
+                            if (oldPrice !== newPrice) {
+                                priceElement.textContent = newPrice.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                                priceElement.dataset.priceValue = newPrice;
+
+                                const cardElement = priceElement.closest('.asset-card');
+                                cardElement.classList.remove('flash-up', 'flash-down');
+                                void cardElement.offsetWidth;
+
+                                if (newPrice > oldPrice) {
+                                    priceElement.classList.add('price-up');
+                                    cardElement.classList.add('flash-up');
+                                } else if (newPrice < oldPrice) {
+                                    priceElement.classList.add('price-down');
+                                    cardElement.classList.add('flash-down');
+                                }
+
+                                if (selectedAsset && selectedAsset.id === assetPrice.assetId) {
+                                    selectedAsset.price = newPrice;
+                                    updateSummary();
+                                }
+                            }
+                        }
+                    });
+                } catch (error) {
+                    console.error("A network error occurred while fetching live asset prices:", error);
+                }
+            }
+
+            // --- THE FIX: ROBUST RECURSIVE ASYNC LOOP ---
+            // This self-calling async function creates a safe, unstoppable loop.
+            async function startLiveUpdateLoop() {
+                await updateLivePrices(); // Wait for the update function to complete fully.
+
+                // AFTER it's done, schedule the next call. This prevents race conditions.
+                setTimeout(startLiveUpdateLoop, 2000); // 3-second interval
+            }
+
+            // === BIND EVENT LISTENERS ===
+            assetBrowser.addEventListener('click', handleAssetSelection);
+            document.getElementById('quantity-plus').addEventListener('click', () => handleQuantityChange(1));
+            document.getElementById('quantity-minus').addEventListener('click', () => handleQuantityChange(-1));
+
+            // === INITIALIZATION ===
+            // Kick off the live update loop once the DOM is fully loaded.
+            startLiveUpdateLoop();
+        });
     </script>
 }

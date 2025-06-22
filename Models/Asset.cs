@@ -34,5 +34,8 @@ namespace InvestmentPortfolioManagement.Models
         public Portfolio? Portfolio { get; set; }
 
         public DateTime PurchasedDate { get; set; }
+
+        [NotMapped]
+        public double Momentum { get; set; } = 0;
     }
 }

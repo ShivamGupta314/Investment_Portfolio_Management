@@ -3,6 +3,7 @@ using InvestmentPortfolioManagement.Interfaces;
 using InvestmentPortfolioManagement.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvestmentPortfolioManagement.Controllers
 {
@@ -65,5 +66,18 @@ namespace InvestmentPortfolioManagement.Controllers
             return RedirectToAction("Index", new { portfolioId = model.PortfolioId });
         }
 
+
+        [HttpGet]
+        public async Task<IActionResult> GetLiveAssetPrices()
+        {
+            var assetPrices = await _context.Assets
+                .Select(a => new {
+                    a.AssetId,
+                    a.CurrentPrice
+                })
+                .ToListAsync();
+
+            return Ok(assetPrices);
+        }
     }
 }

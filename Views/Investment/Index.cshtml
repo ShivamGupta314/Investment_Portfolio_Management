@@ -396,7 +396,7 @@
                 // When modal is shown, start chart update interval
                 if (chartUpdateInterval) clearInterval(chartUpdateInterval); // Clear any old intervals
                 // Update chart every 3 seconds for less frequent updates and better performance
-                chartUpdateInterval = setInterval(updateLiveChart, 1000);
+                chartUpdateInterval = setInterval(updateLiveChart, 2000);
             });
 
             chartModalElement.addEventListener('hidden.bs.modal', function() {
@@ -411,7 +411,7 @@
             // --- 4. INITIAL EXECUTION ---
             updateInvestmentsTable(); // Initial load of the table
             // Update table less frequently, perhaps every 5 seconds, as live updates might be too much
-            setInterval(updateInvestmentsTable, 1000);
+            setInterval(updateInvestmentsTable, 2000);
 
         })();
     </script>

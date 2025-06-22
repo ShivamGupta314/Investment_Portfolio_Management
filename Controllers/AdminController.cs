@@ -3,6 +3,7 @@ using InvestmentPortfolioManagement.Data;
 using InvestmentPortfolioManagement.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvestmentPortfolioManagement.Controllers
 {
@@ -52,6 +53,13 @@ namespace InvestmentPortfolioManagement.Controllers
             _context.SaveChanges();
             TempData["Success"] = "Asset created successfully.";
             return RedirectToAction("ManageAssets");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ManageUsers()
+        {
+            var users = await _context.Users.ToListAsync();
+            return View(users);
         }
     }
 }

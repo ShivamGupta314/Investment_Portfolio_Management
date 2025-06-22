@@ -1,155 +1,311 @@
 ﻿@model InvestmentPortfolioManagement.ViewModels.AddInvestmentsToPortfolioViewModel
 
 @{
-    ViewData["Title"] = "Add Investments to Portfolio";
+    ViewData["Title"] = "Add Existing Investments";
 }
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
-    /* General form styling */
-    .forms {
-        max-width: 600px; /* Limits the form width for better readability on larger screens */
-        margin: 40px auto; /* Centers the form and adds some top/bottom margin */
-        padding: 30px;
-        background-color: #ffffff; /* White background for the form container */
-        border-radius: 8px; /* Slightly rounded corners */
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+    body {
+        background-color: #f4f7f6;
     }
 
-    h2 {
+    .add-investments-container {
+        max-width: 900px;
+        margin: 40px auto;
+    }
+
+    .add-investments-card {
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card-header-custom {
+        background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        color: white;
         text-align: center;
-        color: #333333;
-        margin-bottom: 30px;
-        font-size: 2em; /* Slightly larger heading */
     }
 
-    /* Form group styling */
-    .form-group {
-        margin-bottom: 20px; /* Space between form groups */
+    .browser-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
     }
 
-        .form-group label {
-            display: block; /* Ensures label is on its own line */
-            margin-bottom: 8px; /* Space between label and input */
-            font-weight: 600; /* Slightly bolder labels */
-            color: #555555;
-        }
+    .search-input {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50px;
+    }
 
-    /* Styling for select (dropdown) */
-    .form-control {
-        width: 100%; /* Makes inputs and selects take full width of their container */
-        padding: 12px 15px;
-        border: 1px solid #ced4da;
-        border-radius: 5px;
-        font-size: 1rem;
-        line-height: 1.5;
+    .selection-summary {
+        font-weight: 500;
         color: #495057;
-        background-color: #fff;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        -webkit-appearance: none; /* Removes default browser styling for select */
-        -moz-appearance: none;
-        appearance: none;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); /* Custom dropdown arrow */
-        background-repeat: no-repeat;
-        background-position: right 0.75rem center;
-        background-size: 16px 12px;
     }
 
-        .form-control:focus {
-            border-color: #80bdff; /* Blue border on focus */
-            outline: 0;
-            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Light blue shadow on focus */
-        }
-
-    /* Multi-select specific adjustments */
-    select[multiple].form-control {
-        height: auto; /* Allows the multi-select to expand as needed */
-        min-height: 150px; /* A reasonable default height for multi-select */
-        overflow-y: auto; /* Adds scrollbar if content exceeds height */
-        padding-right: 12px; /* Adjust padding for multi-select so arrow doesn't interfere */
-        background-image: none; /* Remove custom arrow for multi-select */
+    .investment-browser {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+        max-height: 450px;
+        overflow-y: auto;
+        padding: 1.5rem;
     }
 
-    /* Button styling */
-    .btn {
-        display: inline-block;
-        font-weight: 400;
-        color: #212529;
-        text-align: center;
-        vertical-align: middle;
+    .investment-card {
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: #ffffff;
         cursor: pointer;
-        user-select: none;
-        background-color: transparent;
-        border: 1px solid transparent;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border-radius: 0.25rem;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        text-decoration: none; /* For the anchor button */
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+        position: relative;
+        overflow: hidden;
     }
 
-    .btn-primary {
-        color: #fff;
-        background-color: #007bff; /* Standard blue for primary action */
-        border-color: #007bff;
-    }
-
-        .btn-primary:hover {
-            color: #fff;
-            background-color: #0056b3; /* Darker blue on hover */
-            border-color: #004085;
+        .investment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
 
-    .btn-secondary {
-        color: #fff;
-        background-color: #6c757d; /* Grey for secondary action */
-        border-color: #6c757d;
-    }
-
-        .btn-secondary:hover {
-            color: #fff;
-            background-color: #545b62; /* Darker grey on hover */
-            border-color: #4a4e53;
+        .investment-card.selected {
+            border-color: #17a2b8;
+            box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.25);
         }
 
-    /* Margin utilities for buttons */
-    .mt-3 {
-        margin-top: 1rem !important; /* Matches Bootstrap's mt-3 */
+    .selected-indicator {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #17a2b8;
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 0.3s ease;
     }
 
-    .mb-2 {
-        margin-bottom: 0.5rem !important; /* Matches Bootstrap's mb-2 */
+    .investment-card.selected .selected-indicator {
+        opacity: 1;
+        transform: scale(1);
     }
 
-    .me-md-2 {
-        margin-right: 0.5rem !important; /* Matches Bootstrap's me-md-2 */
+    .investment-card-body {
+        padding: 1rem;
     }
 
-   
-    .d-md-inline {
-        display: inline-block !important;
+    .investment-name {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #343a40;
     }
 
-    .d-grid {
-        display: block; /* Reset d-grid on smaller screens */
+    .investment-details {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+
+    .investment-value {
+        font-weight: 700;
+        font-size: 1.25rem;
+        transition: color 0.5s;
+    }
+
+    /* NEW styles for live price flashing */
+    .price-up {
+        color: #198754 !important;
+    }
+
+    .price-down {
+        color: #dc3545 !important;
+    }
+
+    .flash-up {
+        animation: flash-green 1s;
+    }
+
+    .flash-down {
+        animation: flash-red 1s;
+    }
+
+    @@keyframes flash-green {
+        0% {
+            background-color: rgba(25, 135, 84, 0.2);
+        }
+
+        100% {
+            background-color: #ffffff;
+        }
+    }
+
+    @@keyframes flash-red {
+        0% {
+            background-color: rgba(220, 53, 69, 0.2);
+        }
+
+        100% {
+            background-color: #ffffff;
+        }
     }
 </style>
 
-<h2>Add Investments to Portfolio</h2>
+<div class="add-investments-container">
+    <div class="add-investments-card">
+        <div class="card-header-custom py-3">
+            <h2 class="card-title mb-0 fs-4"><i class="fas fa-plus-circle me-2"></i> Add Investments to Portfolio</h2>
+        </div>
+        <div class="card-body p-0">
+            <form asp-action="AddInvestments" method="post" id="addInvestmentsForm">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="PortfolioId" />
+                <select asp-for="SelectedInvestmentIds" multiple="multiple" class="d-none"></select>
 
-<form class="forms" asp-action="AddInvestments" method="post">
-    @Html.AntiForgeryToken()
+                <div class="browser-header">
+                    <input type="text" id="searchAvailable" class="form-control search-input" placeholder="Search available investments...">
+                    <div id="selectionSummary" class="selection-summary">0 items selected</div>
+                </div>
 
-    <input type="hidden" asp-for="PortfolioId" />
+                <div class="investment-browser" id="investmentBrowser">
+                    @if (Model.UnassignedInvestments.Any())
+                    {
+                        @foreach (var investment in Model.UnassignedInvestments)
+                        {
+                            <div class="investment-card" data-value="@investment.InvestmentId" data-name="@investment.AssetName">
+                                <div class="selected-indicator"><i class="fas fa-check-circle"></i></div>
+                                <div class="investment-card-body">
+                                    <div class="investment-name">@investment.AssetName</div>
+                                    <div class="investment-details">@investment.Asset.AssetType</div>
+                                    <hr class="my-2">
+                                    <div class="investment-details">Quantity: @investment.Quantity</div>
+                                    <!-- Add an ID and data-value attribute to the value span -->
+                                    <div class="investment-value"
+                                         id="value_@investment.InvestmentId"
+                                         data-value="@(investment.Asset.CurrentPrice * investment.Quantity)">
+                                        @((investment.Asset.CurrentPrice * investment.Quantity).ToString("C"))
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted text-center col-12">No unassigned investments available to add.</p>
+                    }
+                </div>
 
-    <div class="form-group">
-        <label>Select Investments</label>
-        <select asp-for="SelectedInvestmentIds" asp-items="@(new MultiSelectList(Model.UnassignedInvestments, "InvestmentId", "AssetName"))"
-                multiple="multiple" class="form-control">
-        </select>
+                <div class="p-4 text-center border-top">
+                    <button type="submit" class="btn btn-primary px-5">Add Selected to Portfolio</button>
+                    <a asp-action="Details" asp-route-id="@Model.PortfolioId" class="btn btn-secondary ms-2">Cancel</a>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="form-group button-group">
-        <button type="submit" class="btn btn-primary mt-3">Add to Portfolio</button>
-        <a asp-action="Index" class="btn btn-secondary mt-3">Back</a> @* Changed mb-2 to mt-3 for consistency and better alignment with flexbox *@
-    </div>
-</form>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const investmentBrowser = document.getElementById('investmentBrowser');
+            const form = document.getElementById('addInvestmentsForm');
+            const hiddenSelect = document.querySelector('select[name="SelectedInvestmentIds"]');
+            const searchInput = document.getElementById('searchAvailable');
+            const summaryElement = document.getElementById('selectionSummary');
+
+            // --- Card Selection Logic (Unchanged) ---
+            investmentBrowser.addEventListener('click', function (e) {
+                const card = e.target.closest('.investment-card');
+                if (!card) return;
+                card.classList.toggle('selected');
+                updateSelectionSummary();
+            });
+
+            // --- Update Summary Function (Unchanged) ---
+            function updateSelectionSummary() {
+                const selectedCount = investmentBrowser.querySelectorAll('.investment-card.selected').length;
+                summaryElement.textContent = `${selectedCount} item(s) selected`;
+            }
+
+            // --- Search/Filter Logic (Unchanged) ---
+            searchInput.addEventListener('keyup', function() {
+                const filter = searchInput.value.toUpperCase();
+                const cards = investmentBrowser.querySelectorAll('.investment-card');
+                cards.forEach(card => {
+                    const name = card.dataset.name.toUpperCase();
+                    if (name.includes(filter)) { card.style.display = ""; }
+                    else { card.style.display = "none"; }
+                });
+            });
+
+            // --- Form Submission Logic (Unchanged) ---
+            form.addEventListener('submit', function (e) {
+                hiddenSelect.innerHTML = '';
+                const selectedCards = investmentBrowser.querySelectorAll('.investment-card.selected');
+                if (selectedCards.length === 0) {
+                    alert("Please select at least one investment to add.");
+                    e.preventDefault();
+                    return;
+                }
+                selectedCards.forEach(card => {
+                    const option = document.createElement('option');
+                    option.value = card.dataset.value;
+                    option.selected = true;
+                    hiddenSelect.appendChild(option);
+                });
+            });
+
+            // --- NEW: LIVE VALUE UPDATE LOGIC ---
+            async function updateInvestmentValues() {
+                try {
+                    // We can reuse the same endpoint from the main investment list
+                    const response = await fetch('/Investment/GetUserInvestmentsLive');
+                    if (!response.ok) return;
+
+                    const liveInvestments = await response.json();
+
+                    liveInvestments.forEach(inv => {
+                        // Find the corresponding card's value element on the page
+                        const valueElement = document.getElementById(`value_${inv.investmentId}`);
+                        if (valueElement) {
+                            const cardElement = valueElement.closest('.investment-card');
+                            const oldValue = parseFloat(valueElement.dataset.value) || 0;
+                            const newValue = parseFloat(inv.currentPrice) * inv.quantity;
+
+                            // Only update if the value has changed to avoid unnecessary screen flicker
+                            if (oldValue.toFixed(2) !== newValue.toFixed(2)) {
+                                valueElement.textContent = newValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                                valueElement.dataset.value = newValue; // Update the stored value
+
+                                // Add a visual flash effect
+                                valueElement.classList.remove('price-up', 'price-down');
+                                cardElement.classList.remove('flash-up', 'flash-down');
+                                void cardElement.offsetWidth; // Force reflow to restart animation
+
+                                if (newValue > oldValue) {
+                                    valueElement.classList.add('price-up');
+                                    cardElement.classList.add('flash-up');
+                                } else {
+                                    valueElement.classList.add('price-down');
+                                    cardElement.classList.add('flash-down');
+                                }
+                            }
+                        }
+                    });
+
+                } catch (error) {
+                    console.error("Error fetching live investment values:", error);
+                }
+            }
+
+            // --- Use the robust recursive loop to start the updates ---
+            (async function startLiveUpdates() {
+                await updateInvestmentValues(); // Wait for the first update to complete
+                setTimeout(startLiveUpdates, 2000); // Then schedule the next one in 5 seconds
+            })();
+        });
+    </script>
+}

@@ -1,35 +1,67 @@
-
+@using System.Security.Claims
 @{
     Layout = null;
-    var username = User.Identity.Name;
+    var username = User.FindFirstValue(ClaimTypes.GivenName) ?? User.Identity.Name;
 }
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Admin Panel - Investment Portfolio</title>
+    <title>@ViewData["Title"] - Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        .navbar-admin {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .main-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Admin Panel</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/Admin/Dashboard">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Admin/ManageAssets">Manage Assets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/User/Logout">Logout</a></li>
-                </ul>
-                <span class="navbar-text text-white">Hello, @username</span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-admin">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" asp-controller="Admin" asp-action="Dashboard">
+                    <i class="fas fa-user-shield me-2"></i>Admin Dashboard
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="navbar-text me-3">
+                        Welcome, <strong>@username</strong>
+                    </span>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-sm me-2">
+                        <i class="fas fa-globe me-1"></i> Main Site
+                    </a>
+                    <form method="post" asp-controller="User" asp-action="Logout" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            <i class="fas fa-sign-out-alt me-1"></i> Logout
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="container mt-4">
-        @RenderBody()
+        </nav>
+    </header>
+
+    <div class="container main-container">
+        <main role="main">
+            @RenderBody()
+        </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

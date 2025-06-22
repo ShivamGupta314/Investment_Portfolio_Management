@@ -12,6 +12,8 @@ namespace InvestmentPortfolioManagement.Models
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; } = string.Empty;
+
+        public DateTime RegisteredDate { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; } = string.Empty;

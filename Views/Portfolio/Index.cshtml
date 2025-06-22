@@ -2,123 +2,205 @@
 @{
     ViewData["Title"] = "Your Portfolios";
 }
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - InvestmentPortfolioManagement</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/InvestmentPortfolioManagement.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />
-    <link rel="stylesheet" href="~/css/portfolio-table.css" asp-append-version="true" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+<!-- Font and Icon links (Good to have in _Layout.cshtml but fine here too) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-@* REMOVED: <link rel="stylesheet" href="~/css/portfolio-table.css" asp-append-version="true" /> *@
-@* This link should be in _Layout.cshtml (as we set up in a previous step) *@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />
-<link rel="stylesheet" href="~/css/portfolio-table.css" asp-append-version="true" />
-<section>
-    @* This section applies the 50px margin from portfolio-table.css *@
-    <h1>Your Portfolios</h1>
+<!-- ===== NEW STYLES FOR THE CARD LAYOUT ===== -->
+<style>
+    body {
+        background-color: #f4f7f6; /* A pleasant light gray background */
+    }
+
+    .portfolio-grid-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+        .portfolio-grid-header h1 {
+            font-weight: 700;
+            color: #343a40;
+        }
+
+    /* The main grid for the cards */
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid */
+        gap: 1.5rem;
+    }
+
+    /* Individual Portfolio Card Styling */
+    .portfolio-card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column; /* Allows footer to stick to the bottom */
+    }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+    .portfolio-card-body {
+        padding: 1.5rem;
+        flex-grow: 1; /* Makes the body take up available space */
+    }
+
+    .portfolio-card-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #0056b3;
+        margin-bottom: 0.5rem;
+    }
+
+    .portfolio-card-type {
+        font-size: 0.9rem;
+        color: #6c757d;
+        background-color: #e9ecef;
+        padding: 0.2rem 0.6rem;
+        border-radius: 50px; /* Pill shape */
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio-card-value-wrapper {
+        margin-top: auto; /* Pushes this section down */
+        padding-top: 1rem;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    .portfolio-card-value-label {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin-bottom: 0;
+    }
+
+    .portfolio-card-value {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #28a745; /* Green for value */
+    }
+
+    .portfolio-card-footer {
+        background-color: #f8f9fa;
+        padding: 0.75rem 1.5rem;
+        border-top: 1px solid #dee2e6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portfolio-card-date {
+        font-size: 0.8rem;
+        color: #6c757d;
+    }
+
+    .portfolio-card-actions .btn {
+        padding: 0.25rem 0.6rem; /* Smaller buttons */
+        font-size: 0.8rem;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="portfolio-grid-header">
+        <h1>Your Portfolios</h1>
+        <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus me-2"></i> New Portfolio</a>
+    </div>
 
     @if (TempData["Success"] != null)
     {
         <div class="alert alert-success">@TempData["Success"]</div>
     }
-
     @if (TempData["Error"] != null)
     {
         <div class="alert alert-danger">@TempData["Error"]</div>
     }
 
-    <a asp-action="Create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Portfolio</a>
-
-    <div class="tbl-header">
-        <table cellpadding="0" cellspacing="0" border="0">
-            @* Removed Bootstrap table classes here *@
-            <thead>
-                <tr>
-                    <th>Portfolio Name</th>
-                    <th>Type</th>
-                    <th>Total Value</th>
-                    <th>Created Date</th>
-                    <th colspan="2" style="padding-right:0">Actions</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-
-    <div class="tbl-content">
-        <table cellpadding="0" cellspacing="0" border="0">
-            @* Removed Bootstrap table classes here *@
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Name</td>
-                        <td>@item.Type</td>
-                        <td id="totalValue_@item.PortfolioId"> @item.TotalValue.ToString("C")</td>
-                        <td>@item.CreatedDate.ToShortDateString()</td>
-                        <td class="portfolio-actions" colspan="2">
-                            @* Using flexbox for better button layout *
-                             * Removed d-grid, d-md-inline, mb-2, me-md-2 from individual buttons *@
-                            <div class="d-flex flex-wrap gap-1">
-                                <a asp-action="Details" asp-route-id="@item.PortfolioId" class="btn btn-info btn-sm" aria-label="View Portfolio"><i class="fas fa-eye"></i></a>
-                                <a asp-action="Edit" asp-route-id="@item.PortfolioId" class="btn btn-warning btn-sm" aria-label="Edit Portfolio"><i class="fas fa-edit"></i></a>
-
-                                <form asp-action="Delete" asp-route-id="@item.PortfolioId" method="get" class="d-inline"
-                                      onsubmit="return confirm('Are you sure you want to delete this portfolio?');">
-                                    <button type="submit" class="btn btn-danger btn-sm" aria-label="Delete Portfolio"><i class="fas fa-trash-alt"></i></button>
-                                </form>
-
-                                @* Removed Clone button as per original code *@
-                                @* <form asp-action="Clone" asp-route-id="@item.PortfolioId" method="post" class="d-inline"> *@
-                                @* <button type="submit" class="btn btn-outline-primary btn-sm">Clone</button> *@
-                                @* </form> *@
-
-                                <a asp-action="AllocationChart" asp-route-id="@item.PortfolioId" class="btn btn-secondary btn-sm" aria-label="View Allocation Chart"><i class="fas fa-chart-pie"></i></a>
-                                <a asp-action="AddInvestments" asp-route-portfolioId="@item.PortfolioId"
-                                   class="btn btn-success btn-sm" aria-label="Add Investment"><i class="fas fa-plus-circle"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</section>
-
-@section Scripts {
-@* The portfolio-table.js script should ideally be linked in _Layout.cshtml *
-             * The jQuery scrollbar adjustment part of portfolio-table.js needs the .tbl-header and .tbl-content divs *
-        @* <script src="~/js/portfolio-table.js"></script> *@
-
-    <script>
-        // Your existing JavaScript for updating total values
-        async function updatePortfolioTotalValues() {
-            try {
-                const response = await fetch('/Portfolio/GetLivePortfolioTotalValues');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json(); // This will be an array of { portfolioId, totalValue }
-
-                data.forEach(portfolioUpdate => {
-                    const totalValueElement = document.getElementById(`totalValue_${portfolioUpdate.portfolioId}`);
-                    if (totalValueElement) {
-                        totalValueElement.textContent = portfolioUpdate.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
-                    }
-                });
-
-            } catch (error) {
-                console.error("Error fetching live portfolio total values:", error);
+    <!-- ===== NEW PORTFOLIO CARD GRID ===== -->
+    <div class="portfolio-grid" id="portfolio-list">
+        @if (Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <div class="portfolio-card">
+                    <div class="portfolio-card-body">
+                        <div>
+                            <span class="portfolio-card-type">@item.Type</span>
+                            <h5 class="portfolio-card-title">@item.Name</h5>
+                        </div>
+                        <div class="portfolio-card-value-wrapper mt-3">
+                            <p class="portfolio-card-value-label">Current Total Value</p>
+                            <p class="portfolio-card-value" id="totalValue_@item.PortfolioId">
+                                @item.TotalValue.ToString("C")
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-footer">
+                        <span class="portfolio-card-date">Created: @item.CreatedDate.ToShortDateString()</span>
+                        <div class="portfolio-card-actions d-flex gap-2">
+                            <a asp-action="Details" asp-route-id="@item.PortfolioId" class="btn btn-primary" title="View Details"><i class="fas fa-eye"></i></a>
+                            <a asp-action="Edit" asp-route-id="@item.PortfolioId" class="btn btn-outline-secondary" title="Edit"><i class="fas fa-edit"></i></a>
+                            <form asp-action="Delete" asp-route-id="@item.PortfolioId" method="post" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this portfolio?');">
+                                <button type="submit" class="btn btn-outline-danger" title="Delete"><i class="fas fa-trash-alt"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             }
         }
+        else
+        {
+            <div class="col-12">
+                <div class="text-center p-5 border rounded bg-light">
+                    <h4>No portfolios found.</h4>
+                    <p class="text-muted">Get started by creating your first portfolio!</p>
+                    <a asp-action="Create" class="btn btn-success mt-3"><i class="fas fa-plus"></i> Create a Portfolio</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
 
-        updatePortfolioTotalValues();
-        setInterval(updatePortfolioTotalValues, 1000);
+@section Scripts {
+    <script>
+        (function() {
+            // This JavaScript function is the same as before and works perfectly with the new card structure.
+            // It finds elements by their unique ID, so the layout change doesn't affect it.
+            async function updatePortfolioTotalValues() {
+                try {
+                    const response = await fetch('/Portfolio/GetLivePortfolioTotalValues');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+
+                    data.forEach(portfolioUpdate => {
+                        const totalValueElement = document.getElementById(`totalValue_${portfolioUpdate.portfolioId}`);
+                        if (totalValueElement) {
+                            totalValueElement.textContent = portfolioUpdate.totalValue.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+                        }
+                    });
+
+                } catch (error) {
+                    console.error("Error fetching live portfolio total values:", error);
+                }
+            }
+
+            // Using the robust recursive setTimeout pattern for live updates.
+            (async function startValueUpdates() {
+                await updatePortfolioTotalValues();
+                setTimeout(startValueUpdates, 3000); // Update every 3 seconds
+            })();
+
+        })();
     </script>
 }
-<script src="~/js/portfolio-table.js"></script>

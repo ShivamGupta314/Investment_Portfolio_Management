@@ -77,5 +77,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InvestmentPortfolioManagement.Controllers.RiskController",
+    "Method": "ViewRecentPortfolioRiskHistory",
+    "RelativePath": "api/Risk/viewRecentPortfolioRiskHistory/{portfolioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "portfolioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "minutes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
