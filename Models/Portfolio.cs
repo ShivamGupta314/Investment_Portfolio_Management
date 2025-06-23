@@ -13,8 +13,8 @@ namespace InvestmentPortfolioManagement.Models
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
 
-        [Required]
-        public string Type { get; set; } = string.Empty;
+        //[Required]
+        //public string Type { get; set; } = string.Empty;
 
         public decimal TotalValue { get; set; }
 

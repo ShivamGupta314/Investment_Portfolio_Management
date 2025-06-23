@@ -185,7 +185,7 @@ namespace InvestmentPortfolioManagement.Services
             {
                 existingPortfolio.Name = portfolio.Name;
                 existingPortfolio.Description = portfolio.Description;
-                existingPortfolio.Type = portfolio.Type;
+                //existingPortfolio.Type = portfolio.Type;
                 existingPortfolio.UserId = portfolio.UserId;
                 await _context.SaveChangesAsync();
 

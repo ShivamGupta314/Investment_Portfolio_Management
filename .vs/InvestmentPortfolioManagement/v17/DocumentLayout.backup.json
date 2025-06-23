@@ -3,16 +3,148 @@
   "WorkspaceRootPath": "C:\\Training\\Project\\Investment_Portfolio_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\riskprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\riskprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\viewmodels\\portfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:viewmodels\\portfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\investor\\portfolio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investor\\portfolio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\investor\\createportfolio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investor\\createportfolio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\investmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\investmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\investor\\risk.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investor\\risk.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\admin\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\admin\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\admin\\manageassets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\admin\\manageassets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\common\\riskconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:common\\riskconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\livepriceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\livepriceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\portfolioriskanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\portfolioriskanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\investorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\investorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\riskprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\riskprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -23,20 +155,8 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\viewmodels\\addinvestmentstoportfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:viewmodels\\addinvestmentstoportfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\portfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:common\\assettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\migrations\\20250622152042_date added in user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:migrations\\20250622152042_date added in user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,20 +215,12 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\investmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\investmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\investmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\investmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\investment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\livepriceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\livepriceupdaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -127,60 +235,12 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\common\\riskconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:common\\riskconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\interfaces\\iriskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:interfaces\\iriskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\viewmodels\\portfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:viewmodels\\portfolioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:interfaces\\iportfolioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\performanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\performanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\timepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\timepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\controllers\\investorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:controllers\\investorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\common\\risklevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -199,20 +259,12 @@
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:investmentportfoliomanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\risk\\assess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\risk\\assess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\risk\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:views\\risk\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E899196-CA35-446B-83B4-827EB95E56D3}|InvestmentPortfolioManagement.csproj|c:\\training\\project\\investment_portfolio_management\\views\\portfolio\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -250,37 +302,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PortfolioService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\PortfolioService.cs",
-              "RelativeDocumentMoniker": "Services\\PortfolioService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\PortfolioService.cs",
-              "RelativeToolTip": "Services\\PortfolioService.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAcwNgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T06:47:51.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T09:26:44.413Z"
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\Delete.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Portfolio\\Delete.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAlwKYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:22:21.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Portfolio.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Portfolio.cs",
+              "RelativeDocumentMoniker": "Models\\Portfolio.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Portfolio.cs*",
+              "RelativeToolTip": "Models\\Portfolio.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:07:42.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Details.cshtml",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\Details.cshtml",
-              "ViewState": "AgIAAE4CAAAAAAAAAAAAAKwBAABQAAAAAAAAAA==",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Details.cshtml*",
+              "RelativeToolTip": "Views\\Portfolio\\Details.cshtml*",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAlwLsAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T11:52:34.352Z",
               "EditorCaption": ""
@@ -288,6 +342,427 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Portfolio\\Index.cshtml*",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAlwIgAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T11:52:01.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PortfolioViewModel.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\PortfolioViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\PortfolioViewModel.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\PortfolioViewModel.cs",
+              "RelativeToolTip": "ViewModels\\PortfolioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:43:15.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Portfolio\\Create.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Create.cshtml*",
+              "RelativeToolTip": "Views\\Portfolio\\Create.cshtml*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAlwC8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T08:42:53.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Portfolio.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\Portfolio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Investor\\Portfolio.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\Portfolio.cshtml",
+              "RelativeToolTip": "Views\\Investor\\Portfolio.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAlwCMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:22:13.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Services\\ReportService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\ReportService.cs*",
+              "RelativeToolTip": "Services\\ReportService.cs*",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAlwKYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:39:28.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PortfolioService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\PortfolioService.cs",
+              "RelativeDocumentMoniker": "Services\\PortfolioService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\PortfolioService.cs*",
+              "RelativeToolTip": "Services\\PortfolioService.cs*",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAlwLsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:47:51.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs*",
+              "RelativeToolTip": "Controllers\\PortfolioController.cs*",
+              "ViewState": "AgIAACkBAAAAAAAAAAAlwDoBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:41:01.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreatePortfolio.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\CreatePortfolio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Investor\\CreatePortfolio.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\CreatePortfolio.cshtml",
+              "RelativeToolTip": "Views\\Investor\\CreatePortfolio.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:15:26.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvestmentController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvestmentController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestmentController.cs",
+              "RelativeToolTip": "Controllers\\InvestmentController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwv04AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T05:34:50.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T10:46:06.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "ViewModels\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T17:15:44.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Risk.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\Risk.cshtml",
+              "RelativeDocumentMoniker": "Views\\Investor\\Risk.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investor\\Risk.cshtml",
+              "RelativeToolTip": "Views\\Investor\\Risk.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:15:24.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:15:16.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T17:14:33.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ManageUsers.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\ManageUsers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageUsers.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\ManageUsers.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageUsers.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:13:18.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ManageAssets.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\ManageAssets.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageAssets.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\ManageAssets.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageAssets.cshtml",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAQwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:12:50.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:12:43.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAQwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T06:22:42.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:21:51.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LivePriceUpdaterService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\LivePriceUpdaterService.cs",
+              "RelativeDocumentMoniker": "Services\\LivePriceUpdaterService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\LivePriceUpdaterService.cs",
+              "RelativeToolTip": "Services\\LivePriceUpdaterService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:42:59.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Models\\Report.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Report.cs",
+              "RelativeToolTip": "Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T06:05:34.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T04:06:09.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RiskConstants.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\RiskConstants.cs",
+              "RelativeDocumentMoniker": "Common\\RiskConstants.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\RiskConstants.cs",
+              "RelativeToolTip": "Common\\RiskConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:53:03.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAQwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T15:15:19.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Controllers\\ReportController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:07:43.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IReportService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IReportService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IReportService.cs",
+              "RelativeToolTip": "Interfaces\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:18:43.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IPortfolioService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IPortfolioService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IPortfolioService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IPortfolioService.cs",
+              "RelativeToolTip": "Interfaces\\IPortfolioService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:33:24.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Report\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\Index.cshtml",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Report\\Index.cshtml",
+              "RelativeToolTip": "Views\\Report\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T12:16:13.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PortfolioRiskAnalysis.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\PortfolioRiskAnalysis.cs",
+              "RelativeDocumentMoniker": "Models\\PortfolioRiskAnalysis.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\PortfolioRiskAnalysis.cs",
+              "RelativeToolTip": "Models\\PortfolioRiskAnalysis.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:25:53.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RiskService.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\RiskService.cs",
+              "RelativeDocumentMoniker": "Services\\RiskService.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\RiskService.cs",
+              "RelativeToolTip": "Services\\RiskService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAewGYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T06:21:32.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RiskController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\RiskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RiskController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\RiskController.cs",
+              "RelativeToolTip": "Controllers\\RiskController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAewDMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T04:52:00.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "InvestorController.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvestorController.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestorController.cs",
+              "RelativeToolTip": "Controllers\\InvestorController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAApwFcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:41:17.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RiskProfile.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\RiskProfile.cs",
+              "RelativeDocumentMoniker": "Models\\RiskProfile.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\RiskProfile.cs",
+              "RelativeToolTip": "Models\\RiskProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T06:05:32.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -299,57 +774,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RiskProfile.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\RiskProfile.cs",
-              "RelativeDocumentMoniker": "Models\\RiskProfile.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\RiskProfile.cs",
-              "RelativeToolTip": "Models\\RiskProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 37,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T06:05:32.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T09:26:44.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PortfolioRiskAnalysis.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\PortfolioRiskAnalysis.cs",
-              "RelativeDocumentMoniker": "Models\\PortfolioRiskAnalysis.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\PortfolioRiskAnalysis.cs",
-              "RelativeToolTip": "Models\\PortfolioRiskAnalysis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T09:25:53.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PortfolioController.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\PortfolioController.cs",
-              "RelativeToolTip": "Controllers\\PortfolioController.cs",
-              "ViewState": "AgIAAE0BAAAAAAAAAADgv2UBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:41:01.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Portfolio.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Portfolio.cs",
-              "RelativeDocumentMoniker": "Models\\Portfolio.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Portfolio.cs",
-              "RelativeToolTip": "Models\\Portfolio.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T09:07:42.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 38,
               "Title": "AddInvestmentsToPortfolioViewModel.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\AddInvestmentsToPortfolioViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddInvestmentsToPortfolioViewModel.cs",
@@ -361,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 39,
               "Title": "AssetService.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\AssetService.cs",
               "RelativeDocumentMoniker": "Services\\AssetService.cs",
@@ -373,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 40,
               "Title": "AssetController.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AssetController.cs",
               "RelativeDocumentMoniker": "Controllers\\AssetController.cs",
@@ -385,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 41,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Asset\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Asset\\Index.cshtml",
@@ -397,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 42,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -409,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 43,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -421,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 44,
               "Title": "ReportType.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\ReportType.cs",
               "RelativeDocumentMoniker": "Common\\ReportType.cs",
@@ -433,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 45,
               "Title": "AssetType.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\AssetType.cs",
               "RelativeDocumentMoniker": "Common\\AssetType.cs",
@@ -445,19 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T04:06:09.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 49,
               "Title": "Asset.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Asset.cs",
               "RelativeDocumentMoniker": "Models\\Asset.cs",
@@ -469,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 50,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
@@ -481,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 51,
               "Title": "AddInvestments.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\AddInvestments.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\AddInvestments.cshtml",
@@ -493,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 48,
               "Title": "20250620064732_init.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Migrations\\20250620064732_init.cs",
               "RelativeDocumentMoniker": "Migrations\\20250620064732_init.cs",
@@ -505,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 46,
               "Title": "20250622152042_date added in user.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Migrations\\20250622152042_date added in user.cs",
               "RelativeDocumentMoniker": "Migrations\\20250622152042_date added in user.cs",
@@ -517,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 47,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -529,19 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LivePriceUpdaterService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\LivePriceUpdaterService.cs",
-              "RelativeDocumentMoniker": "Services\\LivePriceUpdaterService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\LivePriceUpdaterService.cs",
-              "RelativeToolTip": "Services\\LivePriceUpdaterService.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwGYAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:42:59.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 54,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investment\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Investment\\Index.cshtml",
@@ -553,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 52,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Investment\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Investment\\Create.cshtml",
@@ -565,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 53,
               "Title": "InvestmentService.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\InvestmentService.cs",
               "RelativeDocumentMoniker": "Services\\InvestmentService.cs",
@@ -577,31 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "InvestmentController.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InvestmentController.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestmentController.cs",
-              "RelativeToolTip": "Controllers\\InvestmentController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAADwv3cAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T05:34:50.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "RiskService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\RiskService.cs",
-              "RelativeDocumentMoniker": "Services\\RiskService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\RiskService.cs",
-              "RelativeToolTip": "Services\\RiskService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwFIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T06:21:32.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 57,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -613,19 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T06:22:42.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 56,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -637,7 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 55,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
@@ -649,67 +1026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "RiskConstants.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\RiskConstants.cs",
-              "RelativeDocumentMoniker": "Common\\RiskConstants.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\RiskConstants.cs",
-              "RelativeToolTip": "Common\\RiskConstants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T11:53:03.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-22T15:15:19.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Portfolio\\Index.cshtml",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Index.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\Index.cshtml",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAIwMMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T11:52:01.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "RiskController.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\RiskController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RiskController.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\RiskController.cs",
-              "RelativeToolTip": "Controllers\\RiskController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwFEAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T04:52:00.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:21:51.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 58,
               "Title": "IRiskService.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IRiskService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRiskService.cs",
@@ -721,31 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PortfolioViewModel.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\PortfolioViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\PortfolioViewModel.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\ViewModels\\PortfolioViewModel.cs",
-              "RelativeToolTip": "ViewModels\\PortfolioViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T11:43:15.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IPortfolioService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IPortfolioService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IPortfolioService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Interfaces\\IPortfolioService.cs",
-              "RelativeToolTip": "Interfaces\\IPortfolioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T11:33:24.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 59,
               "Title": "PerformanceService.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\PerformanceService.cs",
               "RelativeDocumentMoniker": "Services\\PerformanceService.cs",
@@ -757,43 +1050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "timepass.cshtml",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\timepass.cshtml",
-              "RelativeDocumentMoniker": "Views\\Portfolio\\timepass.cshtml",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\timepass.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\timepass.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-20T09:49:42.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\ReportService.cs",
-              "RelativeDocumentMoniker": "Services\\ReportService.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Services\\ReportService.cs",
-              "RelativeToolTip": "Services\\ReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T09:39:28.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "InvestorController.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InvestorController.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Controllers\\InvestorController.cs",
-              "RelativeToolTip": "Controllers\\InvestorController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAlwFIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T09:41:17.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 71,
               "Title": "20250620092759_risk.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Migrations\\20250620092759_risk.cs",
               "RelativeDocumentMoniker": "Migrations\\20250620092759_risk.cs",
@@ -805,7 +1062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 60,
               "Title": "RiskLevel.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Common\\RiskLevel.cs",
               "RelativeDocumentMoniker": "Common\\RiskLevel.cs",
@@ -817,7 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 61,
               "Title": "Investment.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Investment.cs",
               "RelativeDocumentMoniker": "Models\\Investment.cs",
@@ -829,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 62,
               "Title": "Performance.cs",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Performance.cs",
               "RelativeDocumentMoniker": "Models\\Performance.cs",
@@ -841,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 63,
               "Title": "InvestmentPortfolioManagement.csproj",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\InvestmentPortfolioManagement.csproj",
               "RelativeDocumentMoniker": "InvestmentPortfolioManagement.csproj",
@@ -853,31 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Portfolio\\Create.cshtml",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Create.cshtml",
-              "RelativeToolTip": "Views\\Portfolio\\Create.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T08:42:53.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Report.cs",
-              "RelativeDocumentMoniker": "Models\\Report.cs",
-              "ToolTip": "C:\\Training\\Project\\Investment_Portfolio_Management\\Models\\Report.cs",
-              "RelativeToolTip": "Models\\Report.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T06:05:34.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 64,
               "Title": "Assess.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Risk\\Assess.cshtml",
               "RelativeDocumentMoniker": "Views\\Risk\\Assess.cshtml",
@@ -889,7 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 65,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Risk\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Risk\\Index.cshtml",
@@ -901,7 +1134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 67,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -913,7 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 68,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
@@ -925,7 +1158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 69,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\User\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
@@ -937,7 +1170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 66,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\Views\\Portfolio\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Portfolio\\Edit.cshtml",
@@ -949,7 +1182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 70,
               "Title": "portfolio-table.css",
               "DocumentMoniker": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\portfolio-table.css",

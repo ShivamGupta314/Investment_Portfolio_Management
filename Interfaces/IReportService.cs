@@ -1,10 +1,12 @@
+using System;
 using System.Threading.Tasks;
 
 namespace InvestmentPortfolioManagement.Interfaces
 {
     public interface IReportService
     {
-        byte[] GeneratePortfolioPdf(Guid userId);
-        string GenerateAssetCsv(Guid userId);
+        // Changed to accept portfolioId instead of userId
+        byte[] GeneratePortfolioPdf(Guid portfolioId);
+        byte[] GenerateAssetCsv(Guid portfolioId); // Changed to accept portfolioId
     }
 }

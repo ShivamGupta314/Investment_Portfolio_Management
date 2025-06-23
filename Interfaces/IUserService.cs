@@ -6,5 +6,12 @@ namespace InvestmentPortfolioManagement.Interfaces
     {
         Task<User> AuthenticateAsync(string username, string password);
         Task<User> RegisterAsync(User user);
+
+        Task<User?> FindUserByIdAsync(Guid userId);
+        Task<bool> DeleteUserAsync(Guid userId);
+
+
+
     }
+
 }

@@ -33,7 +33,7 @@ else
                     <a href="/Investor/ExportPdf?portfolioId=@p.PortfolioId" class="btn btn-sm btn-outline-dark">PDF</a>
                     <a href="/Investor/ExportCsv?portfolioId=@p.PortfolioId" class="btn btn-sm btn-outline-secondary">CSV</a>
 </td>
-                <td>@p.Type</td>
+                @* <td>@p.Type</td> *@
                 <td>₹@p.TotalValue</td>
                 <td>@p.CreatedDate.ToShortDateString()</td>
                 <td>

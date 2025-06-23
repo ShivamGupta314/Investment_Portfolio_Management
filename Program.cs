@@ -22,6 +22,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<PerformanceService>();
 builder.Services.AddScoped<RiskService>();
 builder.Services.AddScoped<ReportService>();
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools())); // For DinkToPdf
+builder.Services.AddScoped<IReportService, ReportService>(); // Register your ReportService
 
 builder.Services.AddHostedService<LivePriceUpdaterService>();
 builder.Services.AddScoped<IUserService, UserService>();

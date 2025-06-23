@@ -38,5 +38,20 @@ namespace InvestmentPortfolioManagement.Services
             await _context.SaveChangesAsync();
             return user;
         }
+
+        public async Task<User?> FindUserByIdAsync(Guid userId)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+        }
+        public async Task<bool> DeleteUserAsync(Guid userId)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+            if (user == null) return false;
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
     }
 }

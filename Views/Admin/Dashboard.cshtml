@@ -1,6 +1,6 @@
 @{
     ViewData["Title"] = "Dashboard";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml"; // Use the new admin layout
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <style>
@@ -87,7 +87,7 @@
             <div class="card-body d-flex align-items-center">
                 <i class="fas fa-users summary-card-icon me-4"></i>
                 <div>
-                    <div class="summary-card-value">@ViewBag.TotalUsers</div>
+                    <div class="summary-card-value">@ViewBag.UserCount</div>
                     <div class="summary-card-title">Total Users</div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="card-body d-flex align-items-center">
                 <i class="fas fa-coins summary-card-icon me-4"></i>
                 <div>
-                    <div class="summary-card-value">@ViewBag.TotalAssets</div>
+                    <div class="summary-card-value">@ViewBag.TotalAssest</div>
                     <div class="summary-card-title">Total Assets</div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
             <div class="card-body d-flex align-items-center">
                 <i class="fas fa-briefcase summary-card-icon me-4"></i>
                 <div>
-                    <div class="summary-card-value">@ViewBag.TotalPortfolios</div>
+                    <div class="summary-card-value">@ViewBag.PortfolioCount</div>
                     <div class="summary-card-title">Total Portfolios</div>
                 </div>
             </div>
@@ -135,67 +135,69 @@
     </div>
 </div>
 
-<!-- ===== User Analytics Section ===== -->
-<div class="card">
-    <div class="card-header">
-        <h5 class="mb-0">User Analytics</h5>
-    </div>
-    <div class="card-body">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <h6>User Role Distribution</h6>
-                <canvas id="userRolesChart"></canvas>
+<!-- ===== Monthly User Registrations Chart ===== -->
+<div class="card" style=" border:none">
+    @* <div class="card-header"> *@
+    @*     <h5 class="mb-0">User Analytics</h5> *@
+    @* </div> *@
+    <center>
+        <div class="card-body">
+            <h6>User Analytics</h6>
+            <div style="max-width: 100%; height: 250px;">
+                <canvas id="userRegistrationChart"></canvas>
             </div>
-            <div class="col-md-8">
-                <h6>Recently Registered Users</h6>
-                <!-- You would fetch and display recent users here -->
-                <p class="text-muted">User list would be displayed here or on the "Manage Users" page.</p>
-            </div>
-        </div>
-    </div>
-</div>
 
+        </div>
+    </center>
+    @* </center> *@
+</div>
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Data for the user roles chart from the controller
-            const userRolesData = @Html.Raw(Json.Serialize(ViewBag.UserRolesData));
+                       document.addEventListener('DOMContentLoaded', function () {
+            const data = @Html.Raw(Json.Serialize(ViewBag.MonthlyRegistrations)) || [];
 
-            const labels = userRolesData.map(d => d.role);
-            const counts = userRolesData.map(d => d.count);
+            const labels = data.map(d => d.month);     // Jan, Feb, etc.
+            const counts = data.map(d => d.count);     // 0?100 range (or scaled)
 
-            const ctx = document.getElementById('userRolesChart').getContext('2d');
+            const ctx = document.getElementById('userRegistrationChart').getContext('2d');
             new Chart(ctx, {
-                type: 'doughnut',
+                type: 'line',
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'User Roles',
+                        label: 'Monthly Registrations',
                         data: counts,
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.7)',
-                            'rgba(54, 162, 235, 0.7)',
-                            'rgba(255, 206, 86, 0.7)',
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                        ],
-                        borderWidth: 1
+                        borderColor: 'rgba(0, 123, 255, 1)',
+                        backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 4,
+                        pointHoverRadius: 6
                     }]
                 },
                 options: {
                     responsive: true,
+                    scales: {
+                        y: {
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 10
+                            }
+                        }
+                    },
                     plugins: {
                         legend: {
-                            position: 'top',
-                        },
+                            display: true,
+                            position: 'top'
+                        }
                     }
                 }
             });
         });
+
+
     </script>
 }

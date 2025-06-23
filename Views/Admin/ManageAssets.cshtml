@@ -6,47 +6,41 @@
 
 <head>
     <style>
-        /* Styling for the new asset form container */
         .asset-form-container {
-            width: 400px; /* Sets the width to 600 pixels */
-            padding: 30px; /* Adds space inside the container around its content */
-            border-radius: 8px; /* Slightly rounded corners for a softer look */
-            /* Box shadow for a floating, elevated effect */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adjust values for desired intensity and spread */
-            background-color: #ffffff; /* Optional: Sets a white background for clarity */
-        }
-
-            /* You might want to adjust the margin-top for the heading within the container */
-            .asset-form-container h2 {
-                margin-top: 0; /* Remove default top margin if it creates too much space */
-                margin-bottom: 25px; /* Add some space below the heading */
-                text-align: center; /* Center the "Create New Asset" heading */
-                color: #333; /* Darker text color for the heading */
-            }
-
-            /* Small adjustment for the form itself if needed */
-            .asset-form-container form.mt-3 {
-                margin-top: 0 !important; /* Override the default Bootstrap margin-top if present */
-            }
-
-        /* Flexbox container for side-by-side layout */
-        .content-wrapper {
-            display: flex;
-            gap: 40px; /* Space between the form and the table */
-            margin: 40px auto; /* Centers the wrapper horizontally with some top/bottom margin */
-            max-width: 1200px; /* Max width for the content wrapper */
-            align-items: flex-start; /* Aligns items to the top */
-        }
-
-        /* Adjustments for the table section */
-        .existing-assets-section {
-            flex-grow: 1; /* Allows the table section to grow and take available space */
+            width: 400px;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             background-color: #ffffff;
-            display: flex; /* Make it a flex container for its children */
-            flex-direction: column; /* Stack children vertically */
+        }
+
+            .asset-form-container h2 {
+                margin-top: 0;
+                margin-bottom: 25px;
+                text-align: center;
+                color: #333;
+            }
+
+            .asset-form-container form.mt-3 {
+                margin-top: 0 !important;
+            }
+
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
+            align-items: flex-start;
+        }
+
+        .existing-assets-section {
+            flex-grow: 1;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
         }
 
             .existing-assets-section h3 {
@@ -56,14 +50,12 @@
                 color: #333;
             }
 
-        /* Container for the table with scrolling */
         .table-scroll-container {
-            max-height: 400px; /* Set a maximum height for the table container */
-            overflow-y: auto; /* Enable vertical scrolling when content overflows */
-            -webkit-overflow-scrolling: touch; /* Improves scrolling performance on touch devices */
+            max-height: 400px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
-            /* Ensure the table itself doesn't have extra margins if you want the scrollbar tight */
             .table-scroll-container table {
                 margin-bottom: 0;
             }
@@ -72,7 +64,7 @@
 
 <div class="content-wrapper">
     <div class="asset-form-container">
-        <center>  <h3>Create New Asset</h3> </center>
+        <center><h3>Create New Asset</h3></center>
 
         @if (TempData["Success"] != null)
         {
@@ -97,10 +89,10 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label asp-for="BasePrice" class="form-label fs-6" required>Base Price</label>
-                <input asp-for="BasePrice" class="form-control" />
+                <label asp-for="BasePrice" class="form-label fs-6">Base Price</label>
+                <input asp-for="BasePrice" class="form-control" required />
             </div>
-            <center>   <button type="submit" class="btn btn-primary">Create Asset</button> </center>
+            <center><button type="submit" class="btn btn-primary">Create Asset</button></center>
         </form>
     </div>
 
@@ -114,16 +106,34 @@
                         <th>Symbol</th>
                         <th>Type</th>
                         <th>Base Price</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var asset in ViewBag.AllAssets)
                     {
-                        <tr>
+                        <tr data-asset-id="@asset.AssetId">
                             <td>@asset.Name</td>
                             <td>@asset.Symbol</td>
                             <td>@asset.AssetType</td>
                             <td>@asset.BasePrice</td>
+                            <td>
+                                @* <button type="button" class="btn btn-sm btn-outline-danger delete-asset-btn" *@
+                                @*         data-id="@asset.AssetId"> *@
+                                @*     <i class="fas fa-trash-alt"></i> Delete *@
+                                @* </button> *@
+
+                                <a asp-action="DeleteAsset" asp-route-id="@asset.AssetId"
+                                   class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </a>
+
+                                <a asp-action="EditAsset" asp-route-id="@asset.AssetId"
+                                   class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -131,3 +141,31 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).on("click", ".delete-asset-btn", function () {
+            const button = $(this);
+            const assetId = button.data("id");
+
+            if (confirm("Are you sure you want to delete this asset?")) {
+                $.ajax({
+                    url: '/Admin/DeleteAsset',
+                    type: 'POST',
+                    data: { id: assetId },
+                    success: function (response) {
+                        if (response.success) {
+                            button.closest("tr").fadeOut(300, function () { $(this).remove(); });
+                        } else {
+                            alert(response.message || "Failed to delete asset.");
+                        }
+                    },
+                    error: function () {
+                        alert("Server error occurred.");
+                    }
+                });
+            }
+        });
+    </script>
+}
