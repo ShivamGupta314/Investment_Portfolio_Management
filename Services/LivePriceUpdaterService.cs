@@ -58,9 +58,9 @@ namespace InvestmentPortfolioManagement.Services
                         // --- 2. CALCULATE RISK-BASED VOLATILITY (Same as before) ---
                         decimal riskScore = RiskConstants.AssetBaseRiskScores.GetValueOrDefault(asset.AssetType ?? "", 50M);
                         double maxVolatilityPercent;
-                        if (riskScore > 75) maxVolatilityPercent = 2.5;      // High Risk
-                        else if (riskScore > 40) maxVolatilityPercent = 1.0; // Medium Risk
-                        else maxVolatilityPercent = 0.25;                    // Low Risk
+                        if (riskScore > 75) maxVolatilityPercent = 10;      // High Risk
+                        else if (riskScore > 40) maxVolatilityPercent = 5; // Medium Risk
+                        else maxVolatilityPercent = 2.5;                    // Low Risk
 
                         // --- 3. APPLY MARKET TREND AND MOMENTUM ---
                         // A. Start with the base market trend

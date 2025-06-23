@@ -349,29 +349,39 @@
                 }
             }
 
-            // 2. Function to load and display the SINGLE LATEST portfolio risk
-            function loadLatestPortfolioRisk() {
-                const section = $('#portfolioRiskAnalysisSection');
-                $.get(`/api/Risk/viewPortfolioRiskAnalysis/${portfolioId}`)
-                    .done(function(data) {
-                        if (data) {
-                            section.html(`
-                                <p><strong>Current Risk Level:</strong> <span class="risk-level-${data.riskLevel.toLowerCase()}">${data.riskLevel}</span></p>
-                                <p><strong>Risk Score:</strong> ${data.riskScore.toFixed(2)} / 100</p>
-                                <p><strong>Last Assessed:</strong> ${new Date(data.analysisDate).toLocaleString()}</p>
-                                <details>
-                                    <summary>View Calculation Details</summary>
-                                    <pre style="white-space: pre-wrap; word-wrap: break-word;">${data.analysisDetails || 'No details available.'}</pre>
-                                </details>
-                            `);
-                        }
-                    })
-                    .fail(function() {
-                        section.html(`<p class="text-danger"><i class="fas fa-exclamation-triangle"></i> Failed to load current risk data.</p>`);
-                    });
-            }
 
-            // 3. Function to load and display the RECENT portfolio risk history chart
+                     function loadLatestPortfolioRisk() {
+
+            $('#portfolioRiskAnalysisSection').html('<div class="text-muted"><i class="fas fa-spinner fa-spin"></i> Loading risk data...</div>');
+
+            $.get(`/api/Risk/viewPortfolioRiskAnalysis/${portfolioId}`)
+
+                .done(function (data) {
+
+                    let riskHtml = `
+        <h5 class="text-center mb-2">Risk Score: <strong>${data.riskScore}</strong></h5>
+        <p><strong>Level:</strong> ${data.riskLevel}</p>
+        <p><strong>Summary:</strong> ${data.analysisDetails}</p>
+
+                    `;
+
+                    $('#portfolioRiskAnalysisSection').html(riskHtml);
+
+                })
+
+                .fail(function (xhr) {
+
+                    $('#portfolioRiskAnalysisSection').html(
+
+                        `<div class="text-danger">Error loading risk data: ${xhr.responseJSON?.message || 'Unknown error'}</div>`
+
+                    );
+
+                });
+
+        }
+
+                    // 3. Function to load and display the RECENT portfolio risk history chart
             function loadRecentRiskHistoryChart() {
                 const messageDiv = $('#riskHistoryMessage').empty();
                 $.get(`/api/Risk/viewRecentPortfolioRiskHistory/${portfolioId}?minutes=10`)
@@ -544,14 +554,18 @@
 
             // === EVENT LISTENERS & INITIALIZATION ===
              $(document).ready(function() {
+              // Load initial state for risk sections
+                loadLatestPortfolioRisk();
+                loadRecentRiskHistoryChart();
                 // Manual Recalculate Risk Button
                 $('#recalculatePortfolioRiskBtn').on('click', function() {
-                    var $btn = $(this);
-                    $btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Recalculating...');
-                    triggerLiveRiskUpdate();
-                    setTimeout(() => $btn.prop('disabled', false).html('<i class="fas fa-calculator"></i> Recalculate Risk Now'), 1500);
+                    // var $btn = $(this);
+                    // $btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Recalculating...');
+                    // triggerLiveRiskUpdate();
+                    // setTimeout(() => $btn.prop('disabled', false).html('<i class="fas fa-calculator"></i> Recalculate Risk Now'), 1500);
+                    loadLatestPortfolioRisk();
                 });
-
+                chartUpdateInterval = setInterval(loadRecentRiskHistoryChart, 10000);
                 // Asset Chart Button Listener
                 investmentsTableBody.addEventListener('click', function(e) {
                     const button = e.target.closest('.view-chart-btn');
@@ -581,9 +595,6 @@
                     setTimeout(startLiveRiskUpdates, 10000);
                 })();
 
-                // Load initial state for risk sections
-                loadLatestPortfolioRisk();
-                loadRecentRiskHistoryChart();
             });
 
         })();

@@ -23,7 +23,7 @@ namespace InvestmentPortfolioManagement.Models
         [Required]
         public RiskLevel RiskLevel { get; set; } 
 
-        public string? AnalysisDetails { get; set; } // Optional: JSON or text for detailed breakdown
+        public string? AnalysisDetails { get; set; }
 
         [Required]
         public DateTime AnalysisDate { get; set; }
