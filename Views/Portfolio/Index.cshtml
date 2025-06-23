@@ -211,9 +211,9 @@
             // NEW JavaScript function for downloading reports
             function downloadReport(portfolioId, format) {
                 if (format === 'pdf') {
-                    window.location.href = `/Portfolio/DownloadPortfolioReportPdf/${portfolioId}`;
+                    window.location.href = `/Report/DownloadPortfolioReportPdf/${portfolioId}`;
                 } else if (format === 'csv') {
-                    window.location.href = `/Portfolio/DownloadPortfolioReportCsv/${portfolioId}`;
+                    window.location.href = `/Report/DownloadPortfolioReportCsv/${portfolioId}`;
                 }
             }
             window.downloadReport = downloadReport; // Make it globally accessible for onclick

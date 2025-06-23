@@ -19,7 +19,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Register Services
 
-builder.Services.AddScoped<PerformanceService>();
 builder.Services.AddScoped<RiskService>();
 builder.Services.AddScoped<ReportService>();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools())); // For DinkToPdf
@@ -29,7 +28,6 @@ builder.Services.AddHostedService<LivePriceUpdaterService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPortfolioService, PortfolioService>();
 builder.Services.AddScoped<IAssetService, AssetService>(); // ✅ Add below PortfolioService
-builder.Services.AddScoped<IPerformanceService, PerformanceService>();
 builder.Services.AddScoped<IRiskService, RiskService>();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 builder.Services.AddScoped<IReportService, ReportService>();

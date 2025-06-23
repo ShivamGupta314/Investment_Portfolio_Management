@@ -1,79 +1,79 @@
 {
   "Files": [
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
+      "Id": "D:\\Investment_Portfolio_Management\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\InvestmentPortfolioManagement.bundle.scp.css",
       "PackagePath": "staticwebassets\\InvestmentPortfolioManagement.m2hykwq1ic.bundle.scp.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\Dashboard.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\Dashboard.css",
       "PackagePath": "staticwebassets\\css\\Dashboard.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\admin.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\deleteInvestment.css",
       "PackagePath": "staticwebassets\\css\\deleteInvestment.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\navbar.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\portfolio-table.css",
       "PackagePath": "staticwebassets\\css\\portfolio-table.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\images\\bg.png",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\images\\bg.png",
       "PackagePath": "staticwebassets\\images\\bg.png"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\images\\cap.png",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\images\\cap.png",
       "PackagePath": "staticwebassets\\images\\cap.png"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\images\\mob.png",
       "PackagePath": "staticwebassets\\images\\mob.png"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\images\\mobile.png",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\images\\mobile.png",
       "PackagePath": "staticwebassets\\images\\mobile.png"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\home.js",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\home.js",
       "PackagePath": "staticwebassets\\js\\home.js"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\portfolio-table.js",
       "PackagePath": "staticwebassets\\js\\portfolio-table.js"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Training\\Project\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Investment_Portfolio_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {

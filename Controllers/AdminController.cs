@@ -134,7 +134,82 @@ namespace InvestmentPortfolioManagement.Controllers
         }
 
 
+        [HttpGet]
+        public async Task<IActionResult> EditAsset(Guid id)
+        {
+            var asset = await _context.Assets.FindAsync(id);
+            if (asset == null)
+            {
+                return NotFound();
+            }
 
+            // We need to pass the list of all assets again for the table on the side.
+            ViewBag.AllAssets = await _context.Assets.OrderBy(a => a.Name).ToListAsync();
+
+            // Pass the specific asset to be edited as the main model.
+            return View("ManageAssets", asset);
+        }
+
+        // --- NEW: ACTION TO PROCESS THE EDIT FORM SUBMISSION ---
+        [HttpPost]
+        public async Task<IActionResult> EditAsset(Asset asset)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(asset);
+                    await _context.SaveChangesAsync();
+                    TempData["Success"] = "Asset updated successfully.";
+                    return RedirectToAction(nameof(ManageAssets));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.Assets.Any(e => e.AssetId == asset.AssetId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            // If model state is invalid, return to the view with the data
+            ViewBag.AllAssets = await _context.Assets.OrderBy(a => a.Name).ToListAsync();
+            return View("ManageAssets", asset);
+        }
+
+        // --- NEW: ACTION TO HANDLE DELETING AN ASSET (used by AJAX) ---
+        [HttpPost]
+        public async Task<IActionResult> DeleteAsset(Guid id)
+        {
+            var asset = await _context.Assets.FindAsync(id);
+            if (asset == null)
+            {
+                return Json(new { success = false, message = "Asset not found." });
+            }
+
+            // Optional: Check if the asset is in use by any investments
+            var isInUse = await _context.Investments.AnyAsync(i => i.AssetId == id);
+            if (isInUse)
+            {
+                return Json(new { success = false, message = "Cannot delete asset because it is currently part of one or more investments." });
+            }
+
+            try
+            {
+                _context.Assets.Remove(asset);
+                await _context.SaveChangesAsync();
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return Json(new { success = false, message = "An error occurred while deleting the asset." });
+            }
+        }
 
     }
 }
