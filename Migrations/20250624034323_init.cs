@@ -25,27 +25,13 @@ namespace InvestmentPortfolioManagement.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "RiskProfile",
-                columns: table => new
-                {
-                    RiskProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RiskLevel = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AssessedOn = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_RiskProfile", x => x.RiskProfileId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RegisteredDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -61,7 +47,6 @@ namespace InvestmentPortfolioManagement.Migrations
                     PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalValue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
@@ -75,6 +60,27 @@ namespace InvestmentPortfolioManagement.Migrations
                         principalTable: "Users",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RiskProfile",
+                columns: table => new
+                {
+                    RiskProfileId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RiskLevel = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AssessedOn = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RiskProfile", x => x.RiskProfileId);
+                    table.ForeignKey(
+                        name: "FK_RiskProfile_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -117,6 +123,28 @@ namespace InvestmentPortfolioManagement.Migrations
                     table.PrimaryKey("PK_Performances", x => x.PerformanceId);
                     table.ForeignKey(
                         name: "FK_Performances_Portfolios_PortfolioId",
+                        column: x => x.PortfolioId,
+                        principalTable: "Portfolios",
+                        principalColumn: "PortfolioId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PortfolioRiskAnalyses",
+                columns: table => new
+                {
+                    PortfolioRiskAnalysisId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    PortfolioId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RiskScore = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    RiskLevel = table.Column<int>(type: "int", nullable: false),
+                    AnalysisDetails = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AnalysisDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PortfolioRiskAnalyses", x => x.PortfolioRiskAnalysisId);
+                    table.ForeignKey(
+                        name: "FK_PortfolioRiskAnalyses_Portfolios_PortfolioId",
                         column: x => x.PortfolioId,
                         principalTable: "Portfolios",
                         principalColumn: "PortfolioId",
@@ -185,8 +213,18 @@ namespace InvestmentPortfolioManagement.Migrations
                 column: "PortfolioId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_PortfolioRiskAnalyses_PortfolioId",
+                table: "PortfolioRiskAnalyses",
+                column: "PortfolioId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Portfolios_UserId",
                 table: "Portfolios",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RiskProfile_UserId",
+                table: "RiskProfile",
                 column: "UserId");
         }
 
@@ -198,6 +236,9 @@ namespace InvestmentPortfolioManagement.Migrations
 
             migrationBuilder.DropTable(
                 name: "Performances");
+
+            migrationBuilder.DropTable(
+                name: "PortfolioRiskAnalyses");
 
             migrationBuilder.DropTable(
                 name: "Reports");

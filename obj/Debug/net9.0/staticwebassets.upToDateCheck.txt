@@ -1,16 +1,16 @@
-D:\Investment_Portfolio_Management\wwwroot\js\home.js
-D:\Investment_Portfolio_Management\wwwroot\css\deleteInvestment.css
-D:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
-D:\Investment_Portfolio_Management\wwwroot\css\site.css
-D:\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
-D:\Investment_Portfolio_Management\wwwroot\js\portfolio-table.js
-D:\Investment_Portfolio_Management\wwwroot\css\admin.css
-D:\Investment_Portfolio_Management\wwwroot\css\Dashboard.css
-D:\Investment_Portfolio_Management\wwwroot\css\portfolio-table.css
-D:\Investment_Portfolio_Management\wwwroot\favicon.ico
-D:\Investment_Portfolio_Management\wwwroot\js\site.js
-D:\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-D:\Investment_Portfolio_Management\wwwroot\css\navbar.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\js\home.js
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\deleteInvestment.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\site.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\lib\jquery\LICENSE.txt
+C:\Training Project\Investment_Portfolio_Management\wwwroot\js\portfolio-table.js
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\admin.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\Dashboard.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\portfolio-table.css
+C:\Training Project\Investment_Portfolio_Management\wwwroot\favicon.ico
+C:\Training Project\Investment_Portfolio_Management\wwwroot\js\site.js
+C:\Training Project\Investment_Portfolio_Management\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Training Project\Investment_Portfolio_Management\wwwroot\css\navbar.css
 wwwroot\css\admin.css
 wwwroot\css\Dashboard.css
 wwwroot\css\deleteInvestment.css
